@@ -1,103 +1,90 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import Image from 'next/image';
+import Header from '@/components/Header';
+// import './page.css'; // 可选：添加你的样式
+
+export default function HomePage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      <Header title="欢迎来到余海川的个人网站" />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <main
+        style={{
+          backgroundImage: "url('/images/background_qd.jpg')",
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
+        }}
+      >
+        <div className="content-wrapper">
+          <Section id="about" title="关于我" desc="青岛->广州->卡尔斯鲁厄->伯布林根" href="/about" />
+          <Section id="projects" title="个人项目" desc="CAD项目; Excel VBA项目; MATLAB/Simulink 项目; Python 项目; 其他项目" href="/project" />
+          <Section id="academic" title="学术成果" href="/academic">
+            <School name="山东省青岛第二中学" img="/images/qdez-logo.png" />
+            <School name="华南理工大学" img="/images/scut-logo.png" />
+            <School name="卡尔斯鲁厄理工学院" img="/images/kit-logo.png" />
+          </Section>
+          <Section id="work" title="工作经历" href="/work">
+            <Company name="莱州鸿源台钳制造有限公司" img="/images/hongyuan-logo.png" />
+            <Company name="青岛洛林机械有限公司" img="/images/luolin-logo.png" />
+            <Company name="Schaeffler AG" img="/images/schaeffler-logo.png" />
+            <Company name="Stabilus SE" img="/images/stabilus-logo.png" />
+            <Company name="Bertrandt AG" img="/images/bertrandt-logo.png" />
+            <Company name="Mercedes-Benz AG (ANÜ von Bertrandt)" img="/images/mercedes-logo.png" />
+          </Section>
+          <Section id="certificates" title="我的证书" desc="从高中到大学毕业期间的证书" href="/certificates" />
+          <Section id="contact" title="联系方式" desc="欢迎联系我!" href="/contact" />
         </div>
+
+        <footer>
+          <p>&copy; 2025 余海川。 保留所有权利。</p>
+          <p>
+            <span>关注我：</span>
+            <a href="https://www.linkedin.com/in/haichuan-yu/" target="_blank" rel="noopener noreferrer">
+              <Image src="/images/LI-Logo.png" alt="LinkedIn" width={80} height={20} />
+            </a>
+          </p>
+
+          {/* 语言切换按钮（开发调试用） */}
+          <button onClick={() => changeLanguage('zh')}>中文</button>
+          <button onClick={() => changeLanguage('en')}>English</button>
+          <button onClick={() => changeLanguage('de')}>Deutsch</button>
+        </footer>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+    </>
   );
+}
+
+function Section({ id, title, desc, children, href }) {
+  return (
+    <section id={id} onClick={() => (window.location.href = href)} style={{ cursor: 'pointer' }}>
+      <h2>{title}</h2>
+      {desc && <p>{desc}</p>}
+      {children}
+    </section>
+  );
+}
+
+function School({ name, img }) {
+  return (
+    <p>
+      <span>{name}</span>
+      <Image src={img} alt={`${name} Logo`} width={80} height={40} />
+    </p>
+  );
+}
+
+function Company({ name, img }) {
+  return (
+    <p>
+      <span>{name}</span>
+      <Image src={img} alt={`${name} Logo`} width={100} height={50} />
+    </p>
+  );
+}
+
+function changeLanguage(lang) {
+  console.log(`语言切换到 ${lang}（功能后续完成）`);
 }
