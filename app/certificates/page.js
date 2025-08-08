@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
+import './page.css';
 
 export default function CertificatesPage() {
   const [lang, setLang] = useState('zh');

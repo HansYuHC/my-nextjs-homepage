@@ -1,23 +1,16 @@
 'use client';
 
 import { useEffect } from 'react';
-import Header from '@/components/Header';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
-import '../leaflet/leaflet.css'; // 使用你本地下载的 Leaflet 样式
+import '../leaflet/leaflet.css'; // 本地 Leaflet 样式
 import './page.css';
 
 export default function AboutPage() {
   useEffect(() => {
-    const titleContainer = document.getElementById('dynamic-title-container');
-    if (titleContainer) {
-      titleContainer.innerHTML = `<h1 data-lang-key="about">关于我</h1>`;
-    }
-
     const loadLeafletAndMaps = async () => {
       const L = await import('leaflet');
       const combinedData = await loadCombinedLanguageData();
-
       initializeMaps(L, combinedData);
     };
 
@@ -26,11 +19,11 @@ export default function AboutPage() {
 
   return (
     <main className="about-page">
-      <Header />
+      {/* 注意：Header 已经在 layout.js 里统一引入，这里不需要再引入 */}
 
       <div className="content-wrapper">
         <section id="about">
-          <h2 data-lang-key="about">关于我</h2>
+          <h1 data-lang-key="about">关于我</h1>
           <p data-lang-key="aboutDescription">我是余海川……</p>
           <p data-lang-key="aboutExperience">以下是我的个人教育，生活及工作经历:</p>
 
@@ -79,9 +72,6 @@ export default function AboutPage() {
             <Image src="/images/LI-Logo.png" alt="LinkedIn" width={80} height={20} />
           </a>
         </p>
-        <button onClick={() => changeLanguage('zh')}>中文</button>
-        <button onClick={() => changeLanguage('en')}>English</button>
-        <button onClick={() => changeLanguage('de')}>Deutsch</button>
       </footer>
     </main>
   );
@@ -117,7 +107,6 @@ function initializeMaps(L, combinedData) {
   L.tileLayer(tileLayerUrl, tileLayerOptions).addTo(qingdaoMap);
   L.tileLayer(tileLayerUrl, tileLayerOptions).addTo(germanyMap);
 
-  // 简化版 marker 列表（示例）
   const qingdaoMarkers = [
     {
       latlng: [36.07224, 120.41488],
@@ -168,11 +157,4 @@ function translatePopupContent(popupTemplate, combinedData) {
   });
 
   return tempDiv.innerHTML;
-}
-
-function changeLanguage(lang) {
-  localStorage.setItem('userLanguage', lang);
-  const currentUrl = new URL(window.location.href);
-  currentUrl.searchParams.set('lang', lang);
-  window.location.href = currentUrl.toString();
 }

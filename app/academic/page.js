@@ -7,6 +7,7 @@ import Image from 'next/image';
 import SwiperCore from 'swiper';
 import { Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import './page.css';
 
 import 'swiper/css';
 import 'swiper/css/navigation';

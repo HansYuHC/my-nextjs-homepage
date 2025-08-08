@@ -1,0 +1,52 @@
+/* Header.css */
+
+/* 语言切换按钮 */
+.language-switcher {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.language-switcher img {
+  cursor: pointer;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* 欢迎词 */
+.welcome-text {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 10px 0 20px;
+}
+
+/* 导航栏 */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}

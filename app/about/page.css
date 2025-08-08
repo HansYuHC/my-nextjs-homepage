@@ -6,13 +6,43 @@
   margin-bottom: 2rem;
 }
 
-.interest-icons {
-  display: flex;
-  gap: 1rem;
-  margin: 1rem 0;
-}
-
 .icon {
   width: 64px;
   height: 64px;
+}
+
+/* app/about/page.module.css */
+
+.contentWrapper {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contentWrapper h2,
+.contentWrapper p {
+    color: #333;
+}
+
+/* 地图容器样式 */
+#qingdao-map,
+#germany-map {
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+}
+
+/* 兴趣图标 */
+.interest-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.interest-icons .icon {
+    width: 40px;
+    height: 40px;
 }
