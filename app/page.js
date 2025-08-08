@@ -20,7 +20,7 @@ export default function HomePage() {
       >
         <div className="content-wrapper">
           <Section id="about" title="关于我" desc="青岛->广州->卡尔斯鲁厄->伯布林根" href="/about" />
-          <Section id="projects" title="个人项目" desc="CAD项目; Excel VBA项目; MATLAB/Simulink 项目; Python 项目; 其他项目" href="/project" />
+          <Section id="projects" title="个人项目" desc="CAD项目; Excel VBA项目; MATLAB/Simulink 项目; Python 项目; 其他项目" href="/projects" />
           <Section id="academic" title="学术成果" href="/academic">
             <School name="山东省青岛第二中学" img="/images/qdez-logo.png" />
             <School name="华南理工大学" img="/images/scut-logo.png" />

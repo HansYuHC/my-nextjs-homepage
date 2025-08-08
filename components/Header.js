@@ -51,7 +51,7 @@ export default function Header({ title }) {
           <ul className="nav-list">
             <NavItem href="/" label="首页" onClick={closeMenu} />
             <NavItem href="/about" label="关于我" onClick={closeMenu} />
-            <NavItem href="/project" label="个人项目" onClick={closeMenu} />
+            <NavItem href="/projects" label="个人项目" onClick={closeMenu} />
             <NavItem href="/academic" label="学术成果" onClick={closeMenu} />
             <NavItem href="/work" label="工作经历" onClick={closeMenu} />
             <NavItem href="/certificates" label="我的证书" onClick={closeMenu} />
