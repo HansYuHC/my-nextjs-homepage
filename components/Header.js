@@ -3,26 +3,44 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-import './Header.css'; // 放导航栏样式
+import './Header.css';
+import { useLang } from '@/hooks/useLang';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { lang, changeLang } = useLang();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
-
-  const changeLanguage = (lang) => {
-    console.log(`切换语言到: ${lang}`);
-    // 之后可加入动态切换逻辑
-  };
 
   return (
     <header>
       {/* 语言切换 */}
       <div className="language-switcher">
-        <Image src="/images/flags/china.png" alt="中文" width={24} height={16} onClick={() => changeLanguage('zh')} />
-        <Image src="/images/flags/usa.png" alt="English" width={24} height={16} onClick={() => changeLanguage('en')} />
-        <Image src="/images/flags/germany.png" alt="Deutsch" width={24} height={16} onClick={() => changeLanguage('de')} />
+        <Image
+          src="/images/flags/china.png"
+          alt="中文"
+          width={24}
+          height={16}
+          onClick={() => changeLang('zh')}
+          style={{ cursor: 'pointer' }}
+        />
+        <Image
+          src="/images/flags/usa.png"
+          alt="English"
+          width={24}
+          height={16}
+          onClick={() => changeLang('en')}
+          style={{ cursor: 'pointer' }}
+        />
+        <Image
+          src="/images/flags/germany.png"
+          alt="Deutsch"
+          width={24}
+          height={16}
+          onClick={() => changeLang('de')}
+          style={{ cursor: 'pointer' }}
+        />
       </div>
 
       {/* 欢迎词 */}

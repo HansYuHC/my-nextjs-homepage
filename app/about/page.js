@@ -2,8 +2,7 @@
 
 import { useEffect } from 'react';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
-import '../leaflet/leaflet.css'; // 本地 Leaflet 样式
+import '../leaflet/leaflet.css';
 import './page.css';
 
 export default function AboutPage() {
@@ -13,14 +12,11 @@ export default function AboutPage() {
       const combinedData = await loadCombinedLanguageData();
       initializeMaps(L, combinedData);
     };
-
     loadLeafletAndMaps();
   }, []);
 
   return (
     <main className="about-page">
-      {/* 注意：Header 已经在 layout.js 里统一引入，这里不需要再引入 */}
-
       <div className="content-wrapper">
         <section id="about">
           <h1 data-lang-key="about">关于我</h1>
@@ -77,35 +73,44 @@ export default function AboutPage() {
   );
 }
 
-// ==========================================
-// 以下是逻辑函数（map + 翻译 + 语言切换）
-// ==========================================
-
 async function loadCombinedLanguageData() {
-  const globalRes = await fetch('/lang/global.json');
-  const aboutRes = await fetch('/lang/about.json');
   const currentLanguage = localStorage.getItem('userLanguage') || 'zh';
-
+  const [globalRes, aboutRes] = await Promise.all([
+    fetch('/lang/global.json'),
+    fetch('/lang/about.json')
+  ]);
   const globalData = await globalRes.json();
   const aboutData = await aboutRes.json();
-
-  return {
-    ...globalData[currentLanguage],
-    ...aboutData[currentLanguage]
-  };
+  return { ...globalData[currentLanguage], ...aboutData[currentLanguage] };
 }
 
 function initializeMaps(L, combinedData) {
+  // 如果已经初始化过，则移除
+  if (L.DomUtil.get('qingdao-map')?._leaflet_id) {
+    L.map('qingdao-map').remove();
+  }
+  if (L.DomUtil.get('germany-map')?._leaflet_id) {
+    L.map('germany-map').remove();
+  }
+
   const qingdaoMap = L.map('qingdao-map').setView([36.0771, 120.3826], 11.5);
   const germanyMap = L.map('germany-map').setView([51.1657, 10.4515], 6);
 
   const tileLayerUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-  const tileLayerOptions = {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  };
-
+  const tileLayerOptions = { attribution: '&copy; OpenStreetMap contributors' };
   L.tileLayer(tileLayerUrl, tileLayerOptions).addTo(qingdaoMap);
   L.tileLayer(tileLayerUrl, tileLayerOptions).addTo(germanyMap);
+
+  // 自定义 marker 图标路径
+  const defaultIcon = L.icon({
+    iconUrl: '/leaflet/images/marker-icon.png',
+    iconRetinaUrl: '/leaflet/images/marker-icon-2x.png',
+    shadowUrl: '/leaflet/images/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41]
+  });
 
   const qingdaoMarkers = [
     {
@@ -114,8 +119,8 @@ function initializeMaps(L, combinedData) {
         <h4 data-lang-key="myKita">我的幼儿园</h4>
         <img src="/images/kindergarten.png" style="width:100%;max-width:200px;" />
         <p data-lang-key="myKitaDescription">与小盆友们分享奥特曼玩偶，是我童年的起点。</p>
-      `,
-    },
+      `
+    }
   ];
 
   const germanyMarkers = [
@@ -125,18 +130,18 @@ function initializeMaps(L, combinedData) {
         <h4 data-lang-key="boeblingenTitle">伯布林根</h4>
         <img src="/images/boeblingen.png" style="width:100%;max-width:200px;" />
         <p data-lang-key="boeblingenDescription">我目前居住在伯布林根，是个别有韵味的小城。</p>
-      `,
-    },
+      `
+    }
   ];
 
   qingdaoMarkers.forEach(marker => {
     const translated = translatePopupContent(marker.popup, combinedData);
-    L.marker(marker.latlng).addTo(qingdaoMap).bindPopup(translated);
+    L.marker(marker.latlng, { icon: defaultIcon }).addTo(qingdaoMap).bindPopup(translated);
   });
 
   germanyMarkers.forEach(marker => {
     const translated = translatePopupContent(marker.popup, combinedData);
-    L.marker(marker.latlng).addTo(germanyMap).bindPopup(translated);
+    L.marker(marker.latlng, { icon: defaultIcon }).addTo(germanyMap).bindPopup(translated);
   });
 
   window.addEventListener('resize', () => {
@@ -148,13 +153,9 @@ function initializeMaps(L, combinedData) {
 function translatePopupContent(popupTemplate, combinedData) {
   const tempDiv = document.createElement('div');
   tempDiv.innerHTML = popupTemplate;
-
   tempDiv.querySelectorAll('[data-lang-key]').forEach(el => {
     const key = el.getAttribute('data-lang-key');
-    if (combinedData[key]) {
-      el.innerHTML = combinedData[key];
-    }
+    if (combinedData[key]) el.innerHTML = combinedData[key];
   });
-
   return tempDiv.innerHTML;
 }
