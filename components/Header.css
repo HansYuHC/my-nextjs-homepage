@@ -50,3 +50,38 @@
 .navbar a:hover {
   background-color: #555;
 }
+
+/* Header.css */
+.language-switcher {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.language-switcher.changing {
+  opacity: 0.8;
+}
+
+.language-switcher img {
+  transition: all 0.3s ease;
+}
+
+.language-switcher img.active {
+  border: 2px solid #fff;
+  border-radius: 3px;
+}
+
+.language-loading-indicator {
+  position: absolute;
+  right: -25px;
+  color: white;
+}
+
+.welcome-text {
+  transition: opacity 0.3s ease;
+}
+
+.welcome-text.loading {
+  opacity: 0.5;
+}

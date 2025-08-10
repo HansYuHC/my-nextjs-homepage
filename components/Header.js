@@ -1,5 +1,5 @@
+// components/Header.js
 'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
@@ -8,7 +8,7 @@ import { useLang } from '@/hooks/useLang';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const { lang, changeLang } = useLang();
+  const { lang, changeLang, t } = useLang();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
@@ -44,18 +44,18 @@ export default function Header() {
       </div>
 
       {/* 欢迎词 */}
-      <h1 className="welcome-text">欢迎来到余海川的个人网站</h1>
+      <h1 className="welcome-text">{t('welcome')}</h1>
 
       {/* 导航栏 */}
       <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
         <ul>
-          <li><Link href="/" onClick={closeMenu}>首页</Link></li>
-          <li><Link href="/about" onClick={closeMenu}>关于我</Link></li>
-          <li><Link href="/projects" onClick={closeMenu}>个人项目</Link></li>
-          <li><Link href="/academic" onClick={closeMenu}>学术成果</Link></li>
-          <li><Link href="/work" onClick={closeMenu}>工作经历</Link></li>
-          <li><Link href="/certificates" onClick={closeMenu}>我的证书</Link></li>
-          <li><Link href="/contact" onClick={closeMenu}>联系方式</Link></li>
+          <li><Link href="/" onClick={closeMenu}>{t('home')}</Link></li>
+          <li><Link href="/about" onClick={closeMenu}>{t('about')}</Link></li>
+          <li><Link href="/projects" onClick={closeMenu}>{t('projects')}</Link></li>
+          <li><Link href="/academic" onClick={closeMenu}>{t('academic')}</Link></li>
+          <li><Link href="/work" onClick={closeMenu}>{t('work')}</Link></li>
+          <li><Link href="/certificates" onClick={closeMenu}>{t('certificates')}</Link></li>
+          <li><Link href="/contact" onClick={closeMenu}>{t('contact')}</Link></li>
         </ul>
       </nav>
     </header>
