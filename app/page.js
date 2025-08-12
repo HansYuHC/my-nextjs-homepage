@@ -60,14 +60,17 @@ export default function HomePage() {
           <School
             name={t('qdez')}
             img="/images/qdez-logo.png"
+            className="qdez-logo"
           />
           <School
             name={t('scut')}
             img="/images/scut-logo.png"
+            className="scut-logo"
           />
           <School
             name={t('kit')}
             img="/images/kit-logo.png"
+            className="kit-logo"
           />
         </Section>
 
@@ -79,26 +82,32 @@ export default function HomePage() {
           <Company
             name={t('hongyuan')}
             img="/images/hongyuan-logo.png"
+            className="hongyuan-logo"
           />
           <Company
             name={t('luolin')}
             img="/images/luolin-logo.png"
+            className="luolin-logo"
           />
           <Company
             name="Schaeffler AG"
             img="/images/schaeffler-logo.png"
+            className="schaeffler-logo"
           />
           <Company
             name="Stabilus SE"
             img="/images/stabilus-logo.png"
+            className="stabilus-logo"
           />
           <Company
             name="Bertrandt AG"
             img="/images/bertrandt-logo.png"
+            className="bertrandt-logo"
           />
           <Company
             name="Mercedes-Benz AG (ANÜ von Bertrandt)"
             img="/images/mercedes-logo.png"
+            className="mercedes-logo"
           />
         </Section>
 
@@ -145,20 +154,32 @@ function Section({ id, title, desc, children, href }) {
   );
 }
 
-function School({ name, img }) {
+function School({ name, img, className }) {
   return (
-    <p>
+    <p className="name-logo-wrapper">
       <span>{name}</span>
-      <Image src={img} alt={`${name} Logo`} width={80} height={40} />
+      <Image
+       src={img}
+       alt={`${name} Logo`}
+       width={120}
+       height={50}
+       className={className}
+      />
     </p>
   );
 }
 
-function Company({ name, img }) {
+function Company({ name, img, className }) {
   return (
-    <p>
+    <p className="name-logo-wrapper">
       <span>{name}</span>
-      <Image src={img} alt={`${name} Logo`} width={100} height={50} />
+      <Image
+        src={img}
+        alt={`${name} Logo`}
+        width={120} // 或者你原来想给的宽度
+        height={50}
+        className={className}
+      />
     </p>
   );
 }
