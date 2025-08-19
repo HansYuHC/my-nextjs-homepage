@@ -7,7 +7,7 @@ import useTranslation from '../lib/useTranslation'
 export default function ClientHeader() {
   const { t, lang } = useTranslation()
   const searchParams = useSearchParams()
-  const pathname = usePathname() // 使用 usePathname 获取当前路径
+  const pathname = usePathname()
   const currentPath = searchParams.get('lang') ? pathname : '/'
 
   return (
