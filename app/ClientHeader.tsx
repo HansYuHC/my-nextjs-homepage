@@ -1,13 +1,14 @@
 'use client'
 
 import Link from 'next/link'
-import { useSearchParams } from 'next/navigation'
+import { useSearchParams, usePathname } from 'next/navigation'
 import useTranslation from '../lib/useTranslation'
 
 export default function ClientHeader() {
   const { t, lang } = useTranslation()
   const searchParams = useSearchParams()
-  const currentPath = searchParams.get('lang') ? window.location.pathname : '/'
+  const pathname = usePathname() // 使用 usePathname 获取当前路径
+  const currentPath = searchParams.get('lang') ? pathname : '/'
 
   return (
     <header className="p-4 bg-gray-800 text-white flex justify-between">

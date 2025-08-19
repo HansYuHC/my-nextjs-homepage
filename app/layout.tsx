@@ -13,19 +13,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en"> {/* 暂时静态，后续可动态化 */}
-      <body>
-        {/* Header 移到客户端组件 */}
-        <ClientHeader />
-
-        {/* Main */}
-        <main className="p-8">{children}</main>
-
-        {/* Footer */}
-        <footer className="p-4 bg-gray-200 text-center">
-          © 2025 My Website
-        </footer>
-      </body>
-    </html>
+    <html lang="en"><body>
+      <ClientHeader />
+      <main className="p-8">{children}</main>
+      <footer className="p-4 bg-gray-200 text-center">
+        © 2025 My Website
+      </footer>
+    </body></html>
   )
 }

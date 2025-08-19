@@ -5,26 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c479eb8-f125-4fab-906f-edb3d9c0c287" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/about/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/contact/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/projects/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/work/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/useTranslation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/lang/global.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eslint.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/i18n.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/en/common.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/locales/zh/common.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/useTranslation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/useTranslation.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
