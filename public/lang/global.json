@@ -1,0 +1,26 @@
+{
+  "en": {
+    "home": "Home",
+    "about": "About Me",
+    "projects": "Projects",
+    "work": "Work",
+    "contact": "Contact",
+    "welcome": "Welcome to my website!"
+  },
+  "de": {
+    "home": "Startseite",
+    "about": "Über mich",
+    "projects": "Projekte",
+    "work": "Arbeit",
+    "contact": "Kontakt",
+    "welcome": "Willkommen auf meiner Website!"
+  },
+  "zh": {
+    "home": "首页",
+    "about": "关于我",
+    "projects": "项目",
+    "work": "工作",
+    "contact": "联系我",
+    "welcome": "欢迎来到我的网站！"
+  }
+}
