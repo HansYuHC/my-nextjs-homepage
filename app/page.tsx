@@ -4,8 +4,17 @@ import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useState } from 'react'
 import useTranslation from '../lib/useTranslation'
+import { Suspense } from 'react'
 
 export default function HomePage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <HomeContent />
+    </Suspense>
+  )
+}
+
+function HomeContent() {
   const { t, lang } = useTranslation()
   const [hovered, setHovered] = useState<string | null>(null)
 
