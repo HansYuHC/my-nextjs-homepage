@@ -3,7 +3,6 @@
 import { useSearchParams } from 'next/navigation'
 import translations from '../public/lang/global.json'
 
-// 定义 translations 的类型
 interface Translations {
   [lang: string]: {
     [key: string]: string

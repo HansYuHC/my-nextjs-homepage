@@ -1,7 +1,17 @@
 'use client'
+
 import useTranslation from '../../lib/useTranslation'
+import { Suspense } from 'react'
 
 export default function ProjectsPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ProjectsContent />
+    </Suspense>
+  )
+}
+
+function ProjectsContent() {
   const { t } = useTranslation()
   return (
     <div>
