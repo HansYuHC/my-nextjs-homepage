@@ -1,11 +1,12 @@
 {
   "en": {
     "home": "Home",
-    "about": "About Me",
+    "about": "About",
     "projects": "Projects",
     "work": "Work",
     "contact": "Contact",
-    "welcome": "Welcome to my website!"
+    "welcome": "Welcome to My Website",
+    "aboutDescription": "I am an engineer/developer. This is my personal introduction (e.g., education, hobbies, career goals)."
   },
   "de": {
     "home": "Startseite",
@@ -13,7 +14,8 @@
     "projects": "Projekte",
     "work": "Arbeit",
     "contact": "Kontakt",
-    "welcome": "Willkommen auf meiner Website!"
+    "welcome": "Willkommen auf meiner Website",
+    "aboutDescription": "Ich bin Ingenieur/Entwickler. Dies ist meine persönliche Vorstellung (z. B. Ausbildung, Hobbys, Karriereziele)."
   },
   "zh": {
     "home": "首页",
@@ -21,6 +23,7 @@
     "projects": "项目",
     "work": "工作",
     "contact": "联系我",
-    "welcome": "欢迎来到我的网站！"
+    "welcome": "欢迎访问我的网站",
+    "aboutDescription": "我是一名工程师/开发者，这里是我的个人简介（例如教育背景、兴趣爱好、职业目标）。"
   }
 }
