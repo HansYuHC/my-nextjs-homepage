@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c479eb8-f125-4fab-906f-edb3d9c0c287" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/cities/qingdao/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/schools/qdez/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ClientHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ClientHeader.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/about/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/projects/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/projects/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/lang/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/lang/global.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

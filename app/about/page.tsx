@@ -8,12 +8,12 @@ import { useState } from 'react'
 import { Suspense } from 'react'
 
 const initialItems = [
-  { id: 'qingdao', label: '青岛', className: 'h-32 bg-blue-300', href: '#' },
-  { id: 'guangzhou', label: '广州', className: 'h-40 bg-green-300', href: '#' },
-  { id: 'karlsruhe', label: 'Karlsruhe', className: 'h-24 bg-yellow-300', href: '#' },
-  { id: 'qdz', label: '青岛二中', className: 'h-48 bg-pink-300', href: '#' },
-  { id: 'scut', label: '华南理工', className: 'h-28 bg-purple-300', href: '#' },
-  { id: 'kit', label: 'KIT', className: 'h-36 bg-red-300', href: '#' },
+  { id: 'qingdao', labelKey: 'qingdao', className: 'h-32 bg-blue-300', href: '/cities/qingdao' },
+  { id: 'guangzhou', labelKey: 'guangzhou', className: 'h-40 bg-green-300', href: '/cities/guangzhou' },
+  { id: 'karlsruhe', labelKey: 'karlsruhe', className: 'h-24 bg-yellow-300', href: '/cities/karlsruhe' },
+  { id: 'qdz', labelKey: 'qdez', className: 'h-48 bg-pink-300', href: '/schools/qdez' },
+  { id: 'scut', labelKey: 'scut', className: 'h-28 bg-purple-300', href: '/schools/scut' },
+  { id: 'kit', labelKey: 'kit', className: 'h-36 bg-red-300', href: '/schools/kit' },
 ]
 
 export default function AboutPage() {
@@ -50,6 +50,7 @@ function AboutContent() {
   const blocksWithLang = blocks.map((block) => ({
     ...block,
     href: `${block.href}?lang=${lang}`,
+    label: t(block.labelKey),
   }))
 
   return (
