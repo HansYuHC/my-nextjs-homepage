@@ -1,3 +1,4 @@
+
 'use client'
 
 import useTranslation from '../../lib/useTranslation'
@@ -11,7 +12,7 @@ const initialItems = [
   { id: 'qingdao', labelKey: 'qingdao', className: 'h-32 bg-blue-300', href: '/cities/qingdao' },
   { id: 'guangzhou', labelKey: 'guangzhou', className: 'h-40 bg-green-300', href: '/cities/guangzhou' },
   { id: 'karlsruhe', labelKey: 'karlsruhe', className: 'h-24 bg-yellow-300', href: '/cities/karlsruhe' },
-  { id: 'qdz', labelKey: 'qdez', className: 'h-48 bg-pink-300', href: '/schools/qdez' },
+  { id: 'qdez', labelKey: 'qdez', className: 'h-48 bg-pink-300', href: '/schools/qdez' },
   { id: 'scut', labelKey: 'scut', className: 'h-28 bg-purple-300', href: '/schools/scut' },
   { id: 'kit', labelKey: 'kit', className: 'h-36 bg-red-300', href: '/schools/kit' },
 ]
@@ -46,7 +47,6 @@ function AboutContent() {
     setPlaceholderIndex(null)
   }
 
-  // 更新 href 以支持语言参数
   const blocksWithLang = blocks.map((block) => ({
     ...block,
     href: `${block.href}?lang=${lang}`,

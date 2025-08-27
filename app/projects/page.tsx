@@ -1,3 +1,4 @@
+
 'use client'
 
 import { useState } from 'react'
@@ -5,7 +6,13 @@ import { motion, AnimatePresence } from 'framer-motion'
 import useTranslation from '../../lib/useTranslation'
 import { Suspense } from 'react'
 
-const projectsData = [
+interface Project {
+  id: number
+  key: string
+  image: string
+}
+
+const projectsData: Project[] = [
   {
     id: 1,
     key: 'projectA',
@@ -25,13 +32,17 @@ const projectsData = [
 
 export default function ProjectsPage() {
   return (
-    <Suspense fallback={<div className="flex justify-center items-center h-[80vh]">
-      <motion.div
-        className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
-      />
-    </div>}>
+    <Suspense
+      fallback={
+        <div className="flex justify-center items-center h-[80vh]">
+          <motion.div
+            className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
+          />
+        </div>
+      }
+    >
       <ProjectsContent />
     </Suspense>
   )
@@ -39,7 +50,7 @@ export default function ProjectsPage() {
 
 function ProjectsContent() {
   const { t, lang } = useTranslation()
-  const [selectedProject, setSelectedProject] = useState(null)
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
   return (
     <div className="container mx-auto px-6 py-12">
