@@ -1,20 +1,20 @@
-
 'use client'
 
 import useTranslation from '../../lib/useTranslation'
 import Link from 'next/link'
 import Masonry from 'react-masonry-css'
 import { motion } from 'framer-motion'
-import { useState } from 'react'
-import { Suspense } from 'react'
+import { useState, Suspense } from 'react'
 
+// 初始数据：每个块都有 id, key(翻译), height, image, href
 const initialItems = [
-  { id: 'qingdao', labelKey: 'qingdao', className: 'h-32 bg-blue-300', href: '/cities/qingdao' },
-  { id: 'guangzhou', labelKey: 'guangzhou', className: 'h-40 bg-green-300', href: '/cities/guangzhou' },
-  { id: 'karlsruhe', labelKey: 'karlsruhe', className: 'h-24 bg-yellow-300', href: '/cities/karlsruhe' },
-  { id: 'qdez', labelKey: 'qdez', className: 'h-48 bg-pink-300', href: '/schools/qdez' },
-  { id: 'scut', labelKey: 'scut', className: 'h-28 bg-purple-300', href: '/schools/scut' },
-  { id: 'kit', labelKey: 'kit', className: 'h-36 bg-red-300', href: '/schools/kit' },
+  { id: 'qingdao', key: 'qingdao', height: 'h-[300px]', image: '/images/qingdao.jpg', href: '/cities/qingdao' },
+  { id: 'guangzhou', key: 'guangzhou', height: 'h-[260px]', image: '/images/guangzhou.jpg', href: '/cities/guangzhou' },
+  { id: 'karlsruhe', key: 'karlsruhe', height: 'h-[220px]', image: '/images/karlsruhe.jpg', href: '/cities/karlsruhe' },
+  { id: 'boeblingen', key: 'boeblingen', height: 'h-[320px]', image: '/images/boeblingen.jpg', href: '/cities/boeblingen' },
+  { id: 'qdez', key: 'qdez', height: 'h-[340px]', image: '/images/qdez.jpg', href: '/schools/qdez' },
+  { id: 'scut', key: 'scut', height: 'h-[240px]', image: '/images/scut.jpg', href: '/schools/scut' },
+  { id: 'kit', key: 'kit', height: 'h-[280px]', image: '/images/kit.jpg', href: '/schools/kit' },
 ]
 
 export default function AboutPage() {
@@ -47,12 +47,6 @@ function AboutContent() {
     setPlaceholderIndex(null)
   }
 
-  const blocksWithLang = blocks.map((block) => ({
-    ...block,
-    href: `${block.href}?lang=${lang}`,
-    label: t(block.labelKey),
-  }))
-
   return (
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-6">{t('about')}</h1>
@@ -63,7 +57,7 @@ function AboutContent() {
         className="flex w-auto gap-4"
         columnClassName="bg-clip-padding"
       >
-        {blocksWithLang.map((block, index) => {
+        {blocks.map((block, index) => {
           const isDragging = draggingId === block.id
           const isPlaceholder = placeholderIndex === index && draggingId !== block.id
 
@@ -71,7 +65,7 @@ function AboutContent() {
             return (
               <div
                 key={`placeholder-${block.id}`}
-                className={`${block.className} m-2 rounded-lg border-2 border-dashed border-gray-400 bg-gray-200 opacity-50`}
+                className={`${block.height} m-2 rounded-lg border-2 border-dashed border-gray-400 bg-gray-200 opacity-50`}
               />
             )
           }
@@ -85,17 +79,22 @@ function AboutContent() {
               dragElastic={0.05}
               onDragStart={() => handleDragStart(block.id, index)}
               onDragEnd={() => handleDragEnd(block.id, index)}
-              className={`${block.className} m-2 rounded-lg flex items-center justify-center text-lg font-bold cursor-grab ${
-                isDragging
-                  ? 'z-50 scale-105 shadow-2xl'
-                  : 'hover:scale-105 hover:shadow-xl transition'
-              }`}
-              style={{ userSelect: 'none' }}
+              className={`${block.height} m-2 rounded-lg flex items-center justify-center text-lg font-bold cursor-grab text-white`}
+              style={{
+                userSelect: 'none',
+                backgroundImage: `url(${block.image})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.1 }}
+              whileHover={{ scale: 1.05 }}
+              whileDrag={{ scale: 1.08, boxShadow: '0 16px 32px rgba(0,0,0,0.25)' }}
             >
-              <Link href={block.href}>{block.label}</Link>
+              <Link href={`${block.href}?lang=${lang}`} className="bg-black/50 px-4 py-2 rounded-lg">
+                {t(block.key)}
+              </Link>
             </motion.div>
           )
         })}

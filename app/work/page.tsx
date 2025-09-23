@@ -33,6 +33,7 @@ function WorkTimeline() {
 
   const swingDuration = 0.5;
 
+
   // 小人自动循环
   useEffect(() => {
     const interval = setInterval(() => {
