@@ -1,7 +1,7 @@
 'use client'
 
 import useTranslation from '../../../lib/useTranslation'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import { Suspense } from 'react'
 import { useEffect, useState } from 'react'
@@ -17,6 +17,7 @@ export default function QingdaoPage() {
 function QingdaoContent() {
   const { t } = useTranslation()
   const [screenWidth, setScreenWidth] = useState(1200)
+  const [selectedImage, setSelectedImage] = useState<string | null>(null) // 点击放大用
 
   // 监听窗口大小
   useEffect(() => {
@@ -38,15 +39,15 @@ function QingdaoContent() {
     ? 'clamp(140px, 22vw, 280px)' // 平板：稍小
     : 'clamp(180px, 28vw, 420px)' // 桌面：更大
 
-  // 小图配置：角度 + 响应式半径倍率 + 自定义宽高
+  // 小图配置
   const subImages = [
     {
       src: '/images/qdez.jpg',
       text: t('qingdaoMiddleSchool'),
       angle: -30,
       radiusFactor: { mobile: 1.2, tablet: 1.0, desktop: 1.0 },
-      w: '14vw',
-      h: '12vw',
+      w: '16vw',
+      h: '16vw',
     },
     {
       src: '/images/qdchaoyin.jpg',
@@ -59,7 +60,7 @@ function QingdaoContent() {
     {
       src: '/images/qdTaiDong.jpg',
       text: t('qdTaiDong'),
-      angle: 210,
+      angle: 200,
       radiusFactor: { mobile: 1.4, tablet: 1.5, desktop: 1.3 },
       w: '12vw',
       h: '14vw',
@@ -67,15 +68,15 @@ function QingdaoContent() {
     {
       src: '/images/qdShiNan.jpg',
       text: t('qdShiNan'),
-      angle: 150,
-      radiusFactor: { mobile: 1.5, tablet: 1.2, desktop: 1.0 },
-      w: '16vw',
+      angle: 160,
+      radiusFactor: { mobile: 1.5, tablet: 1.4, desktop: 1.0 },
+      w: '19vw',
       h: '12vw',
     },
   ]
 
   return (
-    <div className="relative w-full h-screen flex flex-col items-center justify-center overflow-visible text-center px-4">
+    <div className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-visible text-center bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100">
       {/* 标题 */}
       <h1 className="absolute top-6 text-3xl font-bold z-50">{t('qingdao')}</h1>
 
@@ -84,26 +85,16 @@ function QingdaoContent() {
         {t('qingdaoDescription')}
       </p>
 
-      {/* 中心图：始终居中 */}
+      {/* 中心图 */}
       <motion.div
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
                    rounded-full overflow-hidden shadow-xl z-10
-                   w-[clamp(140px,20vw,300px)] h-[clamp(140px,20vw,300px)]"
+                   w-[clamp(140px,20vw,300px)] h-[clamp(140px,20vw,300px)] cursor-pointer"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.8 }}
+        onClick={() => setSelectedImage('/images/qingdao.jpg')}
       >
-        <motion.div
-          className="absolute inset-0 rounded-full"
-          animate={{
-            boxShadow: [
-              '0 0 20px rgba(0,0,0,0.4)',
-              '0 0 40px rgba(0,0,0,0.6)',
-              '0 0 20px rgba(0,0,0,0.4)',
-            ],
-          }}
-          transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-        />
         <Image
           src="/images/qingdao.jpg"
           alt="Qingdao"
@@ -114,7 +105,6 @@ function QingdaoContent() {
 
       {/* 小图布局 */}
       {!isMobile ? (
-        // 平板/桌面：环绕布局
         subImages.map((item, idx) => {
           const factor = isMobile
             ? item.radiusFactor.mobile
@@ -144,25 +134,12 @@ function QingdaoContent() {
               transition={{ duration: 0.8, delay: idx * 0.2 }}
             >
               <motion.div
-                className="relative overflow-hidden shadow-lg bg-white z-20 rounded-xl"
+                className="relative overflow-hidden shadow-lg bg-white z-20 rounded-xl cursor-pointer"
                 style={{
                   width: `clamp(120px, ${item.w}, 280px)`,
                   height: `clamp(120px, ${item.h}, 280px)`,
                 }}
-                animate={{
-                  scale: [1, 1.05, 1],
-                  boxShadow: [
-                    '0 0 10px rgba(0,0,0,0.2)',
-                    '0 0 25px rgba(0,0,0,0.4)',
-                    '0 0 10px rgba(0,0,0,0.2)',
-                  ],
-                }}
-                transition={{
-                  duration: 3,
-                  repeat: Infinity,
-                  ease: 'easeInOut',
-                  delay: idx * 0.3,
-                }}
+                onClick={() => setSelectedImage(item.src)}
               >
                 <Image
                   src={item.src}
@@ -178,19 +155,16 @@ function QingdaoContent() {
           )
         })
       ) : (
-        // 移动端：网格布局
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-[90%] grid grid-cols-2 gap-4 z-20">
           {subImages.map((item, idx) => (
             <motion.div
               key={idx}
-              className="relative overflow-hidden shadow-lg bg-white rounded-xl"
+              className="relative overflow-hidden shadow-lg bg-white rounded-xl cursor-pointer"
               style={{
                 width: '100%',
                 height: idx % 2 === 0 ? '28vw' : '22vw',
               }}
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: idx * 0.2 }}
+              onClick={() => setSelectedImage(item.src)}
             >
               <Image
                 src={item.src}
@@ -205,6 +179,45 @@ function QingdaoContent() {
           ))}
         </div>
       )}
+
+      {/* 放大预览 Lightbox */}
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div
+            className="fixed inset-0 bg-black/70 flex items-center justify-center z-[100]"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)} // 点击空白关闭
+          >
+            <motion.div
+              className="relative w-[90vw] h-[90vh] max-w-5xl"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
+              transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+              onClick={(e) => e.stopPropagation()} // 阻止冒泡
+            >
+              <Image
+                src={selectedImage}
+                alt="Preview"
+                fill
+                className="object-contain rounded-lg"
+              />
+              {/* 右上角关闭按钮 */}
+              <button
+                onClick={() => setSelectedImage(null)}
+                className="absolute top-4 right-4 bg-white/80 text-black rounded-full px-3 py-1 shadow-lg"
+              >
+                X
+              </button>
+
+
+
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }

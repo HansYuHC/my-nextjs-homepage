@@ -24,7 +24,9 @@ function ClientHeaderContent() {
   }, [pathname, searchParams])
 
   return (
-    <header className="p-4 bg-gray-800 text-white flex justify-between">
+    <header className="fixed top-0 left-0 w-full p-4
+            bg-black/65 text-white flex justify-between
+                backdrop-blur-md shadow-md z-50">
       <nav className="flex gap-4">
         <Link href={`/?lang=${lang}`}>{t('home')}</Link>
         <div className="relative group">
