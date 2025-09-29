@@ -26,8 +26,10 @@ function HomeContent() {
   ]
 
   return (
-    <div className="flex flex-col items-center justify-center h-[80vh] relative">
-      <h1 className="text-4xl font-bold absolute top-20">🌐 {t('welcome')}</h1>
+<div className="flex flex-col items-center justify-center min-h-screen relative
+                bg-gradient-to-r from-indigo-200 via-purple-200 to-pink-200
+                animate-gradient">
+      <h1 className="text-4xl font-bold absolute top-20">⛵🍺🗼 {t('welcome')}👨‍🔧🚗</h1>
       <div className="flex flex-wrap gap-8 justify-center">
         {bubbles.map((bubble, index) => {
           const xOffset = 40 + index * 15
