@@ -6,18 +6,19 @@ import Image from 'next/image'
 import { Suspense } from 'react'
 import { useEffect, useState } from 'react'
 
-export default function QingdaoPage() {
+export default function GuangzhouPage() {
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <QingdaoContent />
+      <GuangzhouContent />
     </Suspense>
   )
 }
 
-function QingdaoContent() {
+function GuangzhouContent() {
   const { t } = useTranslation()
   const [screenWidth, setScreenWidth] = useState(1200)
-  const [selectedIndex, setSelectedIndex] = useState<number | null>(null) // 当前预览索引
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null) // 当前查看图片索引
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   // 监听窗口大小
   useEffect(() => {
@@ -30,70 +31,71 @@ function QingdaoContent() {
   const isMobile = screenWidth < 768
   const isTablet = screenWidth >= 768 && screenWidth < 1024
 
-  const baseRadius = isMobile
-    ? 0
-    : isTablet
-    ? 'clamp(140px, 22vw, 280px)'
-    : 'clamp(180px, 28vw, 420px)'
-
+  // 小图配置
   const subImages = [
     {
-      src: '/images/qdez.jpg',
-      text: t('qingdaoMiddleSchool'),
+      src: '/images/guangzhouMeiShi.jpg',
+      text: t('guangzhouMeishi'),
       angle: -30,
       radiusFactor: { mobile: 1.2, tablet: 1.0, desktop: 1.0 },
       w: '16vw',
-      h: '16vw',
+      h: '22vw',
     },
     {
-      src: '/images/qdchaoyin.jpg',
-      text: t('qingdaoChaoYin'),
+      src: '/images/scut.jpg',
+      text: t('guangzhouSCUT'),
       angle: 30,
       radiusFactor: { mobile: 1.1, tablet: 0.9, desktop: 0.9 },
-      w: '18vw',
-      h: '10vw',
-    },
-    {
-      src: '/images/qdTaiDong.jpg',
-      text: t('qdTaiDong'),
-      angle: 200,
-      radiusFactor: { mobile: 1.4, tablet: 1.5, desktop: 1.3 },
-      w: '12vw',
-      h: '14vw',
-    },
-    {
-      src: '/images/qdShiNan.jpg',
-      text: t('qdShiNan'),
-      angle: 160,
-      radiusFactor: { mobile: 1.5, tablet: 1.4, desktop: 1.0 },
-      w: '19vw',
+      w: '20vw',
       h: '12vw',
     },
     {
-      src: '/images/qingdao.jpg',
-      text: t('qingdao'),
-      angle: 90,
-      radiusFactor: { mobile: 0.9, tablet: 0.8, desktop: 0.8 },
-      w: '20vw',
-      h: '20vw',
+      src: '/images/gzBeijingRoad.jpg',
+      text: t('guangzhouBeijingRoad'),
+      angle: 200,
+      radiusFactor: { mobile: 1.4, tablet: 1.5, desktop: 1.3 },
+      w: '14vw',
+      h: '16vw',
+    },
+    {
+      src: '/images/SunYatSenHall.jpg',
+      text: t('SunYatSenHall'),
+      angle: 160,
+      radiusFactor: { mobile: 1.5, tablet: 1.4, desktop: 1.0 },
+      w: '18vw',
+      h: '12vw',
     },
   ]
 
-  const openImage = (index: number) => setSelectedIndex(index)
-  const closeImage = () => setSelectedIndex(null)
-  const prevImage = () =>
-    setSelectedIndex((i) => (i! - 1 + subImages.length) % subImages.length)
-  const nextImage = () =>
-    setSelectedIndex((i) => (i! + 1) % subImages.length)
+  // 图片列表（中心 + 小图）
+  const allImages = [
+    { src: '/images/guangzhou.jpg', text: t('guangzhou') },
+    ...subImages,
+  ]
+
+  // 切换函数
+  const handlePrev = () => {
+    if (selectedIndex === null) return
+    const prevIndex = (selectedIndex - 1 + allImages.length) % allImages.length
+    setSelectedIndex(prevIndex)
+    setSelectedImage(allImages[prevIndex].src)
+  }
+
+  const handleNext = () => {
+    if (selectedIndex === null) return
+    const nextIndex = (selectedIndex + 1) % allImages.length
+    setSelectedIndex(nextIndex)
+    setSelectedImage(allImages[nextIndex].src)
+  }
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-visible text-center bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100">
+    <div className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-visible text-center bg-gradient-to-br from-green-100 via-yellow-100 to-red-100">
       {/* 标题 */}
-      <h1 className="absolute top-6 text-3xl font-bold z-50">{t('qingdao')}</h1>
+      <h1 className="absolute top-6 text-3xl font-bold z-50">{t('guangzhou')}</h1>
 
       {/* 描述文字 */}
       <p className="absolute top-20 max-w-2xl text-base text-gray-700 z-40">
-        {t('qingdaoDescription')}
+        {t('guangzhouDescription')}
       </p>
 
       {/* 中心图 */}
@@ -104,11 +106,14 @@ function QingdaoContent() {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ duration: 0.8 }}
-        onClick={() => openImage(4)} // 打开中心图（index 4）
+        onClick={() => {
+          setSelectedIndex(0)
+          setSelectedImage(allImages[0].src)
+        }}
       >
         <Image
-          src="/images/qingdao.jpg"
-          alt="Qingdao"
+          src="/images/guangzhou.jpg"
+          alt="Guangzhou"
           fill
           className="object-cover rounded-full"
         />
@@ -116,10 +121,18 @@ function QingdaoContent() {
 
       {/* 小图布局 */}
       {!isMobile ? (
-        subImages.slice(0, 4).map((item, idx) => {
-          const factor = isTablet
+        subImages.map((item, idx) => {
+          const baseRadius = isMobile
+            ? 0
+            : isTablet
+            ? 'clamp(140px, 22vw, 280px)'
+            : 'clamp(180px, 28vw, 420px)'
+          const factor = isMobile
+            ? item.radiusFactor.mobile
+            : isTablet
             ? item.radiusFactor.tablet
             : item.radiusFactor.desktop
+
           const radius = `calc(${baseRadius} * ${factor})`
           const x = `calc(50% + ${radius} * ${Math.cos(
             (item.angle * Math.PI) / 180
@@ -147,7 +160,11 @@ function QingdaoContent() {
                   width: `clamp(120px, ${item.w}, 280px)`,
                   height: `clamp(120px, ${item.h}, 280px)`,
                 }}
-                onClick={() => openImage(idx)}
+                onClick={() => {
+                  const imgIndex = idx + 1 // 因为中心图是 index 0
+                  setSelectedIndex(imgIndex)
+                  setSelectedImage(allImages[imgIndex].src)
+                }}
               >
                 <Image
                   src={item.src}
@@ -172,7 +189,11 @@ function QingdaoContent() {
                 width: '100%',
                 height: idx % 2 === 0 ? '28vw' : '22vw',
               }}
-              onClick={() => openImage(idx)}
+              onClick={() => {
+                const imgIndex = idx + 1
+                setSelectedIndex(imgIndex)
+                setSelectedImage(allImages[imgIndex].src)
+              }}
             >
               <Image
                 src={item.src}
@@ -190,13 +211,13 @@ function QingdaoContent() {
 
       {/* 放大预览 Lightbox */}
       <AnimatePresence>
-        {selectedIndex !== null && (
+        {selectedImage && (
           <motion.div
             className="fixed inset-0 bg-black/70 flex items-center justify-center z-[100]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={closeImage}
+            onClick={() => setSelectedImage(null)}
           >
             <motion.div
               className="relative w-[90vw] h-[90vh] max-w-5xl"
@@ -207,38 +228,33 @@ function QingdaoContent() {
               onClick={(e) => e.stopPropagation()}
             >
               <Image
-                src={subImages[selectedIndex].src}
-                alt={subImages[selectedIndex].text}
+                src={selectedImage}
+                alt="Preview"
                 fill
                 className="object-contain rounded-lg"
               />
 
-              {/* 右上角关闭按钮 */}
+              {/* 关闭按钮 */}
               <button
-                onClick={closeImage}
+                onClick={() => setSelectedImage(null)}
                 className="absolute top-4 right-4 bg-white/80 text-black rounded-full px-3 py-1 shadow-lg"
               >
                 ✕
               </button>
 
-              {/* 左右切换箭头 */}
+              {/* 左右切换按钮 */}
               <button
-                onClick={prevImage}
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-black text-2xl rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
+                onClick={handlePrev}
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 text-black rounded-full px-3 py-2 shadow-lg hover:bg-white transition"
               >
                 ‹
               </button>
               <button
-                onClick={nextImage}
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-black text-2xl rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
+                onClick={handleNext}
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 text-black rounded-full px-3 py-2 shadow-lg hover:bg-white transition"
               >
                 ›
               </button>
-
-              {/* 图片文字说明 */}
-              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-lg bg-black/60 px-4 py-2 rounded-md">
-                {subImages[selectedIndex].text}
-              </div>
             </motion.div>
           </motion.div>
         )}
