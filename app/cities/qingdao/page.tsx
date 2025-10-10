@@ -224,13 +224,13 @@ function QingdaoContent() {
               {/* 左右切换箭头 */}
               <button
                 onClick={prevImage}
-                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-black text-2xl rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 text-black rounded-full px-3 py-2 shadow-lg hover:bg-white transition"
               >
                 ‹
               </button>
               <button
                 onClick={nextImage}
-                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white text-black text-2xl rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 text-black rounded-full px-3 py-2 shadow-lg hover:bg-white transition"
               >
                 ›
               </button>
