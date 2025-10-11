@@ -203,7 +203,7 @@ function KarlsruheContent() {
               />
 
               {/* ✅ 图片文字说明 */}
-                {selectedIndex > 0 && (
+                {selectedIndex !== null && selectedIndex > 0 && (
                   <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-lg bg-black/60 px-4 py-2 rounded-md">
                     {subImages[selectedIndex - 1].text}
                   </div>
