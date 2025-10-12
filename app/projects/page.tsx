@@ -15,19 +15,59 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    key: 'projectA',
-    image: '/images/projectA.jpg',
+    key: 'projectCAD-1',
+    image: '/images/projectCAD.png',
   },
   {
     id: 2,
-    key: 'projectB',
+    key: 'projectCAD-2',
     image: '/images/projectB.jpg',
   },
   {
     id: 3,
-    key: 'projectC',
+    key: 'projectCAD-3',
     image: '/images/projectC.jpg',
   },
+  {
+    id: 4,
+    key: 'projectVBA-1',
+    image: '/images/project4.jpg',
+  },
+  {
+    id: 5,
+    key: 'projectMATLAB-1',
+    image: '/images/project5.jpg',
+  },
+  {
+    id: 6,
+    key: 'projectMATLAB-2',
+    image: '/images/project5.jpg',
+  },
+  {
+    id: 7,
+    key: 'projectMATLAB-3',
+    image: '/images/project5.jpg',
+  },
+  {
+    id: 8,
+    key: 'projectPython-1',
+    image: '/images/project5.jpg',
+  },
+  {
+    id: 9,
+    key: 'projectPython-2',
+    image: '/images/project5.jpg',
+  },
+  {
+    id: 10,
+    key: 'projectPython-3',
+    image: '/images/project5.jpg',
+  },
+  {
+    id: 11,
+    key: 'projectPython-4',
+    image: '/images/project5.jpg',
+  }
 ]
 
 export default function ProjectsPage() {
@@ -95,7 +135,7 @@ function ProjectsContent() {
       <AnimatePresence>
         {selectedProject && (
           <motion.div
-            className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50 p-4"
+            className="fixed inset-0 bg-black/30 flex justify-center items-center z-50 p-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -115,7 +155,9 @@ function ProjectsContent() {
                 ✕
               </button>
               <h2 className="text-2xl font-bold mb-4">{t(selectedProject.key)}</h2>
-              <p className="text-gray-800">{t(`${selectedProject.key}Long`)}</p>
+              <p className="text-gray-800 whitespace-pre-line">
+                {t(`${selectedProject.key}Long`)}
+              </p>
             </motion.div>
           </motion.div>
         )}
