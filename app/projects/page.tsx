@@ -16,57 +16,57 @@ const projectsData: Project[] = [
   {
     id: 1,
     key: 'projectCAD-1',
-    image: '/images/projectCAD.png',
+    image: '/images/projectCAD_1.png',
   },
   {
     id: 2,
     key: 'projectCAD-2',
-    image: '/images/projectB.jpg',
+    image: '/images/projectCAD_2.png',
   },
   {
     id: 3,
     key: 'projectCAD-3',
-    image: '/images/projectC.jpg',
+    image: '/images/projectCAD_3.png',
   },
   {
     id: 4,
     key: 'projectVBA-1',
-    image: '/images/project4.jpg',
+    image: '/images/projectVBA_1.png',
   },
   {
     id: 5,
     key: 'projectMATLAB-1',
-    image: '/images/project5.jpg',
+    image: '/images/projectMATLAB_1.png',
   },
   {
     id: 6,
     key: 'projectMATLAB-2',
-    image: '/images/project5.jpg',
+    image: '/images/projectMATLAB_2.png',
   },
   {
     id: 7,
     key: 'projectMATLAB-3',
-    image: '/images/project5.jpg',
+    image: '/images/projectMATLAB_3.png',
   },
   {
     id: 8,
     key: 'projectPython-1',
-    image: '/images/project5.jpg',
+    image: '/images/projectPython_1.png',
   },
   {
     id: 9,
     key: 'projectPython-2',
-    image: '/images/project5.jpg',
+    image: '/images/projectPython_2.png',
   },
   {
     id: 10,
     key: 'projectPython-3',
-    image: '/images/project5.jpg',
+    image: '/images/projectPython_3.png',
   },
   {
     id: 11,
     key: 'projectPython-4',
-    image: '/images/project5.jpg',
+    image: '/images/projectPython_4.png',
   }
 ]
 

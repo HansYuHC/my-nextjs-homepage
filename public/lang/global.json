@@ -32,6 +32,31 @@
     "projectCAD-1Long": "As part of a team of five students, I created a top-down assembly as a CAD model and managed it in a product data management (PDM) system. Completing the assigned design task is part of the CAD and PDM training concept integrated into the Mechanical Engineering course. The knowledge required for the task is acquired through self-study via e-learning and consolidated through practical application. The results are defended in a colloquium, thus ensuring the achievement of the learning objectives.\nIn this project, I fulfilled the following requirements, among others: explain the principle of references and apply it appropriately in the CAD model; create advanced design elements: the pull feature, the tensile blend feature, the shell feature, and datum curves; create top-down models using skeleton techniques and edit them in a team, etc.",
     "projectCAD-1Short": "University Mechanical Design Theory Course Project",
 
+    "projectCAD-2": "Project CAD - 2",
+    "projectCAD-2Long": "Using online learning resources, I created a 3D model of an aircraft engine from scratch using Creo PTC.",
+    "projectCAD-2Short": "Aircraft Engine Modeling",
+
+    "projectCAD-3": "Project CAD - 3",
+    "projectCAD-3Long": "During my internship at Stabilus, I used Creo PTC to create a 3D model of a railway track and train wheel contact to study methods for reducing noise generated when trains pass by. The model shows several possible vibration reduction methods, including springs, dampers, and energy absorbers installed on the wheels or even the railway sleepers.",
+    "projectCAD-3Short": "Railway Track and Train Wheel Modeling",
+
+    "projectVBA-1": "Project VBA",
+    "projectVBA-1Long": "Using online tutorials, I learned and developed a database table structure management tool with VBA, providing CRUD (Create, Read, Update, Delete) operations for Access or SQL Server databases. It connects to the database via ADO (ActiveX Data Objects) and executes SQL statements for operations.",
+    "projectVBA-1Short": "VBA Database Management",
+
+    "projectMATLAB-1": "Project MATLAB - 1",
+    "projectMATLAB-1Long": "Using MATLAB to build models, process data, plot graphs, and dynamically update. Defined the characteristics of a ball screw, including its geometric parameters, material properties, and axial stiffness calculations. Processed measurement data to calculate the equivalent load, service life, and expected remaining life of bearings, and monitored data plotting.",
+    "projectMATLAB-1Short": "Bachelor's Thesis",
+
+    "projectMATLAB-2": "Project MATLAB - 2",
+    "projectMATLAB-2Long": "Using MATLAB code to calculate velocity-dependent friction coefficients, including defining friction models, numerical integration, and approximating friction forces using Taylor series expansion. Then studied a friction-related two-degree-of-freedom dynamic system, analyzed its motion characteristics under different conditions, and performed stability analysis.",
+    "projectMATLAB-2Short": "Master's Thesis",
+
+    "projectMATLAB-3": "Project MATLAB - 3",
+    "projectMATLAB-3Long": "Developed an LQR controller for train suspension using MATLAB code and compared the performance of active/passive suspensions through Simulink. Additionally, created different active noise reduction algorithm models in Simulink and compared their noise reduction effects.",
+    "projectMATLAB-3Short": "Railway Vibration and Noise Reduction Model Simulation",
+
+
     "projectB": "Project B",
     "projectBLong": "This is the full description of Project B, elaborating on development ideas, use cases, and user feedback.",
     "projectBShort": "A practical tool",
@@ -91,6 +116,47 @@
     "projectCAD-1Long": "Ich habe in einem Team von fünf Studierenden eine Top-Down Baugruppe als CAD-Modell erstellt und diese in einem Produktdatenmanagement-System (PDM-System) verwaltet. Die Bearbeitung der gestellten Konstruktionsaufgabe ist Teil des in die Lehrveranstaltung Maschinenkonstruktionslehre integrierten CAD- und PDM-Ausbildungskonzeptes. Die für die Aufgabe benötigten Kenntnisse werden im Selbststudium mittels E-Learning erarbeitet und bei der Anwendung gefestigt. In einem Kolloquium werden die Ergebnisse verteidigt und so das Erreichen der Lernziele sichergestellt.\nIn diesem Projekt habe ich unter anderem die folgenden Anforderungen erfüllt: das Prinzip „Referenzen“ erläutern und im CAD-Modell anforderungsgerecht einsetzen; fortgeschrittene Konstruktionselemente erzeugen: das Ziehen-KE, das Zug-Verbund-KE, das Schalen-KE und Bezugskurven; Top-Down-Modelle mit Hilfe Skelett-Technik erstellen und im Team bearbeiten usw.",
     "projectCAD-1Short": "Universität Workshop Projekt zur Maschinen Konstruktionslehre",
 
+    "projectCAD-2": "Projekt CAD - 2",
+    "projectCAD-2Long": "Mit Hilfe von Online-Lernressourcen habe ich ein 3D-Modell eines Flugzeugmotors von Grund auf mit Creo PTC erstellt.",
+    "projectCAD-2Short": "Flugzeugmotor-Modellierung",
+
+    "projectCAD-3": "Projekt CAD - 3",
+    "projectCAD-3Long": "Während meines Praktikums bei Stabilus habe ich mit Creo PTC ein 3D-Modell des Kontakts zwischen Schienen und Zugrädern erstellt, um Methoden zur Reduzierung des Lärms bei vorbeifahrenden Zügen zu untersuchen. Das Modell zeigt mehrere mögliche Methoden zur Schwingungsreduzierung, darunter Federn, Dämpfer und Energieabsorber, die an den Rädern oder sogar an den Schwellen angebracht sind.",
+    "projectCAD-3Short": "Modellierung von Schienen und Zugrädern",
+
+    "projectVBA-1": "Projekt VBA",
+    "projectVBA-1Long": "Mithilfe von Online-Tutorials habe ich ein Datenbank-Tabellenstruktur-Verwaltungstool mit VBA entwickelt, das CRUD-Operationen (Create, Read, Update, Delete) für Access- oder SQL Server-Datenbanken bietet. Es verbindet sich über ADO (ActiveX Data Objects) mit der Datenbank und führt SQL-Anweisungen aus.",
+    "projectVBA-1Short": "VBA-Datenbankverwaltung",
+
+    "projectMATLAB-1": "Projekt MATLAB - 1",
+    "projectMATLAB-1Long": "Verwendung von MATLAB zur Erstellung von Modellen, Datenverarbeitung, grafischer Darstellung und dynamischer Aktualisierung. Definierte die Eigenschaften einer Kugelumlaufspindel, einschließlich ihrer geometrischen Parameter, Materialeigenschaften und Berechnungen der axialen Steifigkeit. Verarbeitete Messdaten, um die äquivalente Belastung, Lebensdauer und voraussichtliche Restlebensdauer von Lagern zu berechnen, und überwachte die Datenvisualisierung.",
+    "projectMATLAB-1Short": "Bachelorarbeit",
+
+    "projectMATLAB-2": "Projekt MATLAB - 2",
+    "projectMATLAB-2Long": "Verwendete MATLAB-Code zur Berechnung geschwindigkeitsabhängiger Reibungskoeffizienten, einschließlich der Definition von Reibungsmodellen, numerischer Integration und der Annäherung von Reibungskräften mittels Taylor-Reihenentwicklung. Anschließend wurde ein reibungsbezogenes dynamisches System mit zwei Freiheitsgraden untersucht, dessen Bewegungsverhalten unter verschiedenen Bedingungen analysiert und eine Stabilitätsanalyse durchgeführt.",
+    "projectMATLAB-2Short": "Masterarbeit",
+
+    "projectMATLAB-3": "Projekt MATLAB - 3",
+    "projectMATLAB-3Long": "Entwickelte einen LQR-Regler für die Zugfederung mit MATLAB-Code und verglich die Leistung von aktiven/passiven Federungen durch Simulink. Zusätzlich wurden verschiedene Modelle für aktive Geräuschreduktionsalgorithmen in Simulink erstellt und deren Geräuschreduktionseffekte verglichen.",
+    "projectMATLAB-3Short": "Simulation von Schwingungs- und Geräuschreduktionsmodellen für Schienenfahrzeuge",
+
+    "projectPython-1": "Projekt Python - 1",
+    "projectPython-1Long": "Ein 2D-Schießspiel, das mit Pygame entwickelt wurde, bei dem der Spieler einen Hasen steuert, der eine Burg vor Dachsen verteidigt, indem er Pfeile abschießt. Der Spieler kann die Figur mit den WASD-Tasten bewegen und mit einem Mausklick Pfeile abschießen, wobei der Abschusswinkel gesteuert wird. Dachse, als Gegner, erscheinen regelmäßig auf der rechten Seite des Bildschirms und bewegen sich nach links, um die Burg anzugreifen, was bei Kontakt zu Gesundheitsverlust führt.",
+    "projectPython-1Short": "2D-Schießspiel mit Pygame",
+
+    "projectPython-2": "Projekt Python - 2",
+    "projectPython-2Long": "Ein komplettes Tool zur Erfassung von Hotelbewertungen auf Booking.com und zur Erstellung von Wortwolken mit Python, um sich gründlich auf Reisen vorzubereiten!",
+    "projectPython-2Short": "Hotelbewertungen mit Python scrapen",
+
+    "projectPython-3": "Projekt Python - 3",
+    "projectPython-3Long": "Verwendete Python-Bibliotheken wie requests oder selenium, um relevante Nachrichten von verschiedenen Websites zu scrapen, analysierte Nachrichten, die Schlüsselwörtern entsprachen, und erstellte PDF-Berichte.",
+    "projectPython-3Short": "Aktuelle Nachrichten aus der Industrie in Deutschland und weltweit mit Python scrapen",
+
+    "projectPython-4": "Projekt Python - 4",
+    "projectPython-4Long": "Während meiner Arbeit an der E/E statischen Inbetriebnahme bei Mercedes-Benz schrieb ich ein Python-Programm, um die Fehlerraten von elektronischen Steuergeräten in verschiedenen Phasen und die durchschnittliche Bearbeitungszeit pro Fahrzeug zusammenzufassen, analysierte die Gründe und schlug Verbesserungsvorschläge vor.",
+    "projectPython-4Short": "Zusammenfassung von Arbeitsdetails und Vorschläge zur Verbesserung mit Python",
+
+
     "projectB": "Projekt B",
     "projectBLong": "Dies ist die vollständige Beschreibung von Projekt B, die Entwicklungsansätze, Anwendungsszenarien und Nutzerfeedback ausführlich beschreibt.",
     "projectBShort": "Ein praktisches Werkzeug",
@@ -149,6 +215,47 @@
     "projectCAD-1": "CAD项目 - 1",
     "projectCAD-1Long": "本人在一个由五名学生组成的团队中，创建了一个自上而下的 CAD 模型，并在产品数据管理系统 (PDM 系统) 中进行管理。给定设计任务的处理是机械设计理论课程中融入的 CAD 和 PDM 培训概念的一部分。任务所需的知识是通过E-Learning学习自学获得的，并通过Creo PTC软件应用得到巩固。在座谈会上对结果进行答辩，以确保实现学习目标。\n在该项目中我都达到了包括但不限于如下的要求:解释产品数据管理系统的任务和可能性;创建进阶的CAD模型元素：拉动特征、拉伸混合特征、壳特征和基准曲线;在模型中创建参数和关系等等。",
     "projectCAD-1Short": "大学机械设计理论课程项目",
+
+    "projectCAD-2": "CAD项目 - 2",
+    "projectCAD-2Long": "利用网络的教学资源，使用Creo PTC从零开始制作了一个飞机引擎的3D模型。",
+    "projectCAD-2Short": "飞机引擎建模",
+
+    "projectCAD-3": "CAD项目 - 3",
+    "projectCAD-3Long": "在斯泰必鲁斯进行实习期间，我利用Creo PTC建立了一个简单的铁轨和火车车轮接触的立体模型，用以研究能够减少列车驶过时噪音产生量的方法。通过模型可以看出有多种可能的减振方法，包括弹簧，阻尼器，安装于车轮甚至铁轨枕木上的能量吸收器等等。",
+    "projectCAD-3Short": "铁轨及列车车轮建模",
+
+    "projectVBA-1": "VBA项目",
+    "projectVBA-1Long": "利用网络教程使用VBA程序学习并制作数据库表结构管理软件，提供了 增、删、改、查 相关的操作，可以用于 Access 或 SQL Server 数据库。它通过ADO（ActiveX Data Objects）连接数据库，并执行SQL语句进行操作。",
+    "projectVBA-1Short": "VBA数据库管理",
+
+    "projectMATLAB-1": "MATLAB项目 - 1",
+    "projectMATLAB-1Long": "使用 MATLAB建立模型,进行数据处理、绘图、动态更新，定义滚珠丝杠（Ball Screw）的特性，包括其几何参数、材料属性以及轴向刚度计算,处理测量数据并计算轴承的等效载荷，使用寿命及预期剩余寿命，并监控数据绘图。",
+    "projectMATLAB-1Short": "本科毕业设计",
+
+    "projectMATLAB-2": "MATLAB项目 - 2",
+    "projectMATLAB-2Long": "使用 MATLAB代码计算速度相关的摩擦系数，包括定义摩擦模型，数值积分计算，用泰勒展开近似计算摩擦力等。之后研究摩擦相关的双自由度动力系统，分析它在不同条件下的运动特性，并进行稳定性分析。",
+    "projectMATLAB-2Short": "研究生毕业设计",
+
+    "projectMATLAB-3": "MATLAB项目 - 3",
+    "projectMATLAB-3Long": "使用MATLAB代码建立了列车悬架的 LQR 控制器，通过 Simulink 比较主动/被动悬架的性能。此外使用Simulink建立了不同的主动降噪算法模型，对降噪效果进行比较。",
+    "projectMATLAB-3Short": "铁路减振降噪模型模拟仿真",
+
+    "projectPython-1": "Python项目 - 1",
+    "projectPython-1Long": "使用 pygame 编写的 2D 射击游戏，玩家控制一只兔子（Bunny），通过射箭攻击来保卫城堡不受獾（Badgers）的袭击。玩家控制角色，可以使用 WASD 键移动，鼠标点击发射弓箭并控制发射角度，獾作为敌人定期从屏幕右边生成并向左移动攻击城堡，受到獾的攻击会损失生命值。",
+    "projectPython-1Short": "使用 pygame 编写的 2D 射击游戏",
+
+    "projectPython-2": "Python项目 - 2",
+    "projectPython-2Long": "使用python代码生成一个完整的 Booking.com 酒店评论爬取和词云生成工具，为旅行做好充足准备!",
+    "projectPython-2Short": "使用python爬取酒店评价",
+
+    "projectPython-3": "Python项目 - 3",
+    "projectPython-3Long": "使用python的库requests 或 selenium 爬取各个网站的相关新闻; 解析符合关键词的新闻;生成 PDF 报告。",
+    "projectPython-3Short": "使用python爬取德国及全球工业行业最新信息",
+
+    "projectPython-4": "Python项目 - 4",
+    "projectPython-4Long": "在梅赛德斯奔驰公司的车辆静态调试工作期间利用python编写程序，总结不同阶段车辆电子控制单元的错误率，以及每辆车的平均处理时长，分析原因并提出改进意见。",
+    "projectPython-4Short": "使用python总结工作细节并提出改进建议",
+
 
     "projectB": "项目 B",
     "projectBLong": "这是项目 B 的完整描述，详细阐述开发思路、应用场景和用户反馈。",
