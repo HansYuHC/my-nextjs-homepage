@@ -20,8 +20,10 @@ function ClientHeaderContent() {
   const [currentPath, setCurrentPath] = useState('/')
 
   useEffect(() => {
-    setCurrentPath(searchParams.get('lang') ? pathname : '/')
-  }, [pathname, searchParams])
+  //  setCurrentPath(searchParams.get('lang') ? pathname : '/')
+  //}, [pathname, searchParams])
+      setCurrentPath(pathname)
+      },[pathname])
 
   return (
     <header className="fixed top-0 left-0 w-full p-4

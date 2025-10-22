@@ -16,11 +16,11 @@ export default function Page() {
 
 // ---------------- WorkTimeline ----------------
 function WorkTimeline() {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
 
   // 多语言工作经历数据
   const points = [
-    { yearKey: "2016", companyKey: "companyA", detailKey: "work2016", link: "/work/companyA" },
+    { yearKey: "2017", companyKey: "company_Hongyuan",positionKey: "company_Hongyuan_position",timeKey: "company_Hongyuan_time", detailKey: "company_Hongyuan_work", link: `/work/company_Hongyuan?lang=${lang}` },
     { yearKey: "2019", companyKey: "companyB", detailKey: "work2019", link: "/work/companyB" },
     { yearKey: "2022", companyKey: "companyC", detailKey: "work2022", link: "/work/companyC" },
     { yearKey: "2024", companyKey: "companyD", detailKey: "work2024", link: "/work/companyD" }
@@ -57,23 +57,28 @@ function WorkTimeline() {
         {/* 灰色时间轴 */}
         <div className="absolute top-[12px] left-0 right-0 h-1 bg-gray-300 -z-10" />
         {/* 箭头 */}
-        <div className="absolute top-[12px] right-0 translate-y-[-50%] w-0 h-0 border-t-[10px] border-b-[10px] border-l-[15px] border-t-transparent border-b-transparent border-l-gray-400" />
+        <div className="absolute top-[12px] right-[-14px] translate-y-[-50%] w-0 h-0 border-t-[10px] border-b-[10px] border-l-[15px] border-t-transparent border-b-transparent border-l-gray-400" />
 
         {points.map((point, i) => (
-          <div key={i} className="relative flex flex-col items-center">
+          <div
+            key={i}
+            className="relative flex flex-col items-center w-[120px] text-center"
+          >
             <motion.div
               className={`w-6 h-6 rounded-full cursor-pointer ${
                 i === activeIndex ? "bg-blue-500" : "bg-gray-400"
               }`}
               onClick={() => {
-                setActiveIndex(i); // 小人移动
-                setSelectedPointIndex(i); // 弹窗内容固定
-                setShowModal(true); // 打开弹窗
+                setActiveIndex(i);
+                setSelectedPointIndex(i);
+                setShowModal(true);
               }}
               animate={i === activeIndex ? { scale: [1, 1.3, 1] } : {}}
               transition={{ duration: 0.6 }}
             />
-            <span className="mt-6 text-sm text-gray-700">{t(point.companyKey)}</span>
+            <span className="mt-6 text-sm text-gray-700 break-words leading-tight">
+              {t(point.companyKey)}
+            </span>
             <span className="mt-1 text-xs text-gray-500">{t(point.yearKey)}</span>
           </div>
         ))}
@@ -106,10 +111,16 @@ function WorkTimeline() {
               animate={{ scale: 1 }}
               exit={{ scale: 0.8 }}
             >
-              <h2 className="text-xl font-bold mb-2">
-                {t(points[selectedPointIndex].companyKey)} ({t(points[selectedPointIndex].yearKey)})
-              </h2>
-              <p className="text-gray-600">{t(points[selectedPointIndex].detailKey)}</p>
+              <h2 className="text-xl font-bold mb-1">
+  {t(points[selectedPointIndex].companyKey)}
+                </h2>
+                <p className="text-gray-800 mb-1">
+                  {t(points[selectedPointIndex].positionKey)}  {/* 职位 */}
+                </p>
+                <p className="text-gray-500 mb-3">
+                  {t(points[selectedPointIndex].timeKey)}  {/* 工作时间 */}
+                </p>
+                <p className="text-gray-600">{t(points[selectedPointIndex].detailKey)}</p>
 
               <Link
                 href={points[selectedPointIndex].link}
