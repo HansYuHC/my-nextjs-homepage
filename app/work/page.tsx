@@ -18,12 +18,23 @@ export default function Page() {
 function WorkTimeline() {
   const { t, lang } = useTranslation();
 
+  interface WorkPoint {
+      yearKey: string;
+      companyKey: string;
+      detailKey: string;
+      link: string;
+      positionKey?: string;
+      timeKey?: string;
+  }
+
   // 多语言工作经历数据
-  const points = [
-    { yearKey: "2017", companyKey: "company_Hongyuan",positionKey: "company_Hongyuan_position",timeKey: "company_Hongyuan_time", detailKey: "company_Hongyuan_work", link: `/work/company_Hongyuan?lang=${lang}` },
+  const points: WorkPoint[] = [
+    { yearKey: "2011", companyKey: "company_Hongyuan",positionKey: "company_Hongyuan_position",timeKey: "company_Hongyuan_time", detailKey: "company_Hongyuan_work", link: `/work/company_Hongyuan?lang=${lang}` },
     { yearKey: "2019", companyKey: "companyB", detailKey: "work2019", link: "/work/companyB" },
     { yearKey: "2022", companyKey: "companyC", detailKey: "work2022", link: "/work/companyC" },
-    { yearKey: "2024", companyKey: "companyD", detailKey: "work2024", link: "/work/companyD" }
+    { yearKey: "2024", companyKey: "companyD", detailKey: "work2024", link: "/work/companyD" },
+    { yearKey: "2025", companyKey: "companyE", detailKey: "work2025", link: "/work/companyE" },
+    { yearKey: "2026", companyKey: "companyF", detailKey: "work2026", link: "/work/companyF" }
   ];
 
   const [activeIndex, setActiveIndex] = useState(0); // 小人位置
@@ -112,15 +123,15 @@ function WorkTimeline() {
               exit={{ scale: 0.8 }}
             >
               <h2 className="text-xl font-bold mb-1">
-  {t(points[selectedPointIndex].companyKey)}
+  {t(points[selectedPointIndex].companyKey || "")}
                 </h2>
                 <p className="text-gray-800 mb-1">
-                  {t(points[selectedPointIndex].positionKey)}  {/* 职位 */}
+                  {t(points[selectedPointIndex].positionKey || "")}  {/* 职位 */}
                 </p>
                 <p className="text-gray-500 mb-3">
-                  {t(points[selectedPointIndex].timeKey)}  {/* 工作时间 */}
+                  {t(points[selectedPointIndex].timeKey || "")}  {/* 工作时间 */}
                 </p>
-                <p className="text-gray-600">{t(points[selectedPointIndex].detailKey)}</p>
+                <p className="text-gray-600">{t(points[selectedPointIndex].detailKey || "")}</p>
 
               <Link
                 href={points[selectedPointIndex].link}

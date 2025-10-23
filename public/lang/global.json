@@ -8,7 +8,15 @@
     "boeblingenMercaden": "Böblingen Mercaden shopping mall",
     "boeblingenMotorWorld": "the motor world of Böblingen",
     "boeblingenWeihnachtsmarkt": "Böblingen Christmas Market",
+    "boeblingenDescription": "Böblingen, a satellite city of Stuttgart, is a charming little town with winding streets. Just north of the city, in Sindelfingen, is home to Mercedes-Benz's largest factory.",
+
+
     "company_Hongyuan": "Laizhou Hongyuan Vise Manufacturing Co., Ltd.",
+    "company_Hongyuan_position": "Metalworking Intern",
+    "company_Hongyuan_time": "June 2011 - July 2011",
+    "company_Hongyuan_work": "In the summer of 2011, I completed a one-month internship at Laizhou Hongyuan Vise Manufacturing Co., Ltd.",
+    "company_Hongyuan_work_detailed": "Laizhou Hongyuan Vise Manufacturing Co., Ltd. has over 50 years of history in vise production and is a leader in China's vise manufacturing industry. The company mainly produces vises, austempered ductile iron (ADI), automotive parts, engineering machinery parts, and power equipment parts, exporting to the United States, Canada, Australia, Japan, and EU countries.\n\nIn the summer of 2011, I completed a one-month internship at Laizhou Hongyuan Vise Manufacturing Co., Ltd. I learned about the various processes in the factory, from primary processing of metal raw materials to casting, forging, and heat treatment. Participating in production practices gave me a deeper understanding of mechanical manufacturing and laid a solid foundation for my studies in mechanical engineering at university.",
+
     "companyB": "Company B",
     "companyC": "Company C",
     "companyD": "Company D",
@@ -86,8 +94,13 @@
     "boeblingenMercaden": "Böblingen Mercaden Kaufhaus",
     "boeblingenMotorWorld": "die Motor World von Böblingen",
     "boeblingenWeihnachtsmarkt": "Böblingen Weihnachtsmarkt",
+    "boeblingenDescription": "Böblingen, eine Satellitenstadt von Stuttgart, ist eine charmante Kleinstadt mit verwinkelten Gassen. Nördlich der Stadt, in Sindelfingen, befindet sich das größte Werk von Mercedes-Benz.",
 
     "company_Hongyuan": "Laizhou Hongyuan Schraubstockherstellung GmbH",
+    "company_Hongyuan_position": "Praktikant in der Metallverarbeitung",
+    "company_Hongyuan_time": "Juni 2011 - Juli 2011",
+    "company_Hongyuan_work": "Im Sommer 2011 absolvierte ich ein einmonatiges Praktikum bei der Laizhou Hongyuan Schraubstockherstellung GmbH.",
+    "company_Hongyuan_work_detailed": "Die Laizhou Hongyuan Schraubstockherstellung GmbH blickt auf über 50 Jahre Erfahrung in der Schraubstockproduktion zurück und ist ein führendes Unternehmen in der chinesischen Schraubstockindustrie. Das Unternehmen produziert hauptsächlich Schraubstöcke, ADI-Gusseisen (Austempered Ductile Iron), Automobilteile, Baumaschinenteile und Stromversorgungsteile, die in die USA, Kanada, Australien, Japan und EU-Länder exportiert werden.\n\nIm Sommer 2011 absolvierte ich ein einmonatiges Praktikum bei der Laizhou Hongyuan Schraubstockherstellung GmbH. Ich lernte die verschiedenen Prozesse in der Fabrik kennen, von der Primärverarbeitung von Metallrohstoffen über Gießen, Schmieden und Wärmebehandlung. Die Teilnahme an der Produktion gab mir ein tieferes Verständnis für den Maschinenbau und legte eine solide Grundlage für mein Studium des Maschinenbaus an der Universität.",
 
     "companyB": "Firma B",
     "companyC": "Firma C",
@@ -183,17 +196,21 @@
     "boeblingenMercaden": "伯布林根梅卡登百货商店",
     "boeblingenMotorWorld": "伯布林根汽车世界",
     "boeblingenWeihnachtsmarkt": "伯布林根圣诞市场",
+    "boeblingenDescription": "斯图加特的卫星城市伯布林根，市区街道蜿蜒起伏，是一个别有韵味的小城。城市北边的辛德芬根坐落着梅赛德斯奔驰最大的工厂。",
 
     "company_Hongyuan": "莱州鸿源台钳制造有限公司 ",
     "company_Hongyuan_position": "金工实习生",
     "company_Hongyuan_time": "2011年6月 - 2011年7月",
     "company_Hongyuan_work": "我于2011年的夏天在莱州鸿源台钳制造公司进行了为期一个月的金工实习。",
+    "company_Hongyuan_work_detailed": "莱州鸿源台钳制造有限公司拥有50多年的台虎钳生产历史，是中国台钳生产行业的领军者。目前主要生产台虎钳、奥贝球铁（ADI）、汽车配件、工程机械配件和电力配件等产品，销往美国、加拿大、澳大利亚、日本和欧盟国家。\n\n我于2011年的夏天在莱州鸿源台钳制造公司进行了为期一个月的金工实习，了解到了台钳厂从金属原材料的初级加工，到铸造锻造热处理等的诸多工序流程，参与了生产实践，对于机械制造有了更深层次的理解，也为了大学里的机械制造专业的学习打下了坚实的基础。",
 
 
 
     "companyB": "公司 B",
     "companyC": "公司 C",
     "companyD": "公司 D",
+
+
     "contact": "联系我",
     "guangzhou": "广州",
     "guangzhouDescription": "广州是中国南方的重要城市，珠江三角洲的中心，被誉为“南中国之门”。我于2012年入学华南理工大学机械学院就读过程装备与控制工程专业。",
