@@ -13,7 +13,7 @@ export default function CompanyHongyuanPage() {
     transition: {
       duration: 3,
       repeat: Infinity,
-      ease: 'easeInOut',
+      ease: [0.42, 0, 0.58, 1], // ✅ 使用 cubic-bezier 数组代替字符串
     },
   }
 
