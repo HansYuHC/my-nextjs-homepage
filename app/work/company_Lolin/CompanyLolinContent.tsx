@@ -3,7 +3,7 @@
 import useTranslation from '../../../lib/useTranslation'
 import { motion } from 'framer-motion'
 
-export default function CompanyHongyuanContent() {
+export default function CompanyLolinContent() {
   const { t } = useTranslation()
 
   // 呼吸动画定义
@@ -26,20 +26,20 @@ export default function CompanyHongyuanContent() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        {t('company_Hongyuan')}
+        {t('company_Lolin')}
       </motion.h1>
 
       {/* 公司 Logo */}
       <motion.img
-        src="/images/hongyuan-logo.png"
-        alt="Hongyuan Logo"
-        className="w-48 h-auto mb-6 cursor-pointer shadow-md hover:shadow-lg"
+        src="/images/lolin-logo.png"
+        alt="Lolin Logo"
+        className="w-28 h-auto mb-6 cursor-pointer shadow-md hover:shadow-lg"
         whileHover={{ scale: 1.1 }}
         animate={{
           y: [0, -5, 0],
           transition: { duration: 3, repeat: Infinity, ease: 'easeInOut' },
         }}
-        onClick={() => window.open('https://www.chinavise.com', '_blank')}
+        onClick={() => window.open('https://www.lolinmetals.com', '_blank')}
       />
 
       {/* 介绍文字 */}
@@ -49,17 +49,17 @@ export default function CompanyHongyuanContent() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
-        {t('company_Hongyuan_work_detailed')}
+        {t('company_Lolin_work_detailed')}
       </motion.p>
 
       {/* 图片区域 */}
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl w-full">
-        {['/images/hongyuan_1.png', '/images/hongyuan_2.jpeg', '/images/hongyuan_3.jpeg'].map(
+        {['/images/lolin_1.png', '/images/lolin_2.png', '/images/lolin_3.jpg'].map(
           (src, index) => (
             <motion.img
               key={index}
               src={src}
-              alt={`Factory ${index + 1}`}
+              alt={`Lolin ${index + 1}`}
               className="rounded-2xl shadow-lg w-full h-48 sm:h-48 object-cover"
               whileHover={{ scale: 1.05 }}
               animate={breathingAnimation}
