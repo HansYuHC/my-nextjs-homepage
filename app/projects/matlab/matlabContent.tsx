@@ -10,37 +10,37 @@ interface Project {
   image: string
 }
 
-const cadProjects: Project[] = [
+const matlabProjects: Project[] = [
   {
     id: 1,
-    key: 'projectCAD-1',
-    image: '/images/projectCAD_1.png',
+    key: 'projectMATLAB-1',
+    image: '/images/projectMATLAB_1.png',
   },
   {
     id: 2,
-    key: 'projectCAD-2',
-    image: '/images/projectCAD_2.png',
+    key: 'projectMATLAB-2',
+    image: '/images/projectMATLAB_2.png',
   },
   {
     id: 3,
-    key: 'projectCAD-3',
-    image: '/images/projectCAD_3.png',
+    key: 'projectMATLAB-3',
+    image: '/images/projectMATLAB_3.png',
   },
 ]
 
-export default function CadContent() {
+export default function MatlabContent() {
   const { t } = useTranslation()
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
   return (
     <div className="container mx-auto px-6 py-12">
-      {/* 顶部标题区 */}
+     {/* 顶部标题区 */}
        <div className="relative w-full h-60 md:h-80 mb-12 rounded-2xl overflow-hidden shadow-lg">
 
       {/* 模糊背景层（更轻微的模糊、更浅的遮罩） */}
       <div
         className="absolute inset-0 bg-center bg-cover blur-md scale-105 brightness-110"
-        style={{ backgroundImage: "url('/images/projects/cad.jpg')" }}
+        style={{ backgroundImage: "url('/images/projects/matlab.png')" }}
       ></div>
 
       {/* 半透明遮罩层（轻一点，不遮住轮廓） */}
@@ -50,22 +50,22 @@ export default function CadContent() {
       <div className="relative flex flex-col items-center justify-center w-full h-full text-center z-10">
             {/* 前景主图 */}
         <img
-          src="/images/projects/cad.jpg"
-          alt="CAD"
+          src="/images/projects/matlab.png"
+          alt="MATLAB"
           className="object-contain max-h-full w-auto drop-shadow-lg"
         />
 
         {/* 标题 */}
         <h1 className="absolute text-white text-4xl md:text-5xl font-bold tracking-wide drop-shadow-[0_0_8px_rgba(0,0,0,0.8)]">
-          CAD
+          MATLAB
         </h1>
+
       </div>
     </div>
 
 
-
       {/* 项目内容 */}
-      {cadProjects.map((proj, index) => (
+      {matlabProjects.map((proj, index) => (
         <motion.div
           key={proj.id}
           className={`flex flex-col md:flex-row items-center mb-12 gap-6 ${
