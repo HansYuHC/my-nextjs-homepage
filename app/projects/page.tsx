@@ -1,5 +1,6 @@
 'use client'
 
+import { Suspense } from 'react'
 import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import useTranslation from '../../lib/useTranslation'
@@ -12,12 +13,13 @@ const categories = [
   { id: 'other', title: 'Other', image: '/images/projects/other.png', key: 'project_otherIntro' },
 ]
 
-export default function ProjectsPage() {
+function ProjectsContent() {
   const { t } = useTranslation()
   const router = useRouter()
 
   return (
     <div className="container mx-auto px-6 py-12">
+      {/* 标题和简介 */}
       <h1 className="text-3xl font-bold mb-4 text-center">{t('projects')}</h1>
       <p className="text-center text-gray-700 max-w-3xl mx-auto mb-10">
         {t('projectsOverviewText')}
@@ -25,7 +27,7 @@ export default function ProjectsPage() {
 
       {/* 五个项目类别 */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
-        {categories.map((cat, index) => (
+        {categories.map((cat) => (
           <motion.div
             key={cat.id}
             whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(0,0,0,0.15)' }}
@@ -53,5 +55,13 @@ export default function ProjectsPage() {
         ))}
       </div>
     </div>
+  )
+}
+
+export default function ProjectsPage() {
+  return (
+    <Suspense fallback={<div className="p-10 text-center">Loading...</div>}>
+      <ProjectsContent />
+    </Suspense>
   )
 }
