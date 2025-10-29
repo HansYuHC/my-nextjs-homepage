@@ -23,6 +23,12 @@
     "company_Lolin_work": "Since graduating from high school in 2012, I have worked at Qingdao Lolin Machinery Co., Ltd., serving as an intern, deputy manager, and European market development specialist.",
     "company_Lolin_work_detailed": "Founded in 1990 and headquartered in Qingdao, Qingdao Lolin Machinery Co., Ltd. has a global presence. We export over 400 containers annually to OEMs and tier-one, tier-two, and tier-three suppliers in Europe, Japan, and the USA. We supply forged and cast machine parts for agricultural machinery, construction equipment, railway systems, and heavy-duty trucks.\n\nSince graduating from high school in 2012, I have been working at Qingdao Lolin Machinery Co., Ltd. as an intern, deputy manager, and specialist for European market development. On behalf of the company, I actively develop new customers and maintain existing ones in Germany and participate in international mechanical engineering trade fairs in Hanover, Düsseldorf, and Stuttgart.\n\nIn 2018, I represented the company with the manager at the Hannover Industrial Fair, maintaining relationships with existing clients and exploring new potential customers.\n\nIn 2019, I independently represented the company at the METEC metallurgy and casting exhibition in Düsseldorf. From setting up the booth to arranging exhibits and brochures, coordinating event logistics, and engaging with clients, I handled everything. This exhibition not only enriched my experience but also helped the company secure multiple new clients.",
 
+    "company_Schaeffler": "Schaeffler AG",
+    "company_Schaeffler_position": "Intern",
+    "company_Schaeffler_time": "May 2017 - November 2017",
+    "company_Schaeffler_work": "In May 2017, I began a six-month internship at Schaeffler AG as part of my undergraduate studies. ",
+    "company_Schaeffler_work_detailed": "Schaeffler AG is a technology company focused on drive systems, operating in the automotive and industrial sectors. With annual revenue of approximately €13 billion (2016) and over 85,000 employees worldwide, its headquarters is located in Herzogenaurach, Bavaria, Germany.\n\nIn May 2017, I began a six-month internship at Schaeffler AG as part of my undergraduate studies. I worked in the chain drive development department, with the goal of understanding the principles of chain drive vibration and exploring the damping effects of absorbers on camshafts and crankshafts in automotive engines.\n\nThe research focused on the crankshafts and camshafts of engines from three different car brands. Due to their varying drive principles and installation positions, a comprehensive analysis of the absorber's working principles and effects was possible.\n\nThe dual-mass flywheel can effectively reduce torsional vibrations caused by engine rotation imbalances. It reduces the impact during clutch engagement or disengagement and minimizes engine vibrations. My internship goal was to study the installation of absorbers (Tilgers) on dual-mass flywheels and analyze their effectiveness in reducing chain drive system vibrations using MATLAB and simulation software.\n\nThe project involved order analysis of rotating bodies at different frequencies, Fourier analysis to decompose the motion of rotating objects into fixed-frequency components, and the use of Schaeffler's internal simulation software, DyFaSim, to analyze the damping effects of absorbers on various automotive engines.\n\nThe research results were presented in a PowerPoint presentation. The study showed that lower orders are the main cause of vibrations, and absorbers with specific damping and resonance frequencies can effectively reduce vibrations. Dual-mass flywheels with absorbers performed better in suppressing engine vibrations compared to those without.",
+
     "companyB": "Company B",
     "companyC": "Company C",
     "companyD": "Company D",
@@ -42,6 +48,11 @@
     "kit": "Karlsruhe Institute of Technology",
     "kitDescription": "Karlsruhe Institute of Technology is a top technical university in Germany, known for research and innovation.",
 
+    "project_cadIntro": "Since my undergraduate studies, I have used various CAD software, such as SolidWorks or Creo PTC, to learn and practice CAD software modeling knowledge and projects.",
+
+    "projectsOverview": "Project Overview",
+    "projectsOverviewText": "I have participated in several projects during my studies, work and leisure time. Here you can find introductions to projects in various fields, from which I have benefited greatly.",
+
     "projectCAD-1": "Project CAD - 1",
     "projectCAD-1Long": "As part of a team of five students, I created a top-down assembly as a CAD model and managed it in a product data management (PDM) system. Completing the assigned design task is part of the CAD and PDM training concept integrated into the Mechanical Engineering course. The knowledge required for the task is acquired through self-study via e-learning and consolidated through practical application. The results are defended in a colloquium, thus ensuring the achievement of the learning objectives.\nIn this project, I fulfilled the following requirements, among others: explain the principle of references and apply it appropriately in the CAD model; create advanced design elements: the pull feature, the tensile blend feature, the shell feature, and datum curves; create top-down models using skeleton techniques and edit them in a team, etc.",
     "projectCAD-1Short": "University Mechanical Design Theory Course Project",
@@ -58,6 +69,8 @@
     "projectVBA-1Long": "Using online tutorials, I learned and developed a database table structure management tool with VBA, providing CRUD (Create, Read, Update, Delete) operations for Access or SQL Server databases. It connects to the database via ADO (ActiveX Data Objects) and executes SQL statements for operations.",
     "projectVBA-1Short": "VBA Database Management",
 
+
+    "project_matlabIntro": "I used MATLAB and Simulink software to complete my undergraduate and graduate theses. In addition, I also used MATLAB and Simulink for several research and development projects during my internships and work.",
     "projectMATLAB-1": "Project MATLAB - 1",
     "projectMATLAB-1Long": "Using MATLAB to build models, process data, plot graphs, and dynamically update. Defined the characteristics of a ball screw, including its geometric parameters, material properties, and axial stiffness calculations. Processed measurement data to calculate the equivalent load, service life, and expected remaining life of bearings, and monitored data plotting.",
     "projectMATLAB-1Short": "Bachelor's Thesis",
@@ -114,7 +127,7 @@
     "company_Lolin_work": "Seit meinem Highschool-Abschluss im Jahr 2012 arbeite ich bei Qingdao Lorraine Machinery Co., Ltd. und war als Praktikant, stellvertretender Manager und Spezialist für die Entwicklung des europäischen Marktes tätig.",
     "company_Lolin_work_detailed": "Die 1990 gegründete Qingdao Lolin Maschinenbau GmbH mit Sitz in Qingdao ist weltweit vertreten. Wir exportieren jährlich über 400 Container an OEMs sowie Zulieferer der ersten, zweiten und dritten Ebene in Europa, Japan und den USA. Wir liefern geschmiedete und gegossene Maschinenteile für Landmaschinen, Baumaschinen, Eisenbahnsysteme und Schwerlastkraftwagen.\n\nSeit meinem Abitur 2012 arbeite ich bei der Qingdao Lorin Machinery Co., Ltd. als Praktikant, stellvertretender Manager und Spezialist für die europäische Marktentwicklung. Im Auftrag des Unternehmens baue ich aktiv neue Kunden auf und pflege bestehende Kunden in Deutschland und nehme an internationalen Maschinenbaumessen in Hannover, Düsseldorf und Stuttgart teil.\n\n2018 vertrat ich das Unternehmen gemeinsam mit dem Manager auf der Hannover Messe, pflegte die Beziehungen zu bestehenden Kunden und erkundete neue potenzielle Kunden.\n\n2019 vertrat ich das Unternehmen eigenständig auf der METEC-Gießereimesse in Düsseldorf. Vom Aufbau des Standes über die Anordnung von Exponaten und Broschüren bis zur Koordination der Veranstaltungslogistik und der Kundenbetreuung erledigte ich alles. Diese Messe bereicherte nicht nur meine Erfahrungen, sondern half dem Unternehmen auch, mehrere neue Kunden zu gewinnen.",
 
-    "company_Schaeffler": "Schaeffler AG<br>",
+    "company_Schaeffler": "Schaeffler AG",
     "company_Schaeffler_position": "Praktikant",
     "company_Schaeffler_time": "Mai 2017 - November 2017",
     "company_Schaeffler_work": "Im Mai 2017 begann ich ein sechsmonatiges Praktikum bei der Schaeffler AG im Rahmen meines Bachelorstudiums. ",
@@ -139,6 +152,11 @@
     "kit": "Karlsruher Institut für Technologie",
     "kitDescription": "Das Karlsruher Institut für Technologie ist eine führende technische Universität in Deutschland, bekannt für Forschung und Innovation.",
 
+    "project_cadIntro": "Seit meinem Grundstudium in der Uni habe ich verschiedene CAD-Softwareprogramme mit SolidWorks oder Creo PTC genutzt, um Kenntnisse in der CAD-Softwaremodellierung zu erwerben und in Projekten anzuwenden.",
+
+    "projectsOverview": "Projekt Überblick",
+    "projectsOverviewText": "Ich habe während meines Studiums, meiner Arbeit und meiner Freizeit an verschiedenen Projekten mitgewirkt. Hier finden Sie Einführungen in Projekte aus verschiedenen Bereichen, von denen ich viel profitiert habe.",
+
     "projectCAD-1": "Projekt CAD - 1",
     "projectCAD-1Long": "Ich habe in einem Team von fünf Studierenden eine Top-Down Baugruppe als CAD-Modell erstellt und diese in einem Produktdatenmanagement-System (PDM-System) verwaltet. Die Bearbeitung der gestellten Konstruktionsaufgabe ist Teil des in die Lehrveranstaltung Maschinenkonstruktionslehre integrierten CAD- und PDM-Ausbildungskonzeptes. Die für die Aufgabe benötigten Kenntnisse werden im Selbststudium mittels E-Learning erarbeitet und bei der Anwendung gefestigt. In einem Kolloquium werden die Ergebnisse verteidigt und so das Erreichen der Lernziele sichergestellt.\nIn diesem Projekt habe ich unter anderem die folgenden Anforderungen erfüllt: das Prinzip „Referenzen“ erläutern und im CAD-Modell anforderungsgerecht einsetzen; fortgeschrittene Konstruktionselemente erzeugen: das Ziehen-KE, das Zug-Verbund-KE, das Schalen-KE und Bezugskurven; Top-Down-Modelle mit Hilfe Skelett-Technik erstellen und im Team bearbeiten usw.",
     "projectCAD-1Short": "Universität Workshop Projekt zur Maschinen Konstruktionslehre",
@@ -155,6 +173,8 @@
     "projectVBA-1Long": "Mithilfe von Online-Tutorials habe ich ein Datenbank-Tabellenstruktur-Verwaltungstool mit VBA entwickelt, das CRUD-Operationen (Create, Read, Update, Delete) für Access- oder SQL Server-Datenbanken bietet. Es verbindet sich über ADO (ActiveX Data Objects) mit der Datenbank und führt SQL-Anweisungen aus.",
     "projectVBA-1Short": "VBA-Datenbankverwaltung",
 
+
+    "project_matlabIntro": "Ich habe die Software MATLAB und Simulink für meine Bachelor- und Masterarbeiten verwendet. Darüber hinaus habe ich MATLAB und Simulink auch für verschiedene Forschungs- und Entwicklungsprojekte während meiner Praktika und meiner beruflichen Tätigkeit eingesetzt.",
     "projectMATLAB-1": "Projekt MATLAB - 1",
     "projectMATLAB-1Long": "Verwendung von MATLAB zur Erstellung von Modellen, Datenverarbeitung, grafischer Darstellung und dynamischer Aktualisierung. Definierte die Eigenschaften einer Kugelumlaufspindel, einschließlich ihrer geometrischen Parameter, Materialeigenschaften und Berechnungen der axialen Steifigkeit. Verarbeitete Messdaten, um die äquivalente Belastung, Lebensdauer und voraussichtliche Restlebensdauer von Lagern zu berechnen, und überwachte die Datenvisualisierung.",
     "projectMATLAB-1Short": "Bachelorarbeit",
@@ -228,7 +248,7 @@
     "company_Lolin_work": "自2012年高中毕业之后，我便在青岛洛林机械有限公司就职，历任实习生，经理助理，欧洲市场拓展专员等职位。",
     "company_Lolin_work_detailed": "青岛洛林机械有限公司成立于1990年，扎根青岛，业务覆盖全球，主要面向欧洲，日本及美国的主机厂以及一二三级各个级别的供应商每年出口400多个集装箱，提供锻造和铸造机械类零部件，涵盖农业机械，工程器械，铁路系统和重型卡车零件等等。\n\n自2012年高中毕业之后，我便在青岛洛林机械有限公司就职，历任实习生，经理助理，欧洲市场拓展专员等职位。我代表公司积极在德国拓展新客户，维护老客户，参加过汉诺威，杜塞尔多夫，斯图加特等地区的机械制造业国际展销会。\n\n2018年，我与公司经理一道代表公司参展了当年的汉诺威工业博览会,在与公司老客户互通有无的同时，也拓展了新的潜在客户。\n\n2019年，我独自代表公司出席参展了当年的杜塞尔多夫冶金压铸展览会(METEC)。从布展开始准备，陈列展品及宣传册，沟通协调展会各种事项，接待拓展客户，展会结束后首尾，都由我完成。本次展览会不仅使我受益匪浅，还为公司拓展了多个新客户。",
 
-    "company_Schaeffler": "舍弗勒集团<br>",
+    "company_Schaeffler": "舍弗勒集团",
     "company_Schaeffler_position": "实习生",
     "company_Schaeffler_time": "2017年5月 - 2017年11月",
     "company_Schaeffler_work": "我于2017年5月份开始在舍弗勒公司进行了为期六个月的本科阶段实习。",
@@ -256,6 +276,11 @@
     "kit": "卡尔斯鲁厄理工学院",
     "kitDescription": "卡尔斯鲁厄理工学院是德国顶尖的技术大学，以研究和创新闻名。",
 
+    "projectsOverview": "项目概览",
+    "projectsOverviewText": "在我的学习，工作和业余生活中，我参与进行了若干项目。这里你可以看到各个不同领域的项目的介绍，我从中受益匪浅。",
+
+    "project_cadIntro": "自大学本科起，使用了多种CAD软件，例如SolidWork或者Creo PTC学习并实践了CAD软件建模的相关知识及项目。",
+
     "projectCAD-1": "CAD项目 - 1",
     "projectCAD-1Long": "本人在一个由五名学生组成的团队中，创建了一个自上而下的 CAD 模型，并在产品数据管理系统 (PDM 系统) 中进行管理。给定设计任务的处理是机械设计理论课程中融入的 CAD 和 PDM 培训概念的一部分。任务所需的知识是通过E-Learning学习自学获得的，并通过Creo PTC软件应用得到巩固。在座谈会上对结果进行答辩，以确保实现学习目标。\n在该项目中我都达到了包括但不限于如下的要求:解释产品数据管理系统的任务和可能性;创建进阶的CAD模型元素：拉动特征、拉伸混合特征、壳特征和基准曲线;在模型中创建参数和关系等等。",
     "projectCAD-1Short": "大学机械设计理论课程项目",
@@ -271,6 +296,8 @@
     "projectVBA-1": "VBA项目",
     "projectVBA-1Long": "利用网络教程使用VBA程序学习并制作数据库表结构管理软件，提供了 增、删、改、查 相关的操作，可以用于 Access 或 SQL Server 数据库。它通过ADO（ActiveX Data Objects）连接数据库，并执行SQL语句进行操作。",
     "projectVBA-1Short": "VBA数据库管理",
+
+    "project_matlabIntro": "使用MATLAB以及Simulink软件，辅助完成了本科及研究生的毕业论文，除此之外，还在实习和工作中运用MATLAB及Simulink进行了若干研发工作。",
 
     "projectMATLAB-1": "MATLAB项目 - 1",
     "projectMATLAB-1Long": "使用 MATLAB建立模型,进行数据处理、绘图、动态更新，定义滚珠丝杠（Ball Screw）的特性，包括其几何参数、材料属性以及轴向刚度计算,处理测量数据并计算轴承的等效载荷，使用寿命及预期剩余寿命，并监控数据绘图。",

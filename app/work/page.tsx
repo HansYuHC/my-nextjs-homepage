@@ -52,9 +52,30 @@ function WorkTimeline() {
       detailKey: "company_Schaeffler_work",
       link: `/work/company_Schaeffler?lang=${lang}`,
     },
-    { yearKey: "2024", companyKey: "companyD", detailKey: "work2024", link: "/work/companyD" },
-    { yearKey: "2025", companyKey: "companyE", detailKey: "work2025", link: "/work/companyE" },
-    { yearKey: "2026", companyKey: "companyF", detailKey: "work2026", link: "/work/companyF" },
+    {
+      yearKey: "2021",
+      companyKey: "company_Stabilus",
+      positionKey: "company_Stabilus_position",
+      timeKey: "company_Stabilus_time",
+      detailKey: "company_Stabilus_work",
+      link: `/work/company_Stabilus?lang=${lang}`,
+    },
+    {
+      yearKey: "2022",
+      companyKey: "company_Bertrandt",
+      positionKey: "company_Bertrandt_position",
+      timeKey: "company_Bertrandt_time",
+      detailKey: "company_Bertrandt_work",
+      link: `/work/company_Bertrandt?lang=${lang}`,
+    },
+    {
+      yearKey: "2024",
+      companyKey: "company_Mercedes",
+      positionKey: "company_Mercedes_position",
+      timeKey: "company_Mercedes_time",
+      detailKey: "company_Mercedes_work",
+      link: `/work/company_Mercedes?lang=${lang}`,
+    },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);

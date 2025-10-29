@@ -3,7 +3,7 @@
 import useTranslation from '../../../lib/useTranslation'
 import { motion } from 'framer-motion'
 
-export default function CompanySchaefflerContent() {
+export default function CompanyStabilusContent() {
   const { t } = useTranslation()
 
   // 呼吸动画定义
@@ -26,20 +26,20 @@ export default function CompanySchaefflerContent() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        {t('company_Schaeffler').replace(/<br\s*\/?>/g, '')}
+        {t('company_Stabilus').replace(/<br\s*\/?>/g, '')}
       </motion.h1>
 
       {/* 公司 Logo */}
       <motion.img
-        src="/images/Schaeffler-logo.png"
-        alt="Schaeffler Logo"
+        src="/images/Stabilus-logo.png"
+        alt="Stabilus Logo"
         className="w-28 h-auto mb-6 cursor-pointer shadow-md hover:shadow-lg"
         whileHover={{ scale: 1.1 }}
         animate={{
           y: [0, -5, 0],
           transition: { duration: 3, repeat: Infinity, ease: 'easeInOut' },
         }}
-        onClick={() => window.open('https://www.schaeffler.com', '_blank')}
+        onClick={() => window.open('https://www.Stabilus.com', '_blank')}
       />
 
       {/* 介绍文字 */}
@@ -49,17 +49,17 @@ export default function CompanySchaefflerContent() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
       >
-        {t('company_Schaeffler_work_detailed')}
+        {t('company_Stabilus_work_detailed')}
       </motion.p>
 
       {/* 图片区域 */}
       <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl w-full">
-        {['/images/schaeffler_1.jpg', '/images/schaeffler_2.jpg', '/images/schaeffler_3.png'].map(
+        {['/images/stabilus_1.jpg', '/images/stabilus_2.jpg', '/images/stabilus_3.png'].map(
           (src, index) => (
             <motion.img
               key={index}
               src={src}
-              alt={`Schaeffler ${index + 1}`}
+              alt={`Stabilus ${index + 1}`}
               className="rounded-2xl shadow-lg w-full h-48 sm:h-64 object-cover"
               whileHover={{ scale: 1.05 }}
               animate={breathingAnimation}

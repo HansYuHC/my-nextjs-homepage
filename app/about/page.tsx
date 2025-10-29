@@ -49,8 +49,8 @@ function AboutContent() {
 
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-6">{t('about')}</h1>
-      <p className="mb-8">{t('aboutDescription')}</p>
+      <h1 className="text-3xl font-bold mb-4 text-center">{t('about')}</h1>
+      <p className="mb-20 text-center">{t('aboutDescription')}</p>
 
       <Masonry
         breakpointCols={{ default: 3, 1100: 2, 700: 1 }}
