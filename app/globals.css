@@ -52,3 +52,27 @@ body {
   background-size: 200% 200%;
   animation: gradientFlow 15s ease infinite;
 }
+
+@keyframes shard {
+  0% {
+    opacity: 0;
+    transform: scale(1.3) translate(var(--x, 0), var(--y, 0));
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translate(0, 0);
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-shard {
+  animation: shard 1.2s ease-out forwards;
+}
+
+.animate-fadein {
+  animation: fadein 2s ease-out forwards;
+}

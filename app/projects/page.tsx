@@ -10,11 +10,11 @@ const categories = [
   { id: 'matlab', title: 'MATLAB', image: '/images/projects/matlab.png', key: 'project_matlabIntro' },
   { id: 'vba', title: 'VBA', image: '/images/projects/vba.png', key: 'project_vbaIntro' },
   { id: 'python', title: 'Python', image: '/images/projects/python.png', key: 'project_pythonIntro' },
-  { id: 'other', title: 'Other', image: '/images/projects/other.png', key: 'project_otherIntro' },
+  { id: 'others', title: 'Others', image: '/images/projects/others.png', key: 'project_othersIntro' },
 ]
 
 function ProjectsContent() {
-  const { t } = useTranslation()
+  const { t, lang } = useTranslation()
   const router = useRouter()
 
   return (
@@ -32,7 +32,7 @@ function ProjectsContent() {
             key={cat.id}
             whileHover={{ scale: 1.05, boxShadow: '0 0 20px rgba(0,0,0,0.15)' }}
             transition={{ duration: 0.3 }}
-            onClick={() => router.push(`/projects/${cat.id}`)}
+            onClick={() => router.push(`/projects/${cat.id}?lang=${lang}`)}
             className="cursor-pointer bg-white rounded-2xl overflow-hidden shadow-md w-full max-w-sm"
           >
             {/* 顶部图片 */}

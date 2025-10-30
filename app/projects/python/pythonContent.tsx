@@ -10,38 +10,43 @@ interface Project {
   image: string
 }
 
-const cadProjects: Project[] = [
+const pythonProjects: Project[] = [
   {
     id: 1,
-    key: 'projectCAD-1',
-    image: '/images/projectCAD_1.png',
+    key: 'projectPython-1',
+    image: '/images/projectPython_1.png',
   },
   {
     id: 2,
-    key: 'projectCAD-2',
-    image: '/images/projectCAD_2.png',
+    key: 'projectPython-2',
+    image: '/images/projectPython_2.png',
   },
   {
     id: 3,
-    key: 'projectCAD-3',
-    image: '/images/projectCAD_3.png',
+    key: 'projectPython-3',
+    image: '/images/projectPython_3.png',
+  },
+  {
+    id: 4,
+    key: 'projectPython-4',
+    image: '/images/projectPython_4.png',
   },
 ]
 
-export default function CadContent() {
+export default function PythonContent() {
   const { t } = useTranslation()
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
   return (
     <div className="container mx-auto px-6 py-12">
-      {/* 顶部标题区 */}
+     {/* 顶部标题区 */}
         <div className="relative w-full h-60 md:h-80 mb-12 rounded-2xl overflow-hidden shadow-lg group">
 
           {/* 模糊背景层（左右模糊、中心清晰） */}
           <div
             className="absolute inset-0 bg-center bg-cover blur-sm scale-105 brightness-110"
             style={{
-              backgroundImage: "url('/images/projects/cad.jpg')",
+              backgroundImage: "url('/images/projects/python.png')",
               maskImage:
                 "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))",
               WebkitMaskImage:
@@ -53,13 +58,13 @@ export default function CadContent() {
           <div className="absolute inset-0 bg-black/25"></div>
 
           {/* 左右碎片层（减少数量、放大尺寸、带模糊） */}
-          <div className="absolute inset-0 grid grid-cols-6 grid-rows-2 z-10">
+          <div className="absolute inset-0 grid grid-cols-4 grid-rows-2 z-10">
             {[...Array(12)].map((_, i) => (
               <span
                 key={i}
                 className="block w-full h-full bg-center bg-cover opacity-0 animate-shard blur-[2px] scale-110"
                 style={{
-                  backgroundImage: "url('/images/projects/cad.jpg')",
+                  backgroundImage: "url('/images/projects/python.png')",
                   animationDelay: `${Math.random() * 0.8}s`,
                 }}
               ></span>
@@ -69,22 +74,19 @@ export default function CadContent() {
           {/* 清晰前景层 */}
           <div className="relative flex flex-col items-center justify-center w-full h-full text-center z-20">
             <img
-              src="/images/projects/cad.jpg"
-              alt="CAD"
+              src="/images/projects/python.png"
+              alt="Python"
               className="object-contain max-h-full w-auto drop-shadow-lg transition-opacity duration-1000 opacity-0 animate-fadein"
             />
             <h1 className="absolute text-white text-4xl md:text-5xl font-bold tracking-wide drop-shadow-[0_0_8px_rgba(0,0,0,0.8)]">
-              CAD
+              Python
             </h1>
           </div>
         </div>
 
 
-
-
-
       {/* 项目内容 */}
-      {cadProjects.map((proj, index) => (
+      {pythonProjects.map((proj, index) => (
         <motion.div
           key={proj.id}
           className={`flex flex-col md:flex-row items-center mb-12 gap-6 ${

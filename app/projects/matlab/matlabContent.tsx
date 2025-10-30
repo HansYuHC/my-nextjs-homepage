@@ -35,33 +35,49 @@ export default function MatlabContent() {
   return (
     <div className="container mx-auto px-6 py-12">
      {/* 顶部标题区 */}
-       <div className="relative w-full h-60 md:h-80 mb-12 rounded-2xl overflow-hidden shadow-lg">
+        <div className="relative w-full h-60 md:h-80 mb-12 rounded-2xl overflow-hidden shadow-lg group">
 
-      {/* 模糊背景层（更轻微的模糊、更浅的遮罩） */}
-      <div
-        className="absolute inset-0 bg-center bg-cover blur-md scale-105 brightness-110"
-        style={{ backgroundImage: "url('/images/projects/matlab.png')" }}
-      ></div>
+          {/* 模糊背景层（左右模糊、中心清晰） */}
+          <div
+            className="absolute inset-0 bg-center bg-cover blur-sm scale-105 brightness-110"
+            style={{
+              backgroundImage: "url('/images/projects/matlab.png')",
+              maskImage:
+                "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))",
+              WebkitMaskImage:
+                "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))",
+            }}
+          ></div>
 
-      {/* 半透明遮罩层（轻一点，不遮住轮廓） */}
-      <div className="absolute inset-0 bg-black/25"></div>
+          {/* 半透明遮罩层 */}
+          <div className="absolute inset-0 bg-black/25"></div>
 
-      {/* 清晰前景层 */}
-      <div className="relative flex flex-col items-center justify-center w-full h-full text-center z-10">
-            {/* 前景主图 */}
-        <img
-          src="/images/projects/matlab.png"
-          alt="MATLAB"
-          className="object-contain max-h-full w-auto drop-shadow-lg"
-        />
+          {/* 左右碎片层（减少数量、放大尺寸、带模糊） */}
+          <div className="absolute inset-0 grid grid-cols-6 grid-rows-2 z-10">
+            {[...Array(12)].map((_, i) => (
+              <span
+                key={i}
+                className="block w-full h-full bg-center bg-cover opacity-0 animate-shard blur-[2px] scale-110"
+                style={{
+                  backgroundImage: "url('/images/projects/matlab.png')",
+                  animationDelay: `${Math.random() * 0.8}s`,
+                }}
+              ></span>
+            ))}
+          </div>
 
-        {/* 标题 */}
-        <h1 className="absolute text-white text-4xl md:text-5xl font-bold tracking-wide drop-shadow-[0_0_8px_rgba(0,0,0,0.8)]">
-          MATLAB
-        </h1>
-
-      </div>
-    </div>
+          {/* 清晰前景层 */}
+          <div className="relative flex flex-col items-center justify-center w-full h-full text-center z-20">
+            <img
+              src="/images/projects/matlab.png"
+              alt="MATLAB"
+              className="object-contain max-h-full w-auto drop-shadow-lg transition-opacity duration-1000 opacity-0 animate-fadein"
+            />
+            <h1 className="absolute text-white text-4xl md:text-5xl font-bold tracking-wide drop-shadow-[0_0_8px_rgba(0,0,0,0.8)]">
+              MATLAB
+            </h1>
+          </div>
+        </div>
 
 
       {/* 项目内容 */}
