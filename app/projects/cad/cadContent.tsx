@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import useTranslation from '../../../lib/useTranslation'
 
@@ -8,6 +8,7 @@ interface Project {
   id: number
   key: string
   image: string
+  detailImage?:string
 }
 
 const cadProjects: Project[] = [
@@ -15,73 +16,78 @@ const cadProjects: Project[] = [
     id: 1,
     key: 'projectCAD-1',
     image: '/images/projectCAD_1.png',
+    detailImage: '/images/projectCAD_detail1.png',
   },
   {
     id: 2,
     key: 'projectCAD-2',
     image: '/images/projectCAD_2.png',
+    detailImage: '/images/projectCAD_detail2.png',
   },
   {
     id: 3,
     key: 'projectCAD-3',
     image: '/images/projectCAD_3.png',
+    detailImage: '/images/projectCAD_detail3.png',
   },
 ]
 
 export default function CadContent() {
   const { t } = useTranslation()
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
+  const [delays, setDelays] = useState<number[]>([]) // 存储随机动画延迟
+
+  // ✅ 只在客户端生成随机延迟，避免 SSR mismatch
+  useEffect(() => {
+    const randoms = Array.from({ length: 8 }, () => Math.random() * 0.8) // 数量减少为 8 个碎片
+    setDelays(randoms)
+  }, [])
 
   return (
     <div className="container mx-auto px-6 py-12">
       {/* 顶部标题区 */}
-        <div className="relative w-full h-60 md:h-80 mb-12 rounded-2xl overflow-hidden shadow-lg group">
+      <div className="relative w-full h-60 md:h-80 mb-12 rounded-2xl overflow-hidden shadow-lg group">
+        {/* 模糊背景层（左右模糊、中心清晰） */}
+        <div
+          className="absolute inset-0 bg-center bg-cover blur-sm scale-105 brightness-110"
+          style={{
+            backgroundImage: "url('/images/projects/cad.jpg')",
+            maskImage:
+              'linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))',
+            WebkitMaskImage:
+              'linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))',
+          }}
+        ></div>
 
-          {/* 模糊背景层（左右模糊、中心清晰） */}
-          <div
-            className="absolute inset-0 bg-center bg-cover blur-sm scale-105 brightness-110"
-            style={{
-              backgroundImage: "url('/images/projects/cad.jpg')",
-              maskImage:
-                "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))",
-              WebkitMaskImage:
-                "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))",
-            }}
-          ></div>
+        {/* 半透明遮罩层 */}
+        <div className="absolute inset-0 bg-black/25"></div>
 
-          {/* 半透明遮罩层 */}
-          <div className="absolute inset-0 bg-black/25"></div>
-
-          {/* 左右碎片层（减少数量、放大尺寸、带模糊） */}
-          <div className="absolute inset-0 grid grid-cols-6 grid-rows-2 z-10">
-            {[...Array(12)].map((_, i) => (
-              <span
-                key={i}
-                className="block w-full h-full bg-center bg-cover opacity-0 animate-shard blur-[2px] scale-110"
-                style={{
-                  backgroundImage: "url('/images/projects/cad.jpg')",
-                  animationDelay: `${Math.random() * 0.8}s`,
-                }}
-              ></span>
-            ))}
-          </div>
-
-          {/* 清晰前景层 */}
-          <div className="relative flex flex-col items-center justify-center w-full h-full text-center z-20">
-            <img
-              src="/images/projects/cad.jpg"
-              alt="CAD"
-              className="object-contain max-h-full w-auto drop-shadow-lg transition-opacity duration-1000 opacity-0 animate-fadein"
-            />
-            <h1 className="absolute text-white text-4xl md:text-5xl font-bold tracking-wide drop-shadow-[0_0_8px_rgba(0,0,0,0.8)]">
-              CAD
-            </h1>
-          </div>
+        {/* 左右碎片层（减少数量、放大尺寸、带模糊） */}
+        <div className="absolute inset-0 grid grid-cols-4 grid-rows-2 z-10">
+          {delays.map((delay, i) => (
+            <span
+              key={i}
+              className="block w-full h-full bg-center bg-cover opacity-0 animate-shard blur-[3px] scale-110"
+              style={{
+                backgroundImage: "url('/images/projects/cad.jpg')",
+                animationDelay: `${delay}s`,
+              }}
+            ></span>
+          ))}
         </div>
 
-
-
-
+        {/* 清晰前景层 */}
+        <div className="relative flex flex-col items-center justify-center w-full h-full text-center z-20">
+          <img
+            src="/images/projects/cad.jpg"
+            alt="CAD"
+            className="object-contain max-h-full w-auto drop-shadow-lg transition-opacity duration-1000 opacity-0 animate-fadein"
+          />
+          <h1 className="absolute text-white text-4xl md:text-5xl font-bold tracking-wide drop-shadow-[0_0_8px_rgba(0,0,0,0.8)]">
+            CAD
+          </h1>
+        </div>
+      </div>
 
       {/* 项目内容 */}
       {cadProjects.map((proj, index) => (
@@ -142,10 +148,22 @@ export default function CadContent() {
               >
                 ✕
               </button>
+
               <h2 className="text-2xl font-bold mb-4">{t(selectedProject.key)}</h2>
               <p className="text-gray-800 whitespace-pre-line">
                 {t(`${selectedProject.key}Long`)}
               </p>
+              {/* ✅ 将 detailImage 放到最底部显示 */}
+                {selectedProject.detailImage && (
+                  <motion.img
+                    src={selectedProject.detailImage}
+                    alt="Detail"
+                    className="w-full rounded-xl mt-2 shadow-md object-contain max-h-80 mx-auto"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}
+                  />
+                )}
             </motion.div>
           </motion.div>
         )}
