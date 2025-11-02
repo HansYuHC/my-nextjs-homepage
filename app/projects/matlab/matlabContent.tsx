@@ -170,20 +170,20 @@ export default function MatlabContent() {
               </p>
 
               {/* ✅ 支持单图或两图并排 */}
-              {(selectedProject.detailImages?.length > 0 || selectedProject.detailImage) && (
-                <div className="mt-4 flex flex-wrap justify-center gap-4">
-                  {(selectedProject.detailImages || [selectedProject.detailImage])
-                    .slice(0, 2)
-                    .map((img, index) => (
-                      <img
-                        key={index}
-                        src={img!}
-                        alt={`${t(selectedProject.key)} detail ${index + 1}`}
-                        className="w-full sm:w-[48%] rounded-lg object-cover"
-                      />
-                    ))}
-                </div>
-              )}
+                {(selectedProject.detailImages || selectedProject.detailImage) && (
+                  <div className="mt-4 flex flex-wrap justify-center gap-4">
+                    {([].concat(selectedProject.detailImages || selectedProject.detailImage))
+                      .slice(0, 2)
+                      .map((img, index) => (
+                        <img
+                          key={index}
+                          src={img}
+                          alt={`${t(selectedProject.key)} detail ${index + 1}`}
+                          className="w-full sm:w-[48%] rounded-lg object-cover"
+                        />
+                      ))}
+                  </div>
+                )}
             </motion.div>
           </motion.div>
         )}
