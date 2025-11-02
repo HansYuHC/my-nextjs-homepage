@@ -172,7 +172,12 @@ export default function MatlabContent() {
               {/* ✅ 支持单图或两图并排 */}
                 {(selectedProject.detailImages || selectedProject.detailImage) && (
                   <div className="mt-4 flex flex-wrap justify-center gap-4">
-                    {([].concat(selectedProject.detailImages || selectedProject.detailImage))
+                    {(selectedProject.detailImages
+                      ? selectedProject.detailImages
+                      : selectedProject.detailImage
+                      ? [selectedProject.detailImage]
+                      : []
+                    )
                       .slice(0, 2)
                       .map((img, index) => (
                         <img
