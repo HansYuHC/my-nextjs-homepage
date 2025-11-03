@@ -136,6 +136,18 @@ export default function PythonContent() {
               <p className="text-gray-800 whitespace-pre-line">
                 {t(`${selectedProject.key}Long`)}
               </p>
+
+              {/* ✅ 若为 projectPython-1，插入视频 */}
+                {selectedProject.key === 'projectPython-1' && (
+                  <div className="w-full mt-4">
+                    <video
+                      src="/videos/python_demo.mp4"  // 🔹 替换为你的视频路径
+                      controls
+                      className="w-full rounded-lg shadow-md"
+                    />
+                  </div>
+                )}
+
             </motion.div>
           </motion.div>
         )}

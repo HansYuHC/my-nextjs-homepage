@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import useTranslation from '../../../lib/useTranslation'
 
@@ -22,53 +22,57 @@ export default function VbaContent() {
   const { t } = useTranslation()
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
+  // ✅ 把随机延迟放进 useEffect，只在客户端生成
+  const [delays, setDelays] = useState<number[]>([])
+  useEffect(() => {
+    setDelays(Array.from({ length: 12 }, () => Math.random() * 0.8))
+  }, [])
+
   return (
     <div className="container mx-auto px-6 py-12">
-     {/* 顶部标题区 */}
-        <div className="relative w-full h-60 md:h-80 mb-12 rounded-2xl overflow-hidden shadow-lg group">
+      {/* 顶部标题区 */}
+      <div className="relative w-full h-60 md:h-80 mb-12 rounded-2xl overflow-hidden shadow-lg group">
 
-          {/* 模糊背景层（左右模糊、中心清晰） */}
-          <div
-            className="absolute inset-0 bg-center bg-cover blur-sm scale-105 brightness-110"
-            style={{
-              backgroundImage: "url('/images/projects/vba.png')",
-              maskImage:
-                "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))",
-              WebkitMaskImage:
-                "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))",
-            }}
-          ></div>
+        {/* 模糊背景层 */}
+        <div
+          className="absolute inset-0 bg-center bg-cover blur-sm scale-105 brightness-110"
+          style={{
+            backgroundImage: "url('/images/projects/vba.png')",
+            maskImage:
+              "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))",
+            WebkitMaskImage:
+              "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))",
+          }}
+        ></div>
 
-          {/* 半透明遮罩层 */}
-          <div className="absolute inset-0 bg-black/25"></div>
+        <div className="absolute inset-0 bg-black/25"></div>
 
-          {/* 左右碎片层（减少数量、放大尺寸、带模糊） */}
-          <div className="absolute inset-0 grid grid-cols-4 grid-rows-2 z-10">
-            {[...Array(12)].map((_, i) => (
-              <span
-                key={i}
-                className="block w-full h-full bg-center bg-cover opacity-0 animate-shard blur-[2px] scale-110"
-                style={{
-                  backgroundImage: "url('/images/projects/vba.png')",
-                  animationDelay: `${Math.random() * 0.8}s`,
-                }}
-              ></span>
-            ))}
-          </div>
-
-          {/* 清晰前景层 */}
-          <div className="relative flex flex-col items-center justify-center w-full h-full text-center z-20">
-            <img
-              src="/images/projects/vba.png"
-              alt="VBA"
-              className="object-contain max-h-full w-auto drop-shadow-lg transition-opacity duration-1000 opacity-0 animate-fadein"
-            />
-            <h1 className="absolute text-white text-4xl md:text-5xl font-bold tracking-wide drop-shadow-[0_0_8px_rgba(0,0,0,0.8)]">
-              VBA
-            </h1>
-          </div>
+        {/* ✅ 左右碎片层（使用延迟数组） */}
+        <div className="absolute inset-0 grid grid-cols-4 grid-rows-2 z-10">
+          {delays.map((delay, i) => (
+            <span
+              key={i}
+              className="block w-full h-full bg-center bg-cover opacity-0 animate-shard blur-[2px] scale-110"
+              style={{
+                backgroundImage: "url('/images/projects/vba.png')",
+                animationDelay: `${delay}s`,
+              }}
+            ></span>
+          ))}
         </div>
 
+        {/* 清晰前景层 */}
+        <div className="relative flex flex-col items-center justify-center w-full h-full text-center z-20">
+          <img
+            src="/images/projects/vba.png"
+            alt="VBA"
+            className="object-contain max-h-full w-auto drop-shadow-lg transition-opacity duration-1000 opacity-0 animate-fadein"
+          />
+          <h1 className="absolute text-white text-4xl md:text-5xl font-bold tracking-wide drop-shadow-[0_0_8px_rgba(0,0,0,0.8)]">
+            VBA
+          </h1>
+        </div>
+      </div>
 
       {/* 项目内容 */}
       {vbaProjects.map((proj, index) => (
@@ -82,7 +86,6 @@ export default function VbaContent() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, delay: index * 0.2 }}
         >
-          {/* 图片部分 */}
           <motion.img
             src={proj.image}
             alt={t(proj.key)}
@@ -92,7 +95,6 @@ export default function VbaContent() {
             transition={{ duration: 0.8, delay: index * 0.2 + 0.2 }}
           />
 
-          {/* 文字部分 */}
           <div className="md:w-1/2">
             <h2 className="text-xl font-semibold mb-2">{t(proj.key)}</h2>
             <p className="text-gray-700">{t(`${proj.key}Short`)}</p>
@@ -129,6 +131,7 @@ export default function VbaContent() {
               >
                 ✕
               </button>
+
               <h2 className="text-2xl font-bold mb-4">{t(selectedProject.key)}</h2>
               <p className="text-gray-800 whitespace-pre-line">
                 {t(`${selectedProject.key}Long`)}

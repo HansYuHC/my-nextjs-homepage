@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import useTranslation from '../../../lib/useTranslation'
 
@@ -13,8 +13,8 @@ interface Project {
 const othersProjects: Project[] = [
   {
     id: 1,
-    key: 'projectOthers-1',
-    image: '/images/projectOthers_1.png',
+    key: 'projectCANoe-1',
+    image: '/images/projectCANoe_1.png',
   },
   {
     id: 2,
@@ -26,54 +26,65 @@ const othersProjects: Project[] = [
 export default function OthersContent() {
   const { t } = useTranslation()
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
+  const [delays, setDelays] = useState<number[]>([])
+
+  // ✅ 仅在客户端生成随机延迟，避免 SSR hydration mismatch
+  useEffect(() => {
+    setDelays(Array.from({ length: 12 }, () => Math.random() * 0.8))
+  }, [])
+
+  // ✅ 调试输出翻译状态
+  useEffect(() => {
+    console.log('t(projectCANoe-1):', t('projectCANoe-1'))
+  }, [t])
 
   return (
     <div className="container mx-auto px-6 py-12">
-     {/* 顶部标题区 */}
-        <div className="relative w-full h-60 md:h-80 mb-12 rounded-2xl overflow-hidden shadow-lg group">
+      {/* 顶部标题区 */}
+      <div className="relative w-full h-60 md:h-80 mb-12 rounded-2xl overflow-hidden shadow-lg group">
+        {/* 模糊背景层（左右模糊、中心清晰） */}
+        <div
+          className="absolute inset-0 bg-center bg-cover blur-sm scale-105 brightness-110"
+          style={{
+            backgroundImage: "url('/images/projects/others.png')",
+            maskImage:
+              "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))",
+            WebkitMaskImage:
+              "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))",
+          }}
+        ></div>
 
-          {/* 模糊背景层（左右模糊、中心清晰） */}
-          <div
-            className="absolute inset-0 bg-center bg-cover blur-sm scale-105 brightness-110"
-            style={{
-              backgroundImage: "url('/images/projects/others.png')",
-              maskImage:
-                "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))",
-              WebkitMaskImage:
-                "linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,1) 30%, rgba(0,0,0,1) 70%, rgba(0,0,0,0.4))",
-            }}
-          ></div>
+        {/* 半透明遮罩层 */}
+        <div className="absolute inset-0 bg-black/25"></div>
 
-          {/* 半透明遮罩层 */}
-          <div className="absolute inset-0 bg-black/25"></div>
-
-          {/* 左右碎片层（减少数量、放大尺寸、带模糊） */}
+        {/* 左右碎片层（仅在客户端渲染） */}
+        {delays.length > 0 && (
           <div className="absolute inset-0 grid grid-cols-4 grid-rows-2 z-10">
-            {[...Array(12)].map((_, i) => (
+            {delays.map((delay, i) => (
               <span
                 key={i}
                 className="block w-full h-full bg-center bg-cover opacity-0 animate-shard blur-[2px] scale-110"
                 style={{
                   backgroundImage: "url('/images/projects/others.png')",
-                  animationDelay: `${Math.random() * 0.8}s`,
+                  animationDelay: `${delay}s`,
                 }}
               ></span>
             ))}
           </div>
+        )}
 
-          {/* 清晰前景层 */}
-          <div className="relative flex flex-col items-center justify-center w-full h-full text-center z-20">
-            <img
-              src="/images/projects/others.png"
-              alt="Others"
-              className="object-contain max-h-full w-auto drop-shadow-lg transition-opacity duration-1000 opacity-0 animate-fadein"
-            />
-            <h1 className="absolute text-white text-4xl md:text-5xl font-bold tracking-wide drop-shadow-[0_0_8px_rgba(0,0,0,0.8)]">
-              Others
-            </h1>
-          </div>
+        {/* 清晰前景层 */}
+        <div className="relative flex flex-col items-center justify-center w-full h-full text-center z-20">
+          <img
+            src="/images/projects/others.png"
+            alt="Others"
+            className="object-contain max-h-full w-auto drop-shadow-lg transition-opacity duration-1000 opacity-0 animate-fadein"
+          />
+          <h1 className="absolute text-white text-4xl md:text-5xl font-bold tracking-wide drop-shadow-[0_0_8px_rgba(0,0,0,0.8)]">
+            Others
+          </h1>
         </div>
-
+      </div>
 
       {/* 项目内容 */}
       {othersProjects.map((proj, index) => (
