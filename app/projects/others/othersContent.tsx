@@ -18,8 +18,8 @@ const othersProjects: Project[] = [
   },
   {
     id: 2,
-    key: 'projectOthers-2',
-    image: '/images/projectOthers_2.jpg',
+    key: 'projectDTS-2',
+    image: '/images/projectDTS_2.jpg',
   },
 ]
 

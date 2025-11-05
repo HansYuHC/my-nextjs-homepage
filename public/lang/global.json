@@ -66,6 +66,9 @@
     "kit": "Karlsruhe Institute of Technology",
     "kitDescription": "Karlsruhe Institute of Technology is a top technical university in Germany, known for research and innovation.",
 
+    "otherCitiesTitle": "Other german cities I visited",
+    "othercities": "Other german cities I visited",
+
     "project_cadIntro": "Since my undergraduate studies, I have used various CAD software, such as SolidWorks or Creo PTC, to learn and practice CAD software modeling knowledge and projects.",
 
     "projectsOverview": "Project Overview",
@@ -125,8 +128,12 @@
 
     "project_othersIntro": "In my work and life, I have also come into contact with and used many other software programs, such as CANoe, DTS Monaco, etc.",
     "projectCANoe-1": "Project CANoe",
-    "projectCANoe-1Long": "CANoe is a software development and testing tool developed by Vector Informatik. This software is mainly used by automotive manufacturers and electronic controller suppliers. It can be used for the development, analysis, simulation, testing, diagnosis, and startup of electronic controller networks or individual electronic controllers. With the help of database files provided by OEMs, we can generate CANoe test environments to conduct real or simulated tests of vehicle electronic control units and develop new controllers.",
-    "projectCANoe-1Short": "Using CANoe to test vehicle electronic control units.",
+    "projectCANoe-1Long": "CANoe is a software development and testing tool developed by Vector Informatik. This software is mainly used by automotive manufacturers and electronic controller suppliers. It can be used for the development, analysis, simulation, testing, diagnosis, and startup of electronic controller networks or individual electronic controllers. \nWith the help of database files provided by OEMs, we can generate CANoe test environments to conduct real or simulated tests of vehicle electronic control units and develop new ECU.\nDuring my time at Bertrandt Group, I used CANoe to conduct cybersecurity tests on real ECU prototypes and generated test reports. In addition, I used CANoe to simulate nodes for certain ECUs, a process known as Restbus Simulation, to observe the status of the ECUs' sending and receiving of information.",
+    "projectCANoe-1Short": "Using CANoe to perform test case-based testing of vehicle electronic control units.",
+
+    "projectDTS-2": "Project Softing DTS.monaco",
+    "projectDTS-2Long": "DTS.monaco is a standards-based tool (e.g., ODX, OTX, and UDS) that comprehensively covers all tasks from development, testing, after-sales to pre-manufacturing: diagnostics, analysis, OBD, Flash refresh, measurement, calibration, and residual bus simulation. \nWhile working at Bertrand Group, I used Monaco for ECU data reading, flashing, communication diagnostics, etc. \nAt Mercedes-Benz, during static vehicle commissioning, I used Monaco to connect to the vehicle's OBD interface to flash the ECUs and perform custom variant coding.",
+    "projectDTS-2Short": "Using Softing DTS.monaco for diagnostics, analysis, and ECU flashing of vehicle electronic control units.",
 
     "projects": "Projects",
     "qdTaiDong": "Street scene in Taidong, Qingdao",
@@ -214,6 +221,9 @@
     "kit": "Karlsruher Institut für Technologie",
     "kitDescription": "Das Karlsruher Institut für Technologie ist eine führende technische Universität in Deutschland, bekannt für Forschung und Innovation.",
 
+    "otherCitiesTitle": "Weitere deutsche Städte, die ich besucht habe",
+    "othercities": "Weitere deutsche Städte, die ich besucht habe",
+
     "project_cadIntro": "Seit meinem Grundstudium in der Uni habe ich verschiedene CAD-Softwareprogramme mit SolidWorks oder Creo PTC genutzt, um Kenntnisse in der CAD-Softwaremodellierung zu erwerben und in Projekten anzuwenden.",
 
     "projectsOverview": "Projekt Überblick",
@@ -275,8 +285,12 @@
 
     "project_othersIntro": "In meinem Berufs- und Privatleben bin ich auch mit vielen anderen Softwareprogrammen in Berührung gekommen und habe sie genutzt, wie z. B. CANoe, DTS Monaco usw.",
     "projectCANoe-1": "Projekt CANoe",
-    "projectCANoe-1Long": "CANoe ist ein Softwareentwicklungs- und Testwerkzeug von Vector Informatik. Diese Software wird hauptsächlich von Automobilherstellern und Anbietern elektronischer Steuergeräte eingesetzt. Sie kann für die Entwicklung, Analyse, Simulation, das Testen, die Diagnose und die Inbetriebnahme von Steuergerätenetzwerken oder einzelnen elektronischen Steuergeräten verwendet werden. \nMithilfe von Datenbankdateien der OEMs können wir CANoe-Testumgebungen generieren, um reale oder simulierte Tests von Fahrzeugsteuergeräten durchzuführen und neue Steuergeräte zu entwickeln",
-    "projectCANoe-1Short": "Testen von Fahrzeugsteuergeräten mit CANoe.",
+    "projectCANoe-1Long": "CANoe ist ein Softwareentwicklungs- und Testwerkzeug von Vector Informatik. Diese Software wird hauptsächlich von Automobilherstellern und Anbietern elektronischer Steuergeräte eingesetzt. Sie kann für die Entwicklung, Analyse, Simulation, das Testen, die Diagnose und die Inbetriebnahme von Steuergerätenetzwerken oder einzelnen elektronischen Steuergeräten verwendet werden. \nMithilfe von Datenbankdateien der OEMs können wir CANoe-Testumgebungen generieren, um reale oder simulierte Tests von Fahrzeugsteuergeräten durchzuführen und neue Steuergeräte zu entwickeln.\nWährend meiner Zeit bei der Bertrandt Group nutzte ich CANoe, um Cybersicherheitstests an realen Steuergeräte-Prototypen durchzuführen und Testberichte zu erstellen. Darüber hinaus verwendete ich CANoe zur Simulation von Knoten für bestimmte Steuergeräte – ein Verfahren, das als Restbus-Simulation bekannt ist –, um den Status des Sendens und Empfangens von Informationen durch die Steuergeräte zu beobachten.",
+    "projectCANoe-1Short": "Testfallbasiertes Testen von Fahrzeugsteuergeräten mit CANoe.",
+
+    "projectDTS-2": "Projekt Softing DTS.monaco",
+    "projectDTS-2Long": "DTS.monaco ist ein standardbasiertes Tool (z. B. ODX, OTX und UDS), das alle Aufgaben von der Entwicklung über Tests und Kundendienst bis hin zur Vorfertigung umfassend abdeckt: Diagnose, Analyse, OBD, Flash-Aktualisierung, Messung, Kalibrierung und Restbussimulation. \nWährend meiner Tätigkeit bei der Bertrand Group nutzte ich Monaco zum Auslesen von Steuergerätedaten, zum Flashen, zur Kommunikationsdiagnose usw. \nBei Mercedes-Benz verwendete ich Monaco während der statischen Fahrzeuginbetriebnahme, um mich mit der OBD-Schnittstelle des Fahrzeugs zu verbinden, die Steuergeräte zu flashen und kundenspezifische Variantencodierungen durchzuführen.",
+    "projectDTS-2Short": "Verwendung von Softing DTS.monaco für Diagnose, Analyse und das Flashen von Fahrzeugsteuergeräten.",
 
     "projects": "Projekte",
     "qdTaiDong": "Straßenszene in Taidong, Qingdao",
@@ -366,6 +380,10 @@
     "kit": "卡尔斯鲁厄理工学院",
     "kitDescription": "卡尔斯鲁厄理工学院是德国顶尖的技术大学，以研究和创新闻名。",
 
+    "otherCitiesTitle": "我去过的其他德国城市",
+    "othercities": "我去过的其他德国城市",
+    "othercitiesDescription": "卡尔斯鲁厄和伯布林根是我在德国呆过的时间最长的两个城市。除此之外，我还拜访过很多其他的德国城市，它们各自都有自己吸引人的地方。",
+
     "projectsOverview": "项目概览",
     "projectsOverviewText": "在我的学习，工作和业余生活中，我参与进行了若干项目。这里你可以看到各个不同领域的项目的介绍，我从中受益匪浅。",
 
@@ -425,8 +443,14 @@
 
     "project_othersIntro": "在工作和生活中，我还接触并使用了很多其他的软件，比如CANoe，DTS Monaco等等。",
     "projectCANoe-1": "CANoe 项目",
-    "projectCANoe-1Long": "CANoe是Vector Informatik所开发的软件开发及测试工具。此软件主要是用在汽车制造商以及电子控制器供应商，可用在电子控制器网络或个别电子控制器的开发、分析、模拟、测试、诊断及启动。\n借助于主机厂提供的数据库文件，我们可以生成CANoe的测试环境，从而进行真实的或者模拟的车辆电子控制单元的测试，研发新型的控制器。",
-    "projectCANoe-1Short": "使用CANoe对车辆电子控制单元进行测试。",
+    "projectCANoe-1Long": "CANoe是Vector Informatik所开发的软件开发及测试工具。此软件主要是用在汽车制造商以及电子控制器供应商，可用在电子控制器网络或个别电子控制器的开发、分析、模拟、测试、诊断及启动。\n借助于主机厂提供的数据库文件，我们可以生成CANoe的测试环境，从而进行真实的或者模拟的车辆电子控制单元的测试，研发新型的ECU。\n在伯特兰集团工作期间，我使用CANoe对真实的ECU原型机进行了网络安全方面的测试，并生成了测试报告。除此之外还利用CANoe模拟生成某些ECU的节点，即所谓的Restbus Simulation，来观测ECU的收发信息等的状态。",
+    "projectCANoe-1Short": "使用CANoe对车辆电子控制单元进行基于测试用例的测试。",
+
+    "projectDTS-2": "Softing DTS.monaco 项目",
+    "projectDTS-2Long": "DTS.monaco是基于标准的(例如ODX、OTX和UDS)工具，全面涵盖了所有从开发，测试，售后到预制造的工作任务：诊断，分析，OBD，Flash刷新，测量，标定和残余总线仿真。\n在伯特兰集团工作时，我使用Monaco对ECU进行了数据的读取，刷写，通信诊断等等操作。\n在奔驰集团对车辆进行静态调试时，我使用Monaco，连接车上的OBD接口，对车内的ECU进行刷写，以及定制化变体编码(Variant Coding).",
+    "projectDTS-2Short": "使用Softing DTS.monaco对车辆电子控制单元进行诊断，分析，ECU刷写等操作。",
+
+
 
     "projects": "项目",
     "qdTaiDong": "青岛台东街景",

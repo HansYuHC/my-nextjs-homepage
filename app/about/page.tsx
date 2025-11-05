@@ -12,9 +12,9 @@ const initialItems = [
   { id: 'guangzhou', key: 'guangzhou', height: 'h-[260px]', image: '/images/guangzhou.jpg', href: '/cities/guangzhou' },
   { id: 'karlsruhe', key: 'karlsruhe', height: 'h-[220px]', image: '/images/karlsruhe.jpg', href: '/cities/karlsruhe' },
   { id: 'boeblingen', key: 'boeblingen', height: 'h-[320px]', image: '/images/boeblingen.jpg', href: '/cities/boeblingen' },
-  //{ id: 'qdez', key: 'qdez', height: 'h-[340px]', image: '/images/qdez.jpg', href: '/schools/qdez' },
-  //{ id: 'scut', key: 'scut', height: 'h-[240px]', image: '/images/scut.jpg', href: '/schools/scut' },
-  //{ id: 'kit', key: 'kit', height: 'h-[280px]', image: '/images/kit.jpg', href: '/schools/kit' },
+  // ✅ 新增两个模块
+  { id: 'othercities', key: 'otherCitiesTitle', height: 'h-[260px]', image: '/images/othercities.jpg', href: '/cities/othercities' },
+  { id: 'touristcities', key: 'touristCitiesTitle', height: 'h-[260px]', image: '/images/touristcities.jpg', href: '/cities/touristcities' },
 ]
 
 export default function AboutPage() {
