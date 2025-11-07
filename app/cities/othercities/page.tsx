@@ -25,10 +25,28 @@ const cities: City[] = [
     photos: ['/images/cities/duesseldorf1.jpg'],
   },
   {
+    id: 'koeln',
+    key: 'koeln',
+    image: '/images/cities/koeln_badge.jpg',
+    photos: ['/images/cities/koeln1.jpg'],
+  },
+  {
+    id: 'bonn',
+    key: 'bonn',
+    image: '/images/cities/bonn_badge.jpg',
+    photos: ['/images/cities/bonn1.jpg'],
+  },
+  {
     id: 'stuttgart',
     key: 'stuttgart',
     image: '/images/cities/stuttgart_badge.jpg',
     photos: ['/images/cities/stuttgart1.jpg', '/images/cities/stuttgart2.jpg'],
+  },
+  {
+    id: 'ludwigsburg',
+    key: 'ludwigsburg',
+    image: '/images/cities/ludwigsburg_badge.png',
+    photos: ['/images/cities/ludwigsburg1.jpg'],
   },
   {
     id: 'berlin',
@@ -59,6 +77,12 @@ const cities: City[] = [
     key: 'nuernberg',
     image: '/images/cities/nuernberg_badge.png',
     photos: ['/images/cities/nuernberg.jpg'],
+  },
+  {
+    id: 'erlangen',
+    key: 'erlangen',
+    image: '/images/cities/erlangeng_badge.jpg',
+    photos: ['/images/cities/erlangen.jpg'],
   },
   {
     id: 'muenchen',
@@ -103,21 +127,27 @@ const cities: City[] = [
     photos: ['/images/cities/baden-baden.jpg'],
   },
   {
+    id: 'heilbronn',
+    key: 'heilbronn',
+    image: '/images/cities/heilbronn_badge.jpg',
+    photos: ['/images/cities/heilbronn.jpg'],
+  },
+  {
     id: 'heidelberg',
     key: 'heidelberg',
-    image: '/images/cities/heidelberg_badge.png',
+    image: '/images/cities/heidelberg_badge.jpeg',
     photos: ['/images/cities/heidelberg.jpg'],
   },
   {
     id: 'mannheim',
     key: 'mannheim',
-    image: '/images/cities/mannheim_badge.png',
+    image: '/images/cities/mannheim_badge.jpg',
     photos: ['/images/cities/mannheim.jpg'],
   },
   {
     id: 'frankfurt',
     key: 'frankfurt',
-    image: '/images/cities/frankfurt_badge.png',
+    image: '/images/cities/frankfurt_badge.jpg',
     photos: ['/images/cities/frankfurt.jpg'],
   },
 ]
@@ -142,7 +172,7 @@ function OtherCitiesContent() {
       <p className="mb-12 text-center text-gray-700 z-40">{t('othercitiesDescription')}</p>
 
       {/* 城市徽章展示区 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-items-center">
         {cities.map((city, index) => (
           <motion.div
             key={city.id}

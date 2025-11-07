@@ -52,6 +52,9 @@ function ClientHeaderContent() {
             <Link href={`/cities/boeblingen?lang=${lang}`} className="px-2 py-1 hover:bg-gray-600 rounded">
               {t('boeblingen')}
             </Link>
+            <Link href={`/cities/othercities?lang=${lang}`} className="px-2 py-1 hover:bg-gray-600 rounded">
+              {t('othercities')}
+            </Link>
           </div>
         </div>
 

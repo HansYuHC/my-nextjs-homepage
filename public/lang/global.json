@@ -66,8 +66,9 @@
     "kit": "Karlsruhe Institute of Technology",
     "kitDescription": "Karlsruhe Institute of Technology is a top technical university in Germany, known for research and innovation.",
 
-    "otherCitiesTitle": "Other german cities I visited",
-    "othercities": "Other german cities I visited",
+    "otherCitiesTitle": "Other german cities",
+    "othercities": "Other german cities",
+    "othercitiesDescription": "Karlsruhe and Böblingen are the two German cities where I spent the most time. Besides these, I've also visited many other German cities for work, vacations, and to see friends, each with its own unique charm.",
 
     "project_cadIntro": "Since my undergraduate studies, I have used various CAD software, such as SolidWorks or Creo PTC, to learn and practice CAD software modeling knowledge and projects.",
 
@@ -221,8 +222,9 @@
     "kit": "Karlsruher Institut für Technologie",
     "kitDescription": "Das Karlsruher Institut für Technologie ist eine führende technische Universität in Deutschland, bekannt für Forschung und Innovation.",
 
-    "otherCitiesTitle": "Weitere deutsche Städte, die ich besucht habe",
-    "othercities": "Weitere deutsche Städte, die ich besucht habe",
+    "otherCitiesTitle": "Weitere deutsche Städte",
+    "othercities": "Weitere deutsche Städte",
+    "othercitiesDescription": "Karlsruhe und Böblingen sind die beiden deutschen Städte, in denen ich die meiste Zeit verbracht habe. Daneben habe ich beruflich, privat und zum Besuch von Freunden viele weitere deutsche Städte besucht, jede mit ihrem ganz eigenen Charme.",
 
     "project_cadIntro": "Seit meinem Grundstudium in der Uni habe ich verschiedene CAD-Softwareprogramme mit SolidWorks oder Creo PTC genutzt, um Kenntnisse in der CAD-Softwaremodellierung zu erwerben und in Projekten anzuwenden.",
 
@@ -380,9 +382,11 @@
     "kit": "卡尔斯鲁厄理工学院",
     "kitDescription": "卡尔斯鲁厄理工学院是德国顶尖的技术大学，以研究和创新闻名。",
 
-    "otherCitiesTitle": "我去过的其他德国城市",
-    "othercities": "我去过的其他德国城市",
-    "othercitiesDescription": "卡尔斯鲁厄和伯布林根是我在德国呆过的时间最长的两个城市。除此之外，我还拜访过很多其他的德国城市，它们各自都有自己吸引人的地方。",
+    "otherCitiesTitle": "其他德国城市",
+    "othercities": "其他德国城市",
+    "othercitiesDescription": "卡尔斯鲁厄和伯布林根是我在德国呆过的时间最长的两个城市。除此之外，我还因为工作，度假，拜访朋友等原因，到过很多其他的德国城市，它们各自都有自己吸引人的地方。",
+
+    "hamburg": "汉堡",
 
     "projectsOverview": "项目概览",
     "projectsOverviewText": "在我的学习，工作和业余生活中，我参与进行了若干项目。这里你可以看到各个不同领域的项目的介绍，我从中受益匪浅。",
