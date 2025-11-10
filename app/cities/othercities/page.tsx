@@ -100,7 +100,6 @@ const cities: City[] = [
     id: 'bamberg',
     key: 'bamberg',
     image: '/images/cities/bamberg_badge.jpg',
-    image: '/images/cities/bamberg_badge.jpg',
     photos: ['/images/cities/bamberg1.jpg','/images/cities/bamberg2.jpg'],
   },
   {
