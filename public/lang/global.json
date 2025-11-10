@@ -70,6 +70,14 @@
     "othercities": "Other german cities",
     "othercitiesDescription": "Karlsruhe and Böblingen are the two German cities where I spent the most time. Besides these, I've also visited many other German cities for work, vacations, and to see friends, each with its own unique charm.",
 
+    "hamburg": "Hamburg",
+
+    "touristCitiesTitle": "Other european countries",
+    "touristcities": "Other european countries",
+    "touristcitiesDescription": "Besides Germany, I also traveled to several other neighboring European countries, experiencing different customs and cultures. Below, I will introduce different cities in these countries, some famous for their natural scenery, some for their cultural landscapes, and some for both.",
+
+    "france": "France",
+
     "project_cadIntro": "Since my undergraduate studies, I have used various CAD software, such as SolidWorks or Creo PTC, to learn and practice CAD software modeling knowledge and projects.",
 
     "projectsOverview": "Project Overview",
@@ -225,6 +233,15 @@
     "otherCitiesTitle": "Weitere deutsche Städte",
     "othercities": "Weitere deutsche Städte",
     "othercitiesDescription": "Karlsruhe und Böblingen sind die beiden deutschen Städte, in denen ich die meiste Zeit verbracht habe. Daneben habe ich beruflich, privat und zum Besuch von Freunden viele weitere deutsche Städte besucht, jede mit ihrem ganz eigenen Charme.",
+
+    "hamburg": "Hamburg",
+
+    "touristCitiesTitle": "Andere europäische Länder",
+    "touristcities": "Andere europäische Länder",
+    "touristcitiesDescription": "Neben Deutschland bereiste ich auch einige andere europäische Nachbarländer und lernte dabei verschiedene Sitten und Gebräuche kennen. Im Folgenden stelle ich verschiedene Städte dieser Länder vor, von denen einige für ihre Naturlandschaften, andere für ihre Kulturlandschaften und wieder andere für beides bekannt sind.",
+
+    "france": "Frankreich",
+
 
     "project_cadIntro": "Seit meinem Grundstudium in der Uni habe ich verschiedene CAD-Softwareprogramme mit SolidWorks oder Creo PTC genutzt, um Kenntnisse in der CAD-Softwaremodellierung zu erwerben und in Projekten anzuwenden.",
 
@@ -387,6 +404,14 @@
     "othercitiesDescription": "卡尔斯鲁厄和伯布林根是我在德国呆过的时间最长的两个城市。除此之外，我还因为工作，度假，拜访朋友等原因，到过很多其他的德国城市，它们各自都有自己吸引人的地方。",
 
     "hamburg": "汉堡",
+    "hamburgDesc": "汉堡是德国北部著名的港口城市，拥有近189万人口，是仅次于柏林的德国第二大城市。我去汉堡参观了当地著名的港口，鱼市，微缩景观世界，还品尝了龙虾海鲜大餐。",
+
+    "touristCitiesTitle": "其他欧洲国家",
+    "touristcities": "其他欧洲国家",
+    "touristcitiesDescription": "除了德国之外，我还游历了周边若干其他的欧洲国家，体验了不一样的风土人情。下面我会介绍去过的这些国家里的不同城市，有些以自然风光而闻名，有些以人文景观著称，有些甚至兼而有之。",
+
+    "france": "法国",
+
 
     "projectsOverview": "项目概览",
     "projectsOverviewText": "在我的学习，工作和业余生活中，我参与进行了若干项目。这里你可以看到各个不同领域的项目的介绍，我从中受益匪浅。",

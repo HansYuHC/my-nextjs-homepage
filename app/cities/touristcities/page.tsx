@@ -20,6 +20,7 @@ type Country = {
   cities: CityInfo[]
 }
 
+// ✅ 所有城市照片路径改为 /images/countriesCity/
 const countries: Country[] = [
   {
     id: 'spain',
@@ -31,19 +32,20 @@ const countries: Country[] = [
         name: 'Barcelona',
         descriptionKey: 'barcelonaExp',
         photos: [
-          { src: '/images/cities/barcelona1.jpg' },
-          { src: '/images/cities/barcelona2.jpg' },
+          { src: '/images/countriesCity/barcelona1.jpg' },
+          { src: '/images/countriesCity/barcelona2.jpg' },
+          { src: '/images/countriesCity/barcelona3.jpg' },
         ],
       },
       {
         name: 'Tennerife',
         descriptionKey: 'tennerifeExp',
-        photos: [{ src: '/images/cities/tennerife.jpg' }],
+        photos: [{ src: '/images/countriesCity/tennerife.jpg' }],
       },
       {
         name: 'Palma',
         descriptionKey: 'palmaExp',
-        photos: [{ src: '/images/cities/palma.jpg' }],
+        photos: [{ src: '/images/countriesCity/palma.jpg' }],
       },
     ],
   },
@@ -56,22 +58,24 @@ const countries: Country[] = [
       {
         name: 'Paris',
         descriptionKey: 'parisExp',
-        photos: [{ src: '/images/cities/paris_eiffel.jpg' }],
+        photos: [{ src: '/images/countriesCity/paris1.jpg' },
+            { src: '/images/countriesCity/paris2.jpg' },
+            { src: '/images/countriesCity/paris3.jpg' }],
       },
       {
         name: 'Strasbourg',
         descriptionKey: 'strasbourgExp',
-        photos: [{ src: '/images/cities/strasbourg.jpg' }],
+        photos: [{ src: '/images/countriesCity/strasbourg.jpg' }],
       },
       {
         name: 'Nice',
         descriptionKey: 'niceExp',
-        photos: [{ src: '/images/cities/nice.jpg' }],
+        photos: [{ src: '/images/countriesCity/nice.jpg' }],
       },
       {
         name: 'Cannes',
         descriptionKey: 'cannesExp',
-        photos: [{ src: '/images/cities/cannes.jpg' }],
+        photos: [{ src: '/images/countriesCity/cannes.jpg' }],
       },
     ],
   },
@@ -81,10 +85,10 @@ const countries: Country[] = [
     hero: '/images/countries/monaco_hero.jpg',
     flag: '/images/flags/monaco.png',
     cities: [
-        {
-        name: 'monacoCity',
+      {
+        name: 'Monaco City',
         descriptionKey: 'monacoCityExp',
-        photos: [{ src: '/images/cities/monacoCity.jpg' }],
+        photos: [{ src: '/images/countriesCity/monacoCity.jpg' }],
       },
     ],
   },
@@ -94,15 +98,15 @@ const countries: Country[] = [
     hero: '/images/countries/italy_hero.png',
     flag: '/images/flags/italy.png',
     cities: [
-        {
+      {
         name: 'Como',
         descriptionKey: 'comoExp',
-        photos: [{ src: '/images/cities/como.jpg' }],
+        photos: [{ src: '/images/countriesCity/como.jpg' }],
       },
       {
         name: 'Milan',
         descriptionKey: 'milanExp',
-        photos: [{ src: '/images/cities/milan.jpg' }],
+        photos: [{ src: '/images/countriesCity/milan.jpg' }],
       },
     ],
   },
@@ -112,10 +116,10 @@ const countries: Country[] = [
     hero: '/images/countries/luxembourg_hero.jpg',
     flag: '/images/flags/luxembourg.png',
     cities: [
-        {
-        name: 'luxembourgCity',
+      {
+        name: 'Luxembourg City',
         descriptionKey: 'luxembourgExp',
-        photos: [{ src: '/images/cities/luxembourgCity.jpg' }],
+        photos: [{ src: '/images/countriesCity/luxembourgCity.jpg' }],
       },
     ],
   },
@@ -125,23 +129,27 @@ const countries: Country[] = [
     hero: '/images/countries/czech_hero.png',
     flag: '/images/flags/czech.png',
     cities: [
-        {
+      {
         name: 'Praha',
         descriptionKey: 'prahaExp',
-        photos: [{ src: '/images/cities/praha.jpg' }],
+        photos: [
+          { src: '/images/countriesCity/praha1.jpg' },
+          { src: '/images/countriesCity/praha2.jpg' },
+          { src: '/images/countriesCity/praha3.jpg' },
+        ],
       },
     ],
   },
   {
-    id: 'Hungary',
-    key: 'Hungary',
+    id: 'hungary',
+    key: 'hungary',
     hero: '/images/countries/hungary_hero.jpg',
     flag: '/images/flags/hungary.png',
     cities: [
-        {
+      {
         name: 'Budapest',
         descriptionKey: 'budapestExp',
-        photos: [{ src: '/images/cities/budapest.jpg' }],
+        photos: [{ src: '/images/countriesCity/budapest.jpg' }],
       },
     ],
   },
@@ -151,23 +159,23 @@ const countries: Country[] = [
     hero: '/images/countries/slowakei_hero.jpg',
     flag: '/images/flags/slowakei.png',
     cities: [
-        {
+      {
         name: 'Bratislava',
         descriptionKey: 'bratislavaExp',
-        photos: [{ src: '/images/cities/bratislava.jpg' }],
+        photos: [{ src: '/images/countriesCity/bratislava.jpg' }],
       },
     ],
   },
   {
-    id: 'Liechtenstein',
-    key: 'Liechtenstein',
+    id: 'liechtenstein',
+    key: 'liechtenstein',
     hero: '/images/countries/liechtenstein_hero.png',
     flag: '/images/flags/liechtenstein.png',
     cities: [
-        {
+      {
         name: 'Vaduz',
         descriptionKey: 'vaduztExp',
-        photos: [{ src: '/images/cities/vaduz.jpg' }],
+        photos: [{ src: '/images/countriesCity/vaduz.jpg' }],
       },
     ],
   },
@@ -177,20 +185,20 @@ const countries: Country[] = [
     hero: '/images/countries/switzerland_hero.jpg',
     flag: '/images/flags/switzerland.png',
     cities: [
-        {
+      {
         name: 'Zuerich',
         descriptionKey: 'zuerichExp',
-        photos: [{ src: '/images/cities/zuerich.jpg' }],
+        photos: [{ src: '/images/countriesCity/zuerich.jpg' }],
       },
       {
         name: 'Luzern',
         descriptionKey: 'luzernExp',
-        photos: [{ src: '/images/cities/luzern.jpg' }],
+        photos: [{ src: '/images/countriesCity/luzern.jpg' }],
       },
-     {
+      {
         name: 'Geneva',
         descriptionKey: 'genevaExp',
-        photos: [{ src: '/images/cities/geneva.jpg' }],
+        photos: [{ src: '/images/countriesCity/geneva.jpg' }],
       },
     ],
   },
@@ -200,20 +208,20 @@ const countries: Country[] = [
     hero: '/images/countries/austria_hero.jpg',
     flag: '/images/flags/austria.png',
     cities: [
-        {
+      {
         name: 'Wien',
         descriptionKey: 'wienExp',
-        photos: [{ src: '/images/cities/wien.jpg' }],
+        photos: [{ src: '/images/countriesCity/wien.jpg' }],
       },
       {
         name: 'Salzburg',
         descriptionKey: 'salzburgExp',
-        photos: [{ src: '/images/cities/salzburg.jpg' }],
+        photos: [{ src: '/images/countriesCity/salzburg.jpg' }],
       },
-     {
+      {
         name: 'Hallstatt',
         descriptionKey: 'hallstattExp',
-        photos: [{ src: '/images/cities/hallstatt.jpg' }],
+        photos: [{ src: '/images/countriesCity/hallstatt.jpg' }],
       },
     ],
   },
@@ -223,10 +231,10 @@ const countries: Country[] = [
     hero: '/images/countries/turkey_hero.jpg',
     flag: '/images/flags/turkey.png',
     cities: [
-        {
+      {
         name: 'Antalya',
         descriptionKey: 'antalyaExp',
-        photos: [{ src: '/images/cities/antalya.jpg' }],
+        photos: [{ src: '/images/countriesCity/antalya.jpg' }],
       },
     ],
   },
@@ -249,37 +257,31 @@ function TouristCitiesContent() {
       <h1 className="text-3xl font-bold mb-4 text-center">{t('touristcities')}</h1>
       <p className="text-gray-700 text-center mb-8">{t('touristcitiesDescription')}</p>
 
-      {/* 响应式网格 */}
+      {/* 网格布局 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
         {countries.map((country, idx) => (
           <motion.button
             key={country.id}
             onClick={() => setSelectedCountry(country)}
-            className="relative w-full h-56 md:h-64 xl:h-72 rounded-xl overflow-hidden shadow-md cursor-pointer group p-0 border-0"
+            className="relative w-full h-56 md:h-64 xl:h-72 rounded-xl overflow-hidden shadow-md cursor-pointer group border-0"
             initial={{ opacity: 0, y: 18 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: idx * 0.06, duration: 0.45 }}
+            transition={{ delay: idx * 0.05, duration: 0.45 }}
             whileHover={{ scale: 1.03 }}
             aria-label={t(country.key)}
           >
-            {/* 背景图 */}
             <img
               src={country.hero}
               alt={t(country.key)}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               draggable={false}
             />
-
-            {/* 小国旗 */}
             <img
               src={country.flag}
               alt={`${t(country.key)} flag`}
               className="absolute bottom-3 right-3 w-10 h-7 rounded-sm shadow-md bg-white/20"
               draggable={false}
             />
-
-            {/* 半透明遮罩 + 国家名 */}
-            {/* 国家名显示区 */}
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 flex items-end transition-colors duration-500">
               <div className="p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                 <div className="text-white font-semibold drop-shadow-md">{t(country.key)}</div>
@@ -307,7 +309,6 @@ function TouristCitiesContent() {
               transition={{ duration: 0.25 }}
               onClick={(e) => e.stopPropagation()}
             >
-              {/* 关闭按钮（修复：父容器加 relative） */}
               <button
                 className="absolute top-3 right-4 text-gray-500 hover:text-black text-2xl font-bold"
                 onClick={() => setSelectedCountry(null)}
@@ -321,20 +322,19 @@ function TouristCitiesContent() {
                 <p className="text-gray-600 mt-1">{t(`${selectedCountry.key}Overview`)}</p>
               </header>
 
-              {/* 城市展示区 */}
               <div className="space-y-8">
                 {selectedCountry.cities.map((city, i) => (
                   <section key={i}>
                     <h3 className="text-xl font-semibold text-slate-800 mb-2">{city.name}</h3>
                     <p className="text-gray-700 mb-3">{t(city.descriptionKey)}</p>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center">
                       {city.photos.map((p, pi) => (
-                        <div key={pi} className="rounded-lg overflow-hidden shadow-sm">
+                        <div key={pi} className="rounded-xl overflow-hidden shadow-md">
                           <img
                             src={p.src}
                             alt={`${city.name} ${pi + 1}`}
-                            className="w-full h-48 object-cover"
+                            className="w-full h-64 object-contain bg-gray-100 rounded-xl transition-transform duration-500 hover:scale-105"
                             draggable={false}
                           />
                         </div>

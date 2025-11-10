@@ -20,10 +20,13 @@ function ProjectsContent() {
   return (
     <div className="container mx-auto px-6 py-12">
       {/* 标题和简介 */}
-      <h1 className="text-3xl font-bold mb-4 text-center">{t('projects')}</h1>
-      <p className="text-center text-gray-700 max-w-3xl mx-auto mb-10">
-        {t('projectsOverviewText')}
-      </p>
+       <div className="w-full text-center mt-8 mb-16 px-6">
+          <h1 className="text-3xl font-bold mb-4">{t('projects')}</h1>
+          <p className="text-gray-700 max-w-2xl mx-auto leading-relaxed">
+            {t('projectsOverviewText')}
+          </p>
+       </div>
+
 
       {/* 五个项目类别 */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">

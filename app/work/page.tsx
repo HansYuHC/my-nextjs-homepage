@@ -97,9 +97,11 @@ function WorkTimeline() {
   return (
     <div className="w-full flex flex-col items-center p-10">
       {/* 标题 */}
-      <div className="mb-20 text-center">
-        <h1 className="text-3xl font-bold mb-4">{t("work")}</h1>
-        <p className="text-gray-600 max-w-2xl">{t("workDescription")}</p>
+      <div className="w-full text-center mt-8 mb-16 px-6">
+          <h1 className="text-3xl font-bold mb-4">{t("work")}</h1>
+          <p className="text-gray-700 max-w-2xl mx-auto leading-relaxed">
+            {t("workDescription")}
+          </p>
       </div>
 
       {/* 时间轴主容器 */}

@@ -46,7 +46,7 @@ const cities: City[] = [
     id: 'ludwigsburg',
     key: 'ludwigsburg',
     image: '/images/cities/ludwigsburg_badge.png',
-    photos: ['/images/cities/ludwigsburg1.jpg'],
+    photos: ['/images/cities/ludwigsburg1.jpg','/images/cities/ludwigsburg2.jpg'],
   },
   {
     id: 'berlin',
@@ -70,13 +70,13 @@ const cities: City[] = [
     id: 'dresden',
     key: 'dresden',
     image: '/images/cities/dresden_badge.png',
-    photos: ['/images/cities/dresden.jpg'],
+    photos: ['/images/cities/dresden_zwinger.jpg',"'/images/cities/dresden2.jpg'"],
   },
   {
     id: 'nuernberg',
     key: 'nuernberg',
     image: '/images/cities/nuernberg_badge.png',
-    photos: ['/images/cities/nuernberg.jpg'],
+    photos: ['/images/cities/nuernberg1.jpg','/images/cities/nuernberg2.jpg'],
   },
   {
     id: 'erlangen',
@@ -100,13 +100,14 @@ const cities: City[] = [
     id: 'bamberg',
     key: 'bamberg',
     image: '/images/cities/bamberg_badge.jpg',
-    photos: ['/images/cities/bamberg.jpg'],
+    image: '/images/cities/bamberg_badge.jpg',
+    photos: ['/images/cities/bamberg1.jpg','/images/cities/bamberg2.jpg'],
   },
   {
-    id: 'rottenberg',
-    key: 'rottenberg',
-    image: '/images/cities/rottenberg_badge.png',
-    photos: ['/images/cities/rottenberg.jpg'],
+    id: 'rothenburg',
+    key: 'rothenburg',
+    image: '/images/cities/rothenburg_badge.jpg',
+    photos: ['/images/cities/rothenburg1.jpg','/images/cities/rothenburg2.jpg'],
   },
   {
     id: 'konstanz',
@@ -148,7 +149,7 @@ const cities: City[] = [
     id: 'frankfurt',
     key: 'frankfurt',
     image: '/images/cities/frankfurt_badge.jpg',
-    photos: ['/images/cities/frankfurt.jpg'],
+    photos: ['/images/cities/frankfurt1.jpg','/images/cities/frankfurt2.jpg'],
   },
 ]
 
@@ -229,7 +230,7 @@ function OtherCitiesContent() {
                     key={i}
                     src={img}
                     alt=""
-                    className="rounded-lg object-cover w-full h-48"
+                    className="rounded-lg object-contain w-full h-48"
                   />
                 ))}
               </div>
