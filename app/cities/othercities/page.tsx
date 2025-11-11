@@ -22,7 +22,8 @@ const cities: City[] = [
     id: 'duesseldorf',
     key: 'duesseldorf',
     image: '/images/cities/duesseldorf_badge.png',
-    photos: ['/images/cities/duesseldorf1.jpg'],
+    photos: ['/images/cities/duesseldorf1.jpg',
+        '/images/cities/duesseldorf2.jpg'],
   },
   {
     id: 'koeln',
@@ -52,7 +53,11 @@ const cities: City[] = [
     id: 'berlin',
     key: 'berlin',
     image: '/images/cities/berlin_badge.png',
-    photos: ['/images/cities/berlin1.jpg'],
+    photos: ['/images/cities/berlin1.jpg',
+        '/images/cities/berlin2.jpg',
+        '/images/cities/berlin3.jpg',
+        '/images/cities/berlin4.jpg',
+        '/images/cities/berlin5.jpg'],
   },
   {
     id: 'hannover',
@@ -76,7 +81,7 @@ const cities: City[] = [
     id: 'nuernberg',
     key: 'nuernberg',
     image: '/images/cities/nuernberg_badge.png',
-    photos: ['/images/cities/nuernberg1.jpg','/images/cities/nuernberg2.jpg'],
+    photos: ['/images/cities/nuernberg1.jpg','/images/cities/nuernberg2.jpg','/images/cities/nuernberg3.jpg'],
   },
   {
     id: 'erlangen',
@@ -88,7 +93,9 @@ const cities: City[] = [
     id: 'muenchen',
     key: 'muenchen',
     image: '/images/cities/muenchen_badge.jpg',
-    photos: ['/images/cities/muenchen.jpg'],
+    photos: ['/images/cities/muenchen1.jpg',
+        '/images/cities/muenchen2.jpg',
+        '/images/cities/muenchen3.jpg'],
   },
   {
     id: 'herzogenaurach',
@@ -136,7 +143,8 @@ const cities: City[] = [
     id: 'heidelberg',
     key: 'heidelberg',
     image: '/images/cities/heidelberg_badge.jpeg',
-    photos: ['/images/cities/heidelberg.jpg'],
+    photos: ['/images/cities/heidelberg1.jpg',
+        '/images/cities/heidelberg2.jpg'],
   },
   {
     id: 'mannheim',
@@ -150,6 +158,18 @@ const cities: City[] = [
     image: '/images/cities/frankfurt_badge.jpg',
     photos: ['/images/cities/frankfurt1.jpg','/images/cities/frankfurt2.jpg'],
   },
+  {
+    id: 'lindau',
+    key: 'lindau',
+    image: '/images/cities/lindau_badge.jpeg',
+    photos: ['/images/cities/lindau_1.jpg','/images/cities/lindau_2.jpg'],
+  },
+  {
+    id: 'hohenzollern',
+    key: 'hohenzollern',
+    image: '/images/cities/hohenzollern_badge.jpg',
+    photos: ['/images/cities/hohenzollern1.jpg','/images/cities/hohenzollern2.jpg'],
+  }
 ]
 
 export default function OtherCitiesPage() {

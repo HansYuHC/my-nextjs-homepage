@@ -68,6 +68,12 @@ const countries: Country[] = [
         photos: [{ src: '/images/countriesCity/strasbourg.jpg' }],
       },
       {
+        name: 'Colmar',
+        descriptionKey: 'colmarExp',
+        photos: [{ src: '/images/countriesCity/colmar1.jpg' },
+            { src: '/images/countriesCity/colmar2.jpg' }],
+      },
+      {
         name: 'Nice',
         descriptionKey: 'niceExp',
         photos: [{ src: '/images/countriesCity/nice.jpg' }],
@@ -106,7 +112,8 @@ const countries: Country[] = [
       {
         name: 'Milan',
         descriptionKey: 'milanExp',
-        photos: [{ src: '/images/countriesCity/milan.jpg' }],
+        photos: [{ src: '/images/countriesCity/milan1.jpg' },
+            { src: '/images/countriesCity/milan2.jpg' }],
       },
     ],
   },
@@ -149,7 +156,9 @@ const countries: Country[] = [
       {
         name: 'Budapest',
         descriptionKey: 'budapestExp',
-        photos: [{ src: '/images/countriesCity/budapest.jpg' }],
+        photos: [{ src: '/images/countriesCity/budapest1.jpg' },
+            { src: '/images/countriesCity/budapest2.jpg' },
+            { src: '/images/countriesCity/budapest3.jpg' }],
       },
     ],
   },
@@ -174,8 +183,8 @@ const countries: Country[] = [
     cities: [
       {
         name: 'Vaduz',
-        descriptionKey: 'vaduztExp',
-        photos: [{ src: '/images/countriesCity/vaduz.jpg' }],
+        descriptionKey: 'vaduzExp',
+        photos: [{ src: '/images/countriesCity/vaduz1.jpg' }],
       },
     ],
   },
@@ -188,12 +197,14 @@ const countries: Country[] = [
       {
         name: 'Zuerich',
         descriptionKey: 'zuerichExp',
-        photos: [{ src: '/images/countriesCity/zuerich.jpg' }],
+        photos: [{ src: '/images/countriesCity/zuerich1.jpg' },
+            { src: '/images/countriesCity/zuerich2.jpg' }],
       },
       {
         name: 'Luzern',
         descriptionKey: 'luzernExp',
-        photos: [{ src: '/images/countriesCity/luzern.jpg' }],
+        photos: [{ src: '/images/countriesCity/luzern_1.jpg' },
+            { src: '/images/countriesCity/luzern_2.jpg' }],
       },
       {
         name: 'Geneva',
@@ -211,7 +222,7 @@ const countries: Country[] = [
       {
         name: 'Wien',
         descriptionKey: 'wienExp',
-        photos: [{ src: '/images/countriesCity/wien.jpg' }],
+        photos: [{ src: '/images/countriesCity/wien1.jpg' }],
       },
       {
         name: 'Salzburg',
@@ -221,7 +232,9 @@ const countries: Country[] = [
       {
         name: 'Hallstatt',
         descriptionKey: 'hallstattExp',
-        photos: [{ src: '/images/countriesCity/hallstatt.jpg' }],
+        photos: [{ src: '/images/countriesCity/hallstatt1.jpg' },
+            { src: '/images/countriesCity/hallstatt2.jpg' },
+            { src: '/images/countriesCity/hallstatt3.jpg' }],
       },
     ],
   },
@@ -234,7 +247,12 @@ const countries: Country[] = [
       {
         name: 'Antalya',
         descriptionKey: 'antalyaExp',
-        photos: [{ src: '/images/countriesCity/antalya.jpg' }],
+        photos: [{ src: '/images/countriesCity/antalya1.jpg' },
+            { src: '/images/countriesCity/antalya2.jpg' },
+            { src: '/images/countriesCity/antalya3.jpg' },
+            { src: '/images/countriesCity/antalya4.jpg' },
+            { src: '/images/countriesCity/antalya5.jpg' },
+            { src: '/images/countriesCity/antalya6.jpg' }],
       },
     ],
   },
