@@ -43,7 +43,7 @@ function ContactContent() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
-          className="p-6 rounded-2xl shadow-lg border"
+          className="p-6 rounded-2xl shadow-lg border bg-white"
         >
           <ContactForm />
         </motion.div>
@@ -53,8 +53,14 @@ function ContactContent() {
   )
 }
 
-// 联系方式小组件
-function ContactItem({ title, text, icon }) {
+/* ----------- 修复 TypeScript：给组件加 Props 类型 ----------- */
+type ContactItemProps = {
+  title: string
+  text: string
+  icon: React.ReactNode
+}
+
+function ContactItem({ title, text, icon }: ContactItemProps) {
   return (
     <motion.div
       whileHover={{ scale: 1.03 }}
@@ -69,11 +75,12 @@ function ContactItem({ title, text, icon }) {
   )
 }
 
+
 function ContactForm() {
-  async function handleSubmit(e) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
 
-    const formData = new FormData(e.target)
+    const formData = new FormData(e.currentTarget)
 
     await fetch('/api/send-email', {
       method: 'POST',
