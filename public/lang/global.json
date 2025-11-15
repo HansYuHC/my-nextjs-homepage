@@ -71,6 +71,18 @@
     "othercitiesDescription": "Karlsruhe and Böblingen are the two German cities where I spent the most time. Besides these, I've also visited many other German cities for work, vacations, and to see friends, each with its own unique charm.",
 
     "hamburg": "Hamburg",
+    "hamburgDesc": "Hamburg is a well-known port city in northern Germany with almost 1.89 million inhabitants, making it the second largest city in Germany after Berlin. During our visit, we toured Hamburg's famous harbor, the fish market, and Miniatur Wunderland, and enjoyed a feast of lobster.",
+    "duesseldorf": "Düsseldorf",
+    "duesseldorfDesc": "The Düsseldorf Metallurgical Exhibition is the largest metallurgical exhibition in Europe. In 2019, I was fortunate enough to participate, which not only allowed me to experience the charm of this international metropolis, but also to enjoy a feast at a Michelin-recommended high-end restaurant in the city center.",
+    "koeln": "Köln",
+    "koelnDesc": "Cologne is the fourth largest city in Germany and the largest city in North Rhine-Westphalia. With over 2,000 years of history, it is one of Germany's oldest cities. We have visited Cologne Cathedral many times and enjoyed the beautiful scenery along the banks of the Rhine River.",
+    "bonn": "Bonn",
+    "bonnDesc": "Bonn has a population of approximately 320,000, making it the 19th largest city in Germany (as of 2023). Formerly the capital of the Electorate of Cologne and West Germany, it remains an important political center in Germany. The Federal Museum of German History, located in Bonn, was founded in 1994 and focuses on showcasing the political, social, and daily life history of the Federal Republic of Germany from 1945 to the present.",
+
+
+
+
+
 
     "touristCitiesTitle": "Other european countries",
     "touristcities": "Other european countries",
@@ -235,6 +247,18 @@
     "othercitiesDescription": "Karlsruhe und Böblingen sind die beiden deutschen Städte, in denen ich die meiste Zeit verbracht habe. Daneben habe ich beruflich, privat und zum Besuch von Freunden viele weitere deutsche Städte besucht, jede mit ihrem ganz eigenen Charme.",
 
     "hamburg": "Hamburg",
+    "hamburgDesc": "Hamburg ist eine bekannte Hafenstadt in Norddeutschland mit fast 1,89 Millionen Einwohnern und damit nach Berlin die zweitgrößte Stadt Deutschlands. Während unseres Besuchs besichtigten wir Hamburgs berühmten Hafen, den Fischmarkt und die Miniaturwelt und genossen ein Festmahl mit Hummer.",
+    "duesseldorf": "Düsseldorf",
+    "duesseldorfDesc": "Die Düsseldorfer Metallurgieausstellung ist die größte Metallurgieausstellung Europas. 2019 hatte ich das Glück, daran teilzunehmen, wodurch ich nicht nur den Charme dieser internationalen Metropole erleben, sondern auch in einem mit einem Michelin-Stern ausgezeichneten Spitzenrestaurant im Stadtzentrum ein Festmahl genießen konnte.",
+    "koeln": "Köln",
+    "koelnDesc": "Köln ist die viertgrößte Stadt Deutschlands und die größte Stadt Nordrhein-Westfalens. Mit über 2000 Jahren Geschichte zählt sie zu den ältesten Städten Deutschlands. Wir haben den Kölner Dom schon oft besucht und die wunderschöne Landschaft am Rheinufer genossen.",
+    "bonn": "Bonn",
+    "bonnDesc": "Bonn hat rund 320.000 Einwohner und ist damit (Stand 2023) die 19. größte Stadt Deutschlands. Als ehemalige Hauptstadt des Kurfürstentums Köln und der Bundesrepublik Deutschland ist sie nach wie vor ein wichtiges politisches Zentrum. Das Bundesmuseum für Deutsche Geschichte in Bonn wurde 1994 gegründet und widmet sich der Darstellung der politischen, sozialen und alltäglichen Geschichte der Bundesrepublik Deutschland von 1945 bis heute.",
+
+
+
+
+
 
     "touristCitiesTitle": "Andere europäische Länder",
     "touristcities": "Andere europäische Länder",
@@ -404,7 +428,16 @@
     "othercitiesDescription": "卡尔斯鲁厄和伯布林根是我在德国呆过的时间最长的两个城市。除此之外，我还因为工作，度假，拜访朋友等原因，到过很多其他的德国城市，它们各自都有自己吸引人的地方。",
 
     "hamburg": "汉堡",
-    "hamburgDesc": "汉堡是德国北部著名的港口城市，拥有近189万人口，是仅次于柏林的德国第二大城市。我去汉堡参观了当地著名的港口，鱼市，微缩景观世界，还品尝了龙虾海鲜大餐。",
+    "hamburgDesc": "汉堡是德国北部著名的港口城市，拥有近189万人口，是仅次于柏林的德国第二大城市。我们去汉堡参观了当地著名的港口，鱼市，微缩景观世界，还品尝了龙虾海鲜大餐。",
+    "duesseldorf": "杜塞尔多夫",
+    "duesseldorfDesc": "杜塞尔多夫冶金展是欧洲最大的冶金展览。2019年我有幸参展的同时，也领略这座国际化大都市的风采，并在市中心享用了米其林推荐高端餐厅的盛宴。",
+    "koeln": "科隆",
+    "koelnDesc": "科隆是德国第四大城市，北莱茵-威斯特法伦州最大的城市，它已有2000多年的历史，是德国最古老的城市之一。我们曾多次参观科隆大教堂，并在莱茵河两岸欣赏美丽风光。",
+    "bonn": "波恩",
+    "bonnDesc": "波恩人口约32万，为德国第19大都市（截至2023年）。曾经为科隆选侯国与西德的首都，至今仍是德国重要的政治中心。联邦德国历史博物馆位于波恩，成立于1994年，专注于展示1945年至今德国联邦共和国的政治、社会与日常生活历史。",
+
+
+
 
     "touristCitiesTitle": "其他欧洲国家",
     "touristcities": "其他欧洲国家",

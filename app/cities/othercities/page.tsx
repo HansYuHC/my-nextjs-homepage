@@ -29,13 +29,25 @@ const cities: City[] = [
     id: 'koeln',
     key: 'koeln',
     image: '/images/cities/koeln_badge.jpg',
-    photos: ['/images/cities/koeln1.jpg'],
+    photos: ['/images/cities/koeln1.jpg','/images/cities/koeln2.jpg'],
   },
   {
     id: 'bonn',
     key: 'bonn',
     image: '/images/cities/bonn_badge.jpg',
-    photos: ['/images/cities/bonn1.jpg'],
+    photos: ['/images/cities/bonn1.jpg','/images/cities/bonn2.jpg'],
+  },
+  {
+    id: 'trier',
+    key: 'trier',
+    image: '/images/cities/trier_badge.png',
+    photos: ['/images/cities/trier1.jpg','/images/cities/trier2.jpg'],
+  },
+  {
+    id: 'koenigswinter',
+    key: 'koenigswinter',
+    image: '/images/cities/koenigswinter_badge.jpg',
+    photos: ['/images/cities/koenigswinter1.jpg','/images/cities/koenigswinter2.jpg'],
   },
   {
     id: 'stuttgart',
@@ -170,6 +182,7 @@ const cities: City[] = [
     image: '/images/cities/hohenzollern_badge.jpg',
     photos: ['/images/cities/hohenzollern1.jpg','/images/cities/hohenzollern2.jpg'],
   }
+
 ]
 
 export default function OtherCitiesPage() {
