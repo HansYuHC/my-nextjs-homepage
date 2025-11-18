@@ -41,7 +41,7 @@ const cities: City[] = [
     id: 'trier',
     key: 'trier',
     image: '/images/cities/trier_badge.png',
-    photos: ['/images/cities/trier1.jpg','/images/cities/trier2.jpg'],
+    photos: ['/images/cities/trier1.jpg','/images/cities/trier2.jpg','/images/cities/trier3.jpg'],
   },
   {
     id: 'koenigswinter',
@@ -53,7 +53,7 @@ const cities: City[] = [
     id: 'stuttgart',
     key: 'stuttgart',
     image: '/images/cities/stuttgart_badge.jpg',
-    photos: ['/images/cities/stuttgart1.jpg', '/images/cities/stuttgart2.jpg'],
+    photos: ['/images/cities/stuttgart1.jpg', '/images/cities/stuttgart2.jpg','/images/cities/stuttgart3.jpg','/images/cities/stuttgart4.jpg'],
   },
   {
     id: 'ludwigsburg',

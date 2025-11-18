@@ -78,6 +78,15 @@
     "koelnDesc": "Cologne is the fourth largest city in Germany and the largest city in North Rhine-Westphalia. With over 2,000 years of history, it is one of Germany's oldest cities. We have visited Cologne Cathedral many times and enjoyed the beautiful scenery along the banks of the Rhine River.",
     "bonn": "Bonn",
     "bonnDesc": "Bonn has a population of approximately 320,000, making it the 19th largest city in Germany (as of 2023). Formerly the capital of the Electorate of Cologne and West Germany, it remains an important political center in Germany. The Federal Museum of German History, located in Bonn, was founded in 1994 and focuses on showcasing the political, social, and daily life history of the Federal Republic of Germany from 1945 to the present.",
+    "trier": "Trier",
+    "trierDesc": "Trier, Germany's oldest city, lies on the Moselle River. Founded in 16 BC, it was an important fortress of the Roman Empire and still boasts relics such as the Black Gate and the Caesar Baths. Karl Marx was born here in 1818, and his former home is now a museum. A famous bronze statue of Marx stands in the city center, symbolizing the influence of his philosophy and revolutionary ideas.",
+    "koenigswinter": "Königswinter",
+    "koenigswinterDesc": "Königswinter is a city in the Cologne district. Nearby, on the Dragon Rock, stands a private villa-style castle called Drachenburg (German: Schloss Drachenburg).",
+    "stuttgart": "Stuttgart",
+    "stuttgartDesc": "Stuttgart is located in the Neckar Valley in the southwestern state of Baden-Württemberg, near the Black Forest. It is not only the capital of Baden-Württemberg, but also the capital of the Stuttgart district and the state's largest city. It is also the state's political center. Due to its economic, cultural, and administrative importance, it is one of Germany's most well-known cities. We visited Stuttgart's central square, Wilhelma Zoo, the famous city library, and many other attractions on several occasions.",
+    "ludwigsburg": "Ludwigsburg",
+    "ludwigsburgDesc": "Ludwigsburg is located about 12 kilometers north of the center of Stuttgart and has a population of about 100,000. Ludwigsburg Palace is one of the largest Baroque palace buildings in Germany. Every year, it hosts a grand pumpkin festival where people decorate pumpkins and the Baroque gardens are transformed into a world full of pumpkin art. Visitors can encounter characters and scenes made of thousands of pumpkins in a beautiful autumn atmosphere.",
+
 
 
 
@@ -254,6 +263,15 @@
     "koelnDesc": "Köln ist die viertgrößte Stadt Deutschlands und die größte Stadt Nordrhein-Westfalens. Mit über 2000 Jahren Geschichte zählt sie zu den ältesten Städten Deutschlands. Wir haben den Kölner Dom schon oft besucht und die wunderschöne Landschaft am Rheinufer genossen.",
     "bonn": "Bonn",
     "bonnDesc": "Bonn hat rund 320.000 Einwohner und ist damit (Stand 2023) die 19. größte Stadt Deutschlands. Als ehemalige Hauptstadt des Kurfürstentums Köln und der Bundesrepublik Deutschland ist sie nach wie vor ein wichtiges politisches Zentrum. Das Bundesmuseum für Deutsche Geschichte in Bonn wurde 1994 gegründet und widmet sich der Darstellung der politischen, sozialen und alltäglichen Geschichte der Bundesrepublik Deutschland von 1945 bis heute.",
+    "trier": "Trier",
+    "trierDesc": "Trier, Deutschlands älteste Stadt, liegt an der Mosel. Gegründet 16 v. Chr., war sie eine wichtige Festung des Römischen Reiches und beherbergt noch heute Relikte wie das Schwarze Tor und die Cäsarthermen. Karl Marx wurde hier 1818 geboren, und sein ehemaliges Wohnhaus ist heute ein Museum. Eine berühmte Bronzestatue von Marx steht im Stadtzentrum und symbolisiert den Einfluss seiner Philosophie und seines revolutionären Gedankenguts.",
+    "koenigswinter": "Königswinter",
+    "koenigswinterDesc": "Königswinter ist eine Stadt im Kölner Bezirk. Ganz in der Nähe, auf dem Drachenfelsen, steht ein privates Schloss im Villenstil namens Drachenburg (deutsch: Schloss Drachenburg).",
+    "stuttgart": "Stuttgart",
+    "stuttgartDesc": "Stuttgart liegt im Neckartal im südwestlichen Bundesland Baden-Württemberg, nahe dem Schwarzwald. Sie ist nicht nur die Landeshauptstadt Baden-Württembergs, sondern auch die Hauptstadt des Landkreises Stuttgart und die größte Stadt des Bundeslandes. Zudem ist sie dessen politisches Zentrum. Aufgrund ihrer wirtschaftlichen, kulturellen und administrativen Bedeutung zählt sie zu den bekanntesten Städten Deutschlands. Wir besuchten mehrmals den Stuttgarter Marktplatz, den Tierpark Wilhelma, die berühmte Stadtbibliothek und viele weitere Sehenswürdigkeiten.",
+    "ludwigsburg": "Ludwigsburg",
+    "ludwigsburgDesc": "Ludwigsburg liegt etwa 12 Kilometer nördlich des Stuttgarter Stadtzentrums und hat rund 100.000 Einwohner. Schloss Ludwigsburg ist eines der größten Barockpaläste Deutschlands. Jedes Jahr findet hier ein großes Kürbisfest statt, bei dem die Besucher Kürbisse bemalen und die Barockgärten in eine bunte Kürbiswelt verwandeln. Inmitten einer wunderschönen Herbstkulisse können die Besucher Figuren und Szenen aus Tausenden von Kürbissen bewundern.",
+
 
 
 
@@ -435,6 +453,16 @@
     "koelnDesc": "科隆是德国第四大城市，北莱茵-威斯特法伦州最大的城市，它已有2000多年的历史，是德国最古老的城市之一。我们曾多次参观科隆大教堂，并在莱茵河两岸欣赏美丽风光。",
     "bonn": "波恩",
     "bonnDesc": "波恩人口约32万，为德国第19大都市（截至2023年）。曾经为科隆选侯国与西德的首都，至今仍是德国重要的政治中心。联邦德国历史博物馆位于波恩，成立于1994年，专注于展示1945年至今德国联邦共和国的政治、社会与日常生活历史。",
+    "trier": "特里尔",
+    "trierDesc": "特里尔是德国最古老的城市，位于摩泽尔河畔，建于公元前16年，古罗马时期曾为帝国重要据点，保留有黑城门、凯撒浴场等遗迹。卡尔·马克思于1818年出生于此，其故居现为博物馆，市中心还有一座著名的马克思铜像，象征其哲学与革命思想的影响。",
+    "koenigswinter": "柯尼希斯温特",
+    "koenigswinterDesc": "柯尼希斯温特是科隆行政区的一个城市，它附近的龙岩山上有一座私人别墅式的城堡，名为龙堡(德语：Schloss Drachenburg)。",
+    "stuttgart": "斯图加特",
+    "stuttgartDesc": "斯图加特位于德国西南部的巴登-符腾堡州中部内卡河谷地，靠近黑林山。不仅是该州的州首府，也是斯图加特行政区首府和该州的第一大城市。同时也是该州的政治中心。由于其在经济、文化和行政方面的重要性，是德国最知名的城市之一。我们多次在斯图加特的中心广场，Wilhelma动物园，著名的市立图书馆等等参观游览。",
+    "ludwigsburg": "路德维希堡",
+    "ludwigsburgDesc": "路德维希堡位于斯图加特市中心以北约12千米处，人口约10万人。路德维希堡宫是德国最大的巴洛克式宫殿建筑之一，每年那里都会举行盛大的南瓜节，人们把南瓜乔装打扮一番，巴洛克花园化身为一座充满南瓜艺术的世界，观众可以在绚丽的秋日氛围中邂逅由数以千计的南瓜拼塑而成的角色与场景。",
+
+
 
 
 
