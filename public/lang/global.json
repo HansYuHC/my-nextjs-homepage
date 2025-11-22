@@ -86,6 +86,19 @@
     "stuttgartDesc": "Stuttgart is located in the Neckar Valley in the southwestern state of Baden-Württemberg, near the Black Forest. It is not only the capital of Baden-Württemberg, but also the capital of the Stuttgart district and the state's largest city. It is also the state's political center. Due to its economic, cultural, and administrative importance, it is one of Germany's most well-known cities. We visited Stuttgart's central square, Wilhelma Zoo, the famous city library, and many other attractions on several occasions.",
     "ludwigsburg": "Ludwigsburg",
     "ludwigsburgDesc": "Ludwigsburg is located about 12 kilometers north of the center of Stuttgart and has a population of about 100,000. Ludwigsburg Palace is one of the largest Baroque palace buildings in Germany. Every year, it hosts a grand pumpkin festival where people decorate pumpkins and the Baroque gardens are transformed into a world full of pumpkin art. Visitors can encounter characters and scenes made of thousands of pumpkins in a beautiful autumn atmosphere.",
+    "berlin": "Berlin",
+    "berlinDesc": "Berlin, the capital and largest city of Germany, is a world-renowned center for culture, politics, media, and science. We enjoyed a concert in Berlin, visited the German Bundestag, and had a close encounter with giant pandas at the Berlin Zoo.",
+    "koblenz": "Koblenz",
+    "koblenzDesc": "Koblenz is the third most populous city in the German state of Rhineland-Palatinate, located at the confluence of the Moselle and Rhine rivers. The confluence, known as the German Corner, is a local landmark and a symbol of German unity. I completed a six-month internship at Stabilus, a company located in Koblenz, during my graduate studies.",
+    "hannover": "Hannover",
+    "hannoverDesc": "Hannover is a city with a highly developed industrial manufacturing sector, serving as a center for Germany's automotive, machinery, and electronics industries, and is renowned for hosting trade fairs. I represented Qingdao Lolin Mech. at the 2017 Hannover Fair.",
+    "dresden": "Dresden",
+    "dresdenDesc": "Dresden is an important cultural, political, and economic center in eastern Germany. We visited famous landmarks there, including the Zwinger Palace, the Dresden Royal Palace, and the cathedral.",
+    "nuernberg": "Nürnberg",
+    "nuernbergDesc": "Nuremberg is the central city of the Central Franconia district in Bavaria, Germany. After World War II, the Nuremberg Trials, in which Nazi German war criminals were tried, were held here. We visited the city center and the Nuremberg Zoo.",
+
+
+
 
 
 
@@ -271,6 +284,16 @@
     "stuttgartDesc": "Stuttgart liegt im Neckartal im südwestlichen Bundesland Baden-Württemberg, nahe dem Schwarzwald. Sie ist nicht nur die Landeshauptstadt Baden-Württembergs, sondern auch die Hauptstadt des Landkreises Stuttgart und die größte Stadt des Bundeslandes. Zudem ist sie dessen politisches Zentrum. Aufgrund ihrer wirtschaftlichen, kulturellen und administrativen Bedeutung zählt sie zu den bekanntesten Städten Deutschlands. Wir besuchten mehrmals den Stuttgarter Marktplatz, den Tierpark Wilhelma, die berühmte Stadtbibliothek und viele weitere Sehenswürdigkeiten.",
     "ludwigsburg": "Ludwigsburg",
     "ludwigsburgDesc": "Ludwigsburg liegt etwa 12 Kilometer nördlich des Stuttgarter Stadtzentrums und hat rund 100.000 Einwohner. Schloss Ludwigsburg ist eines der größten Barockpaläste Deutschlands. Jedes Jahr findet hier ein großes Kürbisfest statt, bei dem die Besucher Kürbisse bemalen und die Barockgärten in eine bunte Kürbiswelt verwandeln. Inmitten einer wunderschönen Herbstkulisse können die Besucher Figuren und Szenen aus Tausenden von Kürbissen bewundern.",
+    "berlin": "Berlin",
+    "berlinDesc": "Berlin, die Hauptstadt und größte Stadt Deutschlands, ist ein weltbekanntes Kultur-, Politik-, Medien- und Wissenschaftszentrum. Wir genossen ein Konzert in Berlin, besuchten den Deutschen Bundestag und hatten eine hautnahe Begegnung mit Riesenpandas im Berliner Zoo.",
+    "koblenz": "Koblenz",
+    "koblenzDesc": "Koblenz ist die drittgrößte Stadt im deutschen Bundesland Rheinland-Pfalz und liegt am Zusammenfluss von Mosel und Rhein. Dieser Zusammenfluss, auch als Deutsche Ecke bekannt, ist ein Wahrzeichen der Region und ein Symbol der deutschen Einheit. Während meines Studiums absolvierte ich ein sechsmonatiges Praktikum bei Stabilus, einem Unternehmen mit Sitz in Koblenz.",
+    "hannover": "Hannover",
+    "hannoverDesc": "Hannover ist eine Stadt mit einem hochentwickelten Industriesektor und ein Zentrum der deutschen Automobil-, Maschinenbau- und Elektronikindustrie. Sie ist zudem bekannt für ihre zahlreichen Messen. Ich vertrat Qingdao Lolin Mech. auf der Hannover Messe in 2017.",
+    "dresden": "Dresden",
+    "dresdenDesc": "Dresden ist ein bedeutendes kulturelles, politisches und wirtschaftliches Zentrum in Ostdeutschland. Wir besuchten dort berühmte Sehenswürdigkeiten, darunter den Zwinger, das Dresdner Königliche Schloss und den Dom.",
+    "nuernberg": "Nürnberg",
+    "nuernbergDesc": "Nürnberg ist die Hauptstadt des Landkreises Mittelfranken in Bayern. Nach dem Zweiten Weltkrieg fanden hier die Nürnberger Prozesse statt, in denen nationalsozialistische Kriegsverbrecher angeklagt wurden. Wir besuchten die Innenstadt und den Nürnberger Zoo.",
 
 
 
@@ -461,6 +484,16 @@
     "stuttgartDesc": "斯图加特位于德国西南部的巴登-符腾堡州中部内卡河谷地，靠近黑林山。不仅是该州的州首府，也是斯图加特行政区首府和该州的第一大城市。同时也是该州的政治中心。由于其在经济、文化和行政方面的重要性，是德国最知名的城市之一。我们多次在斯图加特的中心广场，Wilhelma动物园，著名的市立图书馆等等参观游览。",
     "ludwigsburg": "路德维希堡",
     "ludwigsburgDesc": "路德维希堡位于斯图加特市中心以北约12千米处，人口约10万人。路德维希堡宫是德国最大的巴洛克式宫殿建筑之一，每年那里都会举行盛大的南瓜节，人们把南瓜乔装打扮一番，巴洛克花园化身为一座充满南瓜艺术的世界，观众可以在绚丽的秋日氛围中邂逅由数以千计的南瓜拼塑而成的角色与场景。",
+    "berlin": "柏林",
+    "berlinDesc": "柏林是德国首都及最大城市，是一世界性的文化、政治、媒体和科学之都。我们在柏林欣赏了演唱会，参观了德国议会并且在柏林动物园近距离与大熊猫接触。",
+    "koblenz": "科布伦茨",
+    "koblenzDesc": "科布伦茨是德国莱茵兰-普法尔茨州的人口第三多的城市，位于摩泽尔河与莱茵河交汇处。两河汇流之处，称德意志之角，为当地名胜，是德意志统一的象征。我曾在位于该城市的斯泰必鲁斯公司进行了为其半年的研究生阶段的实习工作。",
+    "hannover": "汉诺威",
+    "hannoverDesc": "汉诺威是工业制造业高度发达的城市，是德国的汽车、机械、电子等产业中心，以承办商业博览会而闻名。我曾代表青岛洛林机械公司参加了2017年的汉诺威展览会。",
+    "dresden": "德累斯顿",
+    "dresdenDesc": "德累斯顿是德国东部重要的文化、政治和经济中心。我们在此参观了著名的景点有茨温格宫，德累斯顿王宫以及大教堂等等。",
+    "nuernberg": "纽伦堡",
+    "nuernbergDesc": "纽伦堡是是德国巴伐利亚州中弗兰肯行政区的中心城市，第二次世界大战结束之后曾在此举行针对纳粹德国战犯的纽伦堡审判。我们在此参观了市区，以及纽伦堡的动物园。",
 
 
 

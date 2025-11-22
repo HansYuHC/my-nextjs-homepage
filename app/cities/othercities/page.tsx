@@ -16,7 +16,7 @@ const cities: City[] = [
     id: 'hamburg',
     key: 'hamburg',
     image: '/images/cities/hamburg_badge.jpg',
-    photos: ['/images/cities/hamburg1.jpg', '/images/cities/hamburg2.jpg'],
+    photos: ['/images/cities/hamburg1.jpg', '/images/cities/hamburg2.jpg','/images/cities/hamburg3.jpg','/images/cities/hamburg4.jpg'],
   },
   {
     id: 'duesseldorf',
@@ -68,14 +68,13 @@ const cities: City[] = [
     photos: ['/images/cities/berlin1.jpg',
         '/images/cities/berlin2.jpg',
         '/images/cities/berlin3.jpg',
-        '/images/cities/berlin4.jpg',
         '/images/cities/berlin5.jpg'],
   },
   {
     id: 'hannover',
     key: 'hannover',
     image: '/images/cities/hannover_badge.png',
-    photos: ['/images/cities/hannover.jpg'],
+    photos: ['/images/cities/hannover1.jpg','/images/cities/hannover2.jpg'],
   },
   {
     id: 'koblenz',
@@ -87,7 +86,7 @@ const cities: City[] = [
     id: 'dresden',
     key: 'dresden',
     image: '/images/cities/dresden_badge.png',
-    photos: ['/images/cities/dresden_zwinger.jpg',"'/images/cities/dresden2.jpg'"],
+    photos: ['/images/cities/dresden_zwinger.jpg','/images/cities/dresden2.jpg','/images/cities/dresden3.jpg','/images/cities/dresden4.jpg'],
   },
   {
     id: 'nuernberg',
