@@ -96,7 +96,18 @@
     "dresdenDesc": "Dresden is an important cultural, political, and economic center in eastern Germany. We visited famous landmarks there, including the Zwinger Palace, the Dresden Royal Palace, and the cathedral.",
     "nuernberg": "Nürnberg",
     "nuernbergDesc": "Nuremberg is the central city of the Central Franconia district in Bavaria, Germany. After World War II, the Nuremberg Trials, in which Nazi German war criminals were tried, were held here. We visited the city center and the Nuremberg Zoo.",
+    "freiburg": "Freiburg",
+    "freiburgDesc": "Freiburg is a transportation hub in the western Black Forest region, on the Upper Rhine Plain. As an ancient university town and the center of a Catholic diocese, Freiburg boasts the University of Freiburg, founded during the Renaissance, and the famous medieval Freiburg Cathedral. Lake Titisee, located nearby, offers stunning scenery.",
+    "baden-baden": "Baden-Baden",
+    "baden-badenDesc": "Baden-Baden, located in southwestern Germany at the western foot of the Black Forest, is a renowned spa resort, tourist destination, and international conference city.",
 
+    "heidelberg": "Heidelberg",
+    "heidelbergDesc": "Heidelberg is situated on the banks of the Neckar River, with its famous Heidelberg Castle perched atop Königstuhl (King's Seat) 200 meters above the river, overlooking the narrow old town of Heidelberg. The renowned poet Goethe once strolled through the park surrounding the castle.",
+
+    "lindau": "Lindau",
+    "lindauDesc": "Lindau is located near the tri-border area of Austria, Germany, and Switzerland, with its old town situated on Lindau Island on the eastern shore of Lake Constance. Lindau is a popular tourist destination due to its scenery and location, with its lighthouse and lion sculpture serving as landmarks.",
+    "hohenzollern": "Hohenzollern Castle",
+    "hohenzollernDesc": "Hohenzollern Castle is one of the two most famous castles in southern Germany, on par with Neuschwanstein Castle in Bavaria. The castle houses Prussian historical artifacts, including the crown of Wilhelm II, some personal belongings of Frederick the Great, and a letter from U.S. President George Washington thanking Baron von Stobenberg, a relative of the Hohenzollern family, for his contributions to the American Revolution.",
 
 
 
@@ -294,8 +305,19 @@
     "dresdenDesc": "Dresden ist ein bedeutendes kulturelles, politisches und wirtschaftliches Zentrum in Ostdeutschland. Wir besuchten dort berühmte Sehenswürdigkeiten, darunter den Zwinger, das Dresdner Königliche Schloss und den Dom.",
     "nuernberg": "Nürnberg",
     "nuernbergDesc": "Nürnberg ist die Hauptstadt des Landkreises Mittelfranken in Bayern. Nach dem Zweiten Weltkrieg fanden hier die Nürnberger Prozesse statt, in denen nationalsozialistische Kriegsverbrecher angeklagt wurden. Wir besuchten die Innenstadt und den Nürnberger Zoo.",
+    "freiburg": "Freiburg",
+    "freiburgDesc": "Freiburg ist ein Verkehrsknotenpunkt im westlichen Schwarzwald, in der Oberrheinischen Tiefebene. Als alte Universitätsstadt und Zentrum eines katholischen Bistums beherbergt Freiburg die Universität Freiburg, die in der Renaissance gegründet wurde, und den berühmten mittelalterlichen Freiburger Dom. Der nahegelegene Titisee bietet eine atemberaubende Kulisse.",
+    "baden-baden": "Baden-Baden",
+    "baden-badenDesc": "Baden-Baden, im Südwesten Deutschlands am westlichen Fuße des Schwarzwaldes gelegen, ist ein bekannter Kurort, ein beliebtes Touristenziel und eine internationale Konferenzstadt.",
+
+    "heidelberg": "Heidelberg",
+    "heidelbergDesc": "Heidelberg liegt am Ufer des Neckars, und das berühmte Heidelberger Schloss thront 200 Meter über dem Fluss auf dem Königstuhl und überblickt die enge Altstadt. Der berühmte Dichter Goethe flanierte einst durch den Park rund um das Schloss.",
 
 
+    "lindau": "Lindau",
+    "lindauDesc": "Lindau liegt im Dreiländereck Österreich, Deutschland und Schweiz. Die Altstadt befindet sich auf der Lindauer Insel am Ostufer des Bodensees. Dank seiner malerischen Lage und des Leuchtturms sowie der Löwenskulptur ist Lindau ein beliebtes Touristenziel.",
+    "hohenzollern": "Burg Hohenzollern",
+    "hohenzollernDesc": "Burg Hohenzollern zählt neben Schloss Neuschwanstein in Bayern zu den beiden berühmtesten Schlössern Süddeutschlands. Es beherbergt preußische historische Artefakte, darunter die Krone Wilhelms II., einige persönliche Gegenstände Friedrichs des Großen und einen Brief des US-Präsidenten George Washington, in dem er Baron von Stobenberg, einem Verwandten der Hohenzollern, für dessen Verdienste um die Amerikanische Revolution dankt.",
 
 
 
@@ -495,6 +517,27 @@
     "nuernberg": "纽伦堡",
     "nuernbergDesc": "纽伦堡是是德国巴伐利亚州中弗兰肯行政区的中心城市，第二次世界大战结束之后曾在此举行针对纳粹德国战犯的纽伦堡审判。我们在此参观了市区，以及纽伦堡的动物园。",
 
+    "erlangen": "埃朗根",
+    "erlangenDesc": "埃朗根是巴伐利亚州的三大都市之一，以以埃朗根-纽伦堡大学及西门子公司中心而闻名。我在此城市附近的舍弗勒公司进行了机械制造本科阶段的实习工作。",
+    "muenchen": "慕尼黑",
+    "muenchenDesc": "慕尼黑是德国巴伐利亚自由州的首府，位于德国南部阿尔卑斯山北麓的伊萨尔河畔，是德国主要的经济、文化、科技和交通中心之一。宝马公司总部，安联球场，慕尼黑啤酒节以及巴伐利亚的自然风光美景都是它的标志。",
+    "bamberg": "班贝格",
+    "bambergDesc": "班贝格是一座大学城和行政城市，班贝格老城是德国最大的一座未受战争毁坏的历史城区，1993年入选联合国教科文组织的世界文化遗产名录。我们在城市中心的河流中乘船欣赏老城风光。",
+    "rothenburg": "罗腾堡",
+    "rothenburgDesc": "罗滕堡以其保存完好的中世纪古城而闻名，吸引着来自世界各地的游客。其为德国南部的浪漫之路上的一站。如今，罗滕堡是德国仅存的四座仍保有完整城墙的城市之一。",
+    "konstanz": "康斯坦茨",
+    "konstanzDesc": "康斯坦茨南与瑞士接壤，是博登湖畔最大的城市。这里风景秀丽，依山傍水，是休闲度假的好去处。",
+    "freiburg": "弗莱堡",
+    "freiburgDesc": "弗赖堡是黑林山西部，上莱茵河平原地区的交通枢纽。作为古老的大学城和天主教教区中心，弗赖堡有文艺复兴时期创建的弗赖堡大学，以及著名的中世纪弗赖堡大教堂。它附近的蒂蒂湖风景秀丽。",
+    "baden-baden": "巴登巴登",
+    "baden-badenDesc": "巴登巴登位于德国的西南部，黑林山的西麓，是著名的温泉疗养地、旅游胜地和国际会议城市。",
+    "heidelberg": "海德堡",
+    "heidelbergDesc": "海德堡坐落于内卡河畔，著名的海德堡城堡位于高出内卡河200米的王座山上，俯视狭长的海德堡老城。著名诗人歌德曾经漫步环绕城堡的公园。",
+
+    "lindau": "林道",
+    "lindauDesc": "林道位于奥德瑞三国交界处附近，其老城区位于博登湖东岸的林道岛上。林道因其景色和地理位置而成为旅游胜地，灯塔和狮子雕塑为地标建筑。",
+    "hohenzollern": "霍亨索伦城堡",
+    "hohenzollernDesc": "霍亨索伦城堡是德国南部最著名的两大城堡之一，与巴伐利亚州的新天鹅堡齐名于世。城堡内藏有普鲁士历史文物，包括威廉二世的王冠、腓特烈大帝的一些私人物品，以及美国总统乔治·华盛顿的一封信，感谢霍亨索伦家族的亲戚冯·斯托本男爵为美国革命做出的贡献战争。",
 
 
 
