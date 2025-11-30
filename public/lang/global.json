@@ -100,9 +100,14 @@
     "freiburgDesc": "Freiburg is a transportation hub in the western Black Forest region, on the Upper Rhine Plain. As an ancient university town and the center of a Catholic diocese, Freiburg boasts the University of Freiburg, founded during the Renaissance, and the famous medieval Freiburg Cathedral. Lake Titisee, located nearby, offers stunning scenery.",
     "baden-baden": "Baden-Baden",
     "baden-badenDesc": "Baden-Baden, located in southwestern Germany at the western foot of the Black Forest, is a renowned spa resort, tourist destination, and international conference city.",
-
+    "heilbronn": "Heilbronn",
+    "heilbronnDesc": "Heilbronn is a city in northern Baden-Württemberg, Germany, with a population of approximately 120,000. The Experimenta science museum in the city center is a popular weekend destination for children.",
     "heidelberg": "Heidelberg",
     "heidelbergDesc": "Heidelberg is situated on the banks of the Neckar River, with its famous Heidelberg Castle perched atop Königstuhl (King's Seat) 200 meters above the river, overlooking the narrow old town of Heidelberg. The renowned poet Goethe once strolled through the park surrounding the castle.",
+    "mannheim": "Mannheim",
+    "mannheimDesc": "Mannheim is the third largest city in the German state of Baden-Württemberg after Stuttgart and Karlsruhe, with a population of approximately 310,000. The Luisen Park within the city center contains the Duojing Garden, which is currently one of the largest and most complete collections of classical Jiangnan-style gardens in Europe.",
+    "frankfurt": "Frankfurt",
+    "frankfurtDesc": "Frankfurt am Main Frankfurt is a major commercial, cultural, educational, tourism, and transportation hub in continental Europe, and home to the headquarters of many global and European companies and educational institutions. We visited the Frankfurt International Motor Show and enjoyed the beautiful scenery along the Main River.",
 
     "lindau": "Lindau",
     "lindauDesc": "Lindau is located near the tri-border area of Austria, Germany, and Switzerland, with its old town situated on Lindau Island on the eastern shore of Lake Constance. Lindau is a popular tourist destination due to its scenery and location, with its lighthouse and lion sculpture serving as landmarks.",
@@ -312,8 +317,12 @@
 
     "heidelberg": "Heidelberg",
     "heidelbergDesc": "Heidelberg liegt am Ufer des Neckars, und das berühmte Heidelberger Schloss thront 200 Meter über dem Fluss auf dem Königstuhl und überblickt die enge Altstadt. Der berühmte Dichter Goethe flanierte einst durch den Park rund um das Schloss.",
-
-
+    "mannheim": "Mannheim",
+    "mannheimDesc": "Mannheim ist nach Stuttgart und Karlsruhe die drittgrößte Stadt im deutschen Bundesland Baden-Württemberg mit rund 310.000 Einwohnern. Im Luisenpark im Stadtzentrum befindet sich der Duojing-Garten, der heute eine der größten und vollständigsten Sammlungen klassischer Gärten im Jiangnan-Stil in Europa darstellt.",
+    "frankfurt": "Frankfurt",
+    "frankfurtDesc": "Frankfurt am Main ist ein bedeutendes Handels-, Kultur-, Bildungs-, Tourismus- und Verkehrszentrum in Kontinentaleuropa und Sitz zahlreicher globaler und europäischer Unternehmen und Bildungseinrichtungen. Wir besuchten die Internationale Automobil-Ausstellung in Frankfurt und genossen die wunderschöne Landschaft entlang des Mains.",
+    "heilbronn": "Heilbronn",
+    "heilbronnDesc": "Heilbronn ist eine Stadt im nördlichen Baden-Württemberg mit rund 120.000 Einwohnern. Das Experimenta-Museum im Stadtzentrum ist ein beliebtes Wochenendziel für Kinder.",
     "lindau": "Lindau",
     "lindauDesc": "Lindau liegt im Dreiländereck Österreich, Deutschland und Schweiz. Die Altstadt befindet sich auf der Lindauer Insel am Ostufer des Bodensees. Dank seiner malerischen Lage und des Leuchtturms sowie der Löwenskulptur ist Lindau ein beliebtes Touristenziel.",
     "hohenzollern": "Burg Hohenzollern",
@@ -533,7 +542,12 @@
     "baden-badenDesc": "巴登巴登位于德国的西南部，黑林山的西麓，是著名的温泉疗养地、旅游胜地和国际会议城市。",
     "heidelberg": "海德堡",
     "heidelbergDesc": "海德堡坐落于内卡河畔，著名的海德堡城堡位于高出内卡河200米的王座山上，俯视狭长的海德堡老城。著名诗人歌德曾经漫步环绕城堡的公园。",
-
+    "mannheim": "曼海姆",
+    "mannheimDesc": "曼海姆是德国巴登-符腾堡州继斯图加特和卡尔斯鲁厄之后的第三大城市，人口约31万。市区内的路易森公园里的多景园是目前欧洲规模较大、较为完整的古典江南园林建筑群体。",
+    "frankfurt": "法兰克福",
+    "frankfurtDesc": "法兰克福是欧洲大陆商业、文化、教育、旅游和交通枢纽的重要都市，也是许多全球和欧洲公司总部、教育机构的所在地。我们在法兰克福参观过国际汽车展，并欣赏了美因河畔的美丽风光。",
+    "heilbronn": "海尔布隆",
+    "heilbronnDesc": "海尔布隆是德国巴登-符腾堡州北部的城市，人口约12万。市区的科学馆Experimenta是小朋友周末休闲娱乐的好去处。",
     "lindau": "林道",
     "lindauDesc": "林道位于奥德瑞三国交界处附近，其老城区位于博登湖东岸的林道岛上。林道因其景色和地理位置而成为旅游胜地，灯塔和狮子雕塑为地标建筑。",
     "hohenzollern": "霍亨索伦城堡",

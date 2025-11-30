@@ -155,7 +155,7 @@ const cities: City[] = [
     id: 'mannheim',
     key: 'mannheim',
     image: '/images/cities/mannheim_badge.jpg',
-    photos: ['/images/cities/mannheim.jpg'],
+    photos: ['/images/cities/mannheim1.jpg','/images/cities/mannheim2.jpg'],
   },
   {
     id: 'frankfurt',
@@ -245,6 +245,29 @@ function OtherCitiesContent() {
               >
                 ✕
               </button>
+
+               {/* 左右切换按钮（美观圆角版） */}
+            <button
+              onClick={() => {
+                const currentIndex = cities.findIndex((c) => c.id === selectedCity.id)
+                const prevIndex = (currentIndex - 1 + cities.length) % cities.length
+                setSelectedCity(cities[prevIndex])
+              }}
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 text-black rounded-full px-3 py-2 shadow-lg hover:bg-white transition"
+            >
+              ‹
+            </button>
+
+            <button
+              onClick={() => {
+                const currentIndex = cities.findIndex((c) => c.id === selectedCity.id)
+                const nextIndex = (currentIndex + 1) % cities.length
+                setSelectedCity(cities[nextIndex])
+              }}
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 text-black rounded-full px-3 py-2 shadow-lg hover:bg-white transition"
+            >
+              ›
+            </button>
 
               <h2 className="text-2xl font-bold mb-3 text-center">{t(selectedCity.key)}</h2>
               <p className="text-gray-700 mb-4 text-center">{t(`${selectedCity.key}Desc`)}</p>
