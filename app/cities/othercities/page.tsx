@@ -2,7 +2,8 @@
 
 import useTranslation from '../../../lib/useTranslation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { useState, Suspense } from 'react'
+import { useState, Suspense, useEffect, useMemo } from 'react'
+import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
 
 interface City {
   id: string
@@ -11,6 +12,7 @@ interface City {
   photos: string[]
 }
 
+/* ----------- 城市列表 ----------- */
 const cities: City[] = [
   {
     id: 'hamburg',
@@ -22,8 +24,7 @@ const cities: City[] = [
     id: 'duesseldorf',
     key: 'duesseldorf',
     image: '/images/cities/duesseldorf_badge.png',
-    photos: ['/images/cities/duesseldorf1.jpg',
-        '/images/cities/duesseldorf2.jpg'],
+    photos: ['/images/cities/duesseldorf1.jpg','/images/cities/duesseldorf2.jpg'],
   },
   {
     id: 'koeln',
@@ -53,7 +54,7 @@ const cities: City[] = [
     id: 'stuttgart',
     key: 'stuttgart',
     image: '/images/cities/stuttgart_badge.jpg',
-    photos: ['/images/cities/stuttgart1.jpg', '/images/cities/stuttgart2.jpg','/images/cities/stuttgart3.jpg','/images/cities/stuttgart4.jpg'],
+    photos: ['/images/cities/stuttgart1.jpg','/images/cities/stuttgart2.jpg','/images/cities/stuttgart3.jpg','/images/cities/stuttgart4.jpg'],
   },
   {
     id: 'ludwigsburg',
@@ -65,10 +66,7 @@ const cities: City[] = [
     id: 'berlin',
     key: 'berlin',
     image: '/images/cities/berlin_badge.png',
-    photos: ['/images/cities/berlin1.jpg',
-        '/images/cities/berlin2.jpg',
-        '/images/cities/berlin3.jpg',
-        '/images/cities/berlin5.jpg'],
+    photos: ['/images/cities/berlin1.jpg','/images/cities/berlin2.jpg','/images/cities/berlin3.jpg','/images/cities/berlin5.jpg'],
   },
   {
     id: 'hannover',
@@ -104,9 +102,7 @@ const cities: City[] = [
     id: 'muenchen',
     key: 'muenchen',
     image: '/images/cities/muenchen_badge.jpg',
-    photos: ['/images/cities/muenchen1.jpg',
-        '/images/cities/muenchen2.jpg',
-        '/images/cities/muenchen3.jpg','/images/cities/muenchen4.jpg'],
+    photos: ['/images/cities/muenchen1.jpg','/images/cities/muenchen2.jpg','/images/cities/muenchen3.jpg','/images/cities/muenchen4.jpg'],
   },
   {
     id: 'bamberg',
@@ -148,8 +144,7 @@ const cities: City[] = [
     id: 'heidelberg',
     key: 'heidelberg',
     image: '/images/cities/heidelberg_badge.jpeg',
-    photos: ['/images/cities/heidelberg1.jpg',
-        '/images/cities/heidelberg2.jpg'],
+    photos: ['/images/cities/heidelberg1.jpg','/images/cities/heidelberg2.jpg'],
   },
   {
     id: 'mannheim',
@@ -174,8 +169,7 @@ const cities: City[] = [
     key: 'hohenzollern',
     image: '/images/cities/hohenzollern_badge.jpg',
     photos: ['/images/cities/hohenzollern1.jpg','/images/cities/hohenzollern2.jpg'],
-  }
-
+  },
 ]
 
 export default function OtherCitiesPage() {
@@ -188,40 +182,72 @@ export default function OtherCitiesPage() {
 
 function OtherCitiesContent() {
   const { t } = useTranslation()
+  const [search, setSearch] = useState('')
+  const filteredCities = useMemo(() => {
+    return cities.filter((city) => t(city.key).toLowerCase().includes(search.toLowerCase()))
+  }, [search, t])
   const [selectedCity, setSelectedCity] = useState<City | null>(null)
+  const allPhotos = cities.flatMap(c => c.photos)
+  const [zoomIndex, setZoomIndex] = useState(-1)
+
+  useEffect(() => {
+    function handleKey(e: KeyboardEvent) {
+      if (zoomIndex < 0) return
+      if (e.key === 'Escape') setZoomIndex(-1)
+      if (e.key === 'ArrowRight') nextPhoto()
+      if (e.key === 'ArrowLeft') prevPhoto()
+    }
+    window.addEventListener('keydown', handleKey)
+    return () => window.removeEventListener('keydown', handleKey)
+  }, [zoomIndex])
+
+  function openZoom(img: string) { setZoomIndex(allPhotos.indexOf(img)) }
+  function nextPhoto() { setZoomIndex(i => (i + 1) % allPhotos.length) }
+  function prevPhoto() { setZoomIndex(i => (i - 1 + allPhotos.length) % allPhotos.length) }
+
+  const currentCityName = useMemo(() => {
+    if (zoomIndex < 0) return ''
+    const img = allPhotos[zoomIndex]
+    const city = cities.find(c => c.photos.includes(img))
+    return city ? t(city.key) : ''
+  }, [zoomIndex, t])
 
   return (
     <div className="p-6">
-      {/* 标题与简介 */}
-      <h1 className="text-3xl font-bold mb-4 text-center">{t('othercities')}</h1>
-      {/*<p className="absolute top-20 max-w-2xl text-base text-gray-700 z-40">*/}
-      <p className="mb-12 text-center text-gray-700 z-40">{t('othercitiesDescription')}</p>
+      {/* 搜索框 */}
+      <div className="max-w-xl mx-auto mb-8">
+        <input
+          type="text"
+          placeholder={t('searchCity')}
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="w-full px-4 py-2 rounded-lg border shadow-sm focus:outline-none"
+        />
+      </div>
 
-      {/* 城市徽章展示区 */}
+      <h1 className="text-3xl font-bold mb-4 text-center">{t('othercities')}</h1>
+      <p className="mb-12 text-center text-gray-700">{t('othercitiesDescription')}</p>
+
+      {/* 城市徽章 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 justify-items-center">
-        {cities.map((city, index) => (
+        {filteredCities.map((city, index) => (
           <motion.div
             key={city.id}
             className="relative w-56 h-56 rounded-2xl overflow-hidden shadow-lg cursor-pointer group"
             onClick={() => setSelectedCity(city)}
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.15, duration: 0.5 }}
-            whileHover={{ scale: 1.05 }}
+            transition={{ delay: index * 0.1, duration: 0.4 }}
           >
-            <img
-              src={city.image}
-              alt={t(city.key)}
-              className="object-contain w-full h-full bg-gray-100 transition-transform duration-700 group-hover:scale-105"
-            />
-            <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <h2 className="text-white text-xl font-semibold drop-shadow-lg">{t(city.key)}</h2>
+            <img src={city.image} className="object-contain w-full h-full bg-gray-100" />
+            <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition">
+              <h2 className="text-white text-xl font-semibold">{t(city.key)}</h2>
             </div>
           </motion.div>
         ))}
       </div>
 
-      {/* 弹窗详情 */}
+      {/* 城市弹窗 */}
       <AnimatePresence>
         {selectedCity && (
           <motion.div
@@ -233,10 +259,6 @@ function OtherCitiesContent() {
           >
             <motion.div
               className="bg-white rounded-xl shadow-2xl p-6 max-w-2xl w-full relative"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              transition={{ duration: 0.3 }}
               onClick={(e) => e.stopPropagation()}
             >
               <button
@@ -245,44 +267,70 @@ function OtherCitiesContent() {
               >
                 ✕
               </button>
-
-               {/* 左右切换按钮（美观圆角版） */}
-            <button
-              onClick={() => {
-                const currentIndex = cities.findIndex((c) => c.id === selectedCity.id)
-                const prevIndex = (currentIndex - 1 + cities.length) % cities.length
-                setSelectedCity(cities[prevIndex])
-              }}
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 text-black rounded-full px-3 py-2 shadow-lg hover:bg-white transition"
-            >
-              ‹
-            </button>
-
-            <button
-              onClick={() => {
-                const currentIndex = cities.findIndex((c) => c.id === selectedCity.id)
-                const nextIndex = (currentIndex + 1) % cities.length
-                setSelectedCity(cities[nextIndex])
-              }}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 text-black rounded-full px-3 py-2 shadow-lg hover:bg-white transition"
-            >
-              ›
-            </button>
+              <button
+                onClick={() => { const i = cities.findIndex(c => c.id === selectedCity.id); setSelectedCity(cities[(i - 1 + cities.length) % cities.length]) }}
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/70 rounded-full px-3 py-2 shadow-lg"
+              >‹</button>
+              <button
+                onClick={() => { const i = cities.findIndex(c => c.id === selectedCity.id); setSelectedCity(cities[(i + 1) % cities.length]) }}
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/70 rounded-full px-3 py-2 shadow-lg"
+              >›</button>
 
               <h2 className="text-2xl font-bold mb-3 text-center">{t(selectedCity.key)}</h2>
               <p className="text-gray-700 mb-4 text-center">{t(`${selectedCity.key}Desc`)}</p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {selectedCity.photos.map((img, i) => (
+                {selectedCity.photos.map((img, idx) => (
                   <img
-                    key={i}
+                    key={idx}
                     src={img}
-                    alt=""
-                    className="rounded-lg object-contain w-full h-48"
+                    className="rounded-lg object-contain w-full h-auto max-h-64 bg-gray-50 cursor-zoom-in hover:opacity-80"
+                    onClick={() => openZoom(img)}
                   />
                 ))}
               </div>
             </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* 全屏大图 */}
+      <AnimatePresence>
+        {zoomIndex >= 0 && (
+          <motion.div
+            className="fixed inset-0 bg-black/80 z-[999] flex flex-col items-center justify-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setZoomIndex(-1)}
+          >
+            <div className="absolute top-4 text-white text-lg font-semibold">{zoomIndex + 1} / {allPhotos.length}</div>
+            <div className="absolute bottom-4 text-white text-lg font-semibold">{currentCityName}</div>
+
+            <TransformWrapper
+              initialScale={1}
+              minScale={1}
+              maxScale={4}
+              doubleClick={{ disabled: true }}
+              pinch={{ disabled: false }}
+            >
+              <TransformComponent>
+                <img
+                  src={allPhotos[zoomIndex]}
+                  className="max-w-full max-h-[90vh] object-contain rounded-lg"
+                  onClick={(e) => e.stopPropagation()}
+                />
+              </TransformComponent>
+            </TransformWrapper>
+
+            <button
+              onClick={(e) => { e.stopPropagation(); prevPhoto() }}
+              className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/70 rounded-full px-4 py-2 shadow-lg text-2xl"
+            >‹</button>
+            <button
+              onClick={(e) => { e.stopPropagation(); nextPhoto() }}
+              className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/70 rounded-full px-4 py-2 shadow-lg text-2xl"
+            >›</button>
           </motion.div>
         )}
       </AnimatePresence>

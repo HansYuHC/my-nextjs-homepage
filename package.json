@@ -15,6 +15,8 @@
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-masonry-css": "^1.0.16",
+    "react-pinch-zoom-pan": "^1.4.5",
+    "react-zoom-pan-pinch": "^3.7.0",
     "resend": "^6.4.2"
   },
   "devDependencies": {
