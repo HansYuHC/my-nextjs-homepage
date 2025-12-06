@@ -3,7 +3,8 @@
 import useTranslation from '../../../lib/useTranslation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState, Suspense, useEffect, useMemo } from 'react'
-import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+
 
 interface City {
   id: string
@@ -138,7 +139,7 @@ const cities: City[] = [
     id: 'heilbronn',
     key: 'heilbronn',
     image: '/images/cities/heilbronn_badge.jpg',
-    photos: ['/images/cities/heilbronn.jpg'],
+    photos: ['/images/cities/heilbronn1.jpg','/images/cities/heilbronn2.jpg'],
   },
   {
     id: 'heidelberg',
@@ -169,6 +170,12 @@ const cities: City[] = [
     key: 'hohenzollern',
     image: '/images/cities/hohenzollern_badge.jpg',
     photos: ['/images/cities/hohenzollern1.jpg','/images/cities/hohenzollern2.jpg'],
+  },
+  {
+    id: 'badwimpfen',
+    key: 'badwimpfen',
+    image: '/images/cities/badwimpfen_badge.png',
+    photos: ['/images/cities/badwimpfen1.jpg','/images/cities/badwimpfen2.jpg'],
   },
 ]
 
