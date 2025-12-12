@@ -177,6 +177,18 @@ const cities: City[] = [
     image: '/images/cities/badwimpfen_badge.png',
     photos: ['/images/cities/badwimpfen1.jpg','/images/cities/badwimpfen2.jpg'],
   },
+  {
+    id: 'reutlingen',
+    key: 'reutlingen',
+    image: '/images/cities/reutlingen_badge.png',
+    photos: ['/images/cities/reutlingen1.jpg','/images/cities/reutlingen2.jpg'],
+  },
+  {
+    id: 'esslingen',
+    key: 'esslingen',
+    image: '/images/cities/esslingen_badge.png',
+    photos: ['/images/cities/esslingen1.jpg','/images/cities/esslingen2.jpg','/images/cities/esslingen3.jpg','/images/cities/esslingen4.jpg'],
+  }
 ]
 
 export default function OtherCitiesPage() {
