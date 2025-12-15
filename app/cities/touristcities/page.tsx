@@ -1,9 +1,11 @@
 'use client'
 
-import { Suspense, useState } from 'react'
+import { Suspense, useState, useMemo, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
 import useTranslation from '../../../lib/useTranslation'
 
+/* ================== 类型 ================== */
 type Photo = { src: string }
 
 type CityInfo = {
@@ -20,7 +22,7 @@ type Country = {
   cities: CityInfo[]
 }
 
-// ✅ 所有城市照片路径改为 /images/countriesCity/
+/* ================== 国家数据 ================== */
 const countries: Country[] = [
   {
     id: 'spain',
@@ -58,9 +60,11 @@ const countries: Country[] = [
       {
         name: 'Paris',
         descriptionKey: 'parisExp',
-        photos: [{ src: '/images/countriesCity/paris1.jpg' },
-            { src: '/images/countriesCity/paris2.jpg' },
-            { src: '/images/countriesCity/paris3.jpg' }],
+        photos: [
+          { src: '/images/countriesCity/paris1.jpg' },
+          { src: '/images/countriesCity/paris2.jpg' },
+          { src: '/images/countriesCity/paris3.jpg' },
+        ],
       },
       {
         name: 'Strasbourg',
@@ -70,8 +74,10 @@ const countries: Country[] = [
       {
         name: 'Colmar',
         descriptionKey: 'colmarExp',
-        photos: [{ src: '/images/countriesCity/colmar1.jpg' },
-            { src: '/images/countriesCity/colmar2.jpg' }],
+        photos: [
+          { src: '/images/countriesCity/colmar1.jpg' },
+          { src: '/images/countriesCity/colmar2.jpg' },
+        ],
       },
       {
         name: 'Nice',
@@ -112,8 +118,10 @@ const countries: Country[] = [
       {
         name: 'Milan',
         descriptionKey: 'milanExp',
-        photos: [{ src: '/images/countriesCity/milan1.jpg' },
-            { src: '/images/countriesCity/milan2.jpg' }],
+        photos: [
+          { src: '/images/countriesCity/milan1.jpg' },
+          { src: '/images/countriesCity/milan2.jpg' },
+        ],
       },
     ],
   },
@@ -156,9 +164,11 @@ const countries: Country[] = [
       {
         name: 'Budapest',
         descriptionKey: 'budapestExp',
-        photos: [{ src: '/images/countriesCity/budapest1.jpg' },
-            { src: '/images/countriesCity/budapest2.jpg' },
-            { src: '/images/countriesCity/budapest3.jpg' }],
+        photos: [
+          { src: '/images/countriesCity/budapest1.jpg' },
+          { src: '/images/countriesCity/budapest2.jpg' },
+          { src: '/images/countriesCity/budapest3.jpg' },
+        ],
       },
     ],
   },
@@ -197,14 +207,18 @@ const countries: Country[] = [
       {
         name: 'Zuerich',
         descriptionKey: 'zuerichExp',
-        photos: [{ src: '/images/countriesCity/zuerich1.jpg' },
-            { src: '/images/countriesCity/zuerich2.jpg' }],
+        photos: [
+          { src: '/images/countriesCity/zuerich1.jpg' },
+          { src: '/images/countriesCity/zuerich2.jpg' },
+        ],
       },
       {
         name: 'Luzern',
         descriptionKey: 'luzernExp',
-        photos: [{ src: '/images/countriesCity/luzern_1.jpg' },
-            { src: '/images/countriesCity/luzern_2.jpg' }],
+        photos: [
+          { src: '/images/countriesCity/luzern_1.jpg' },
+          { src: '/images/countriesCity/luzern_2.jpg' },
+        ],
       },
       {
         name: 'Geneva',
@@ -232,9 +246,11 @@ const countries: Country[] = [
       {
         name: 'Hallstatt',
         descriptionKey: 'hallstattExp',
-        photos: [{ src: '/images/countriesCity/hallstatt1.jpg' },
-            { src: '/images/countriesCity/hallstatt2.jpg' },
-            { src: '/images/countriesCity/hallstatt3.jpg' }],
+        photos: [
+          { src: '/images/countriesCity/hallstatt1.jpg' },
+          { src: '/images/countriesCity/hallstatt2.jpg' },
+          { src: '/images/countriesCity/hallstatt3.jpg' },
+        ],
       },
     ],
   },
@@ -247,121 +263,199 @@ const countries: Country[] = [
       {
         name: 'Antalya',
         descriptionKey: 'antalyaExp',
-        photos: [{ src: '/images/countriesCity/antalya1.jpg' },
-            { src: '/images/countriesCity/antalya2.jpg' },
-            { src: '/images/countriesCity/antalya3.jpg' },
-            { src: '/images/countriesCity/antalya4.jpg' },
-            { src: '/images/countriesCity/antalya5.jpg' },
-            { src: '/images/countriesCity/antalya6.jpg' }],
+        photos: [
+          { src: '/images/countriesCity/antalya1.jpg' },
+          { src: '/images/countriesCity/antalya2.jpg' },
+          { src: '/images/countriesCity/antalya3.jpg' },
+          { src: '/images/countriesCity/antalya4.jpg' },
+          { src: '/images/countriesCity/antalya5.jpg' },
+          { src: '/images/countriesCity/antalya6.jpg' },
+        ],
       },
     ],
   },
 ]
 
+/* ================== 页面入口 ================== */
 export default function TouristCitiesPage() {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<div className="p-10">Loading…</div>}>
       <TouristCitiesContent />
     </Suspense>
   )
 }
 
+/* ================== 页面主体 ================== */
 function TouristCitiesContent() {
   const { t } = useTranslation()
+
+  const [search, setSearch] = useState('')
   const [selectedCountry, setSelectedCountry] = useState<Country | null>(null)
+  const [zoomIndex, setZoomIndex] = useState<number>(-1)
+
+  const allPhotos = useMemo(
+    () =>
+      countries.flatMap(country =>
+        country.cities.flatMap(city =>
+          city.photos.map(p => ({
+            src: p.src,
+            city: city.name,
+            countryKey: country.key,
+          })),
+        ),
+      ),
+    [],
+  )
+
+  const openZoom = (src: string) =>
+    setZoomIndex(allPhotos.findIndex(p => p.src === src))
+
+  const nextPhoto = () => setZoomIndex(i => (i + 1) % allPhotos.length)
+  const prevPhoto = () =>
+    setZoomIndex(i => (i - 1 + allPhotos.length) % allPhotos.length)
+
+  useEffect(() => {
+    const h = (e: KeyboardEvent) => {
+      if (zoomIndex < 0) return
+      if (e.key === 'Escape') setZoomIndex(-1)
+      if (e.key === 'ArrowRight') nextPhoto()
+      if (e.key === 'ArrowLeft') prevPhoto()
+    }
+    window.addEventListener('keydown', h)
+    return () => window.removeEventListener('keydown', h)
+  }, [zoomIndex])
+
+  const filteredCountries = countries.filter(c =>
+    t(c.key).toLowerCase().includes(search.toLowerCase()),
+  )
+
+  const currentPhoto = zoomIndex >= 0 ? allPhotos[zoomIndex] : null
 
   return (
     <div className="p-6">
-      <h1 className="text-3xl font-bold mb-4 text-center">{t('touristcities')}</h1>
-      <p className="text-gray-700 text-center mb-8">{t('touristcitiesDescription')}</p>
+      {/* 搜索 */}
+      <div className="max-w-xl mx-auto mb-6">
+        <input
+          value={search}
+          onChange={e => setSearch(e.target.value)}
+          placeholder={t('searchCountry')}
+          className="w-full px-4 py-2 border rounded-lg"
+        />
+      </div>
 
-      {/* 网格布局 */}
+      <h1 className="text-3xl font-bold text-center mb-2">
+        {t('touristcities')}
+      </h1>
+      <p className="text-center text-gray-600 mb-8">
+        {t('touristcitiesDescription')}
+      </p>
+
+      {/* 国家卡片 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
-        {countries.map((country, idx) => (
-          <motion.button
+        {filteredCountries.map(country => (
+          <button
             key={country.id}
             onClick={() => setSelectedCountry(country)}
-            className="relative w-full h-56 md:h-64 xl:h-72 rounded-xl overflow-hidden shadow-md cursor-pointer group border-0"
-            initial={{ opacity: 0, y: 18 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: idx * 0.05, duration: 0.45 }}
-            whileHover={{ scale: 1.03 }}
-            aria-label={t(country.key)}
+            className="relative h-56 rounded-xl overflow-hidden shadow-lg"
           >
-            <img
-              src={country.hero}
-              alt={t(country.key)}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              draggable={false}
-            />
-            <img
-              src={country.flag}
-              alt={`${t(country.key)} flag`}
-              className="absolute bottom-3 right-3 w-10 h-7 rounded-sm shadow-md bg-white/20"
-              draggable={false}
-            />
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 flex items-end transition-colors duration-500">
-              <div className="p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                <div className="text-white font-semibold drop-shadow-md">{t(country.key)}</div>
-              </div>
+            <img src={country.hero} className="w-full h-full object-cover" />
+            <img src={country.flag} className="absolute bottom-3 right-3 w-10 h-7" />
+            <div className="absolute inset-0 bg-black/30 flex items-end p-3">
+              <span className="text-white font-semibold">{t(country.key)}</span>
             </div>
-          </motion.button>
+          </button>
         ))}
       </div>
 
-      {/* 弹窗 */}
+      {/* 国家弹窗 */}
       <AnimatePresence>
         {selectedCountry && (
           <motion.div
-            className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4"
             onClick={() => setSelectedCountry(null)}
           >
             <motion.div
-              className="relative bg-white rounded-xl shadow-2xl p-6 max-w-5xl w-full max-h-[90vh] overflow-y-auto"
-              initial={{ y: 20, scale: 0.98 }}
-              animate={{ y: 0, scale: 1 }}
-              exit={{ y: 10, scale: 0.98 }}
-              transition={{ duration: 0.25 }}
-              onClick={(e) => e.stopPropagation()}
+              className="bg-white rounded-xl max-w-5xl w-full p-6 overflow-y-auto max-h-[90vh] relative"
+              onClick={e => e.stopPropagation()}
             >
               <button
-                className="absolute top-3 right-4 text-gray-500 hover:text-black text-2xl font-bold"
+                className="absolute top-3 right-4 text-2xl"
                 onClick={() => setSelectedCountry(null)}
-                aria-label={t('close')}
               >
                 ✕
               </button>
 
-              <header className="mb-4 text-center">
-                <h2 className="text-2xl font-bold">{t(selectedCountry.key)}</h2>
-                <p className="text-gray-600 mt-1">{t(`${selectedCountry.key}Overview`)}</p>
+              {/* ✅ 国家标题 + 描述 */}
+              <header className="mb-6 text-center">
+                <h2 className="text-2xl font-bold">
+                  {t(selectedCountry.key)}
+                </h2>
+                <p className="text-gray-600 mt-1">
+                  {t(`${selectedCountry.key}Overview`)}
+                </p>
               </header>
 
-              <div className="space-y-8">
-                {selectedCountry.cities.map((city, i) => (
-                  <section key={i}>
-                    <h3 className="text-xl font-semibold text-slate-800 mb-2">{city.name}</h3>
-                    <p className="text-gray-700 mb-3">{t(city.descriptionKey)}</p>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center">
-                      {city.photos.map((p, pi) => (
-                        <div key={pi} className="rounded-xl overflow-hidden shadow-md">
-                          <img
-                            src={p.src}
-                            alt={`${city.name} ${pi + 1}`}
-                            className="w-full h-64 object-contain bg-gray-100 rounded-xl transition-transform duration-500 hover:scale-105"
-                            draggable={false}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  </section>
-                ))}
-              </div>
+              {selectedCountry.cities.map(city => (
+                <section key={city.name} className="mb-10">
+                  <h3 className="text-xl font-semibold mb-2">{city.name}</h3>
+                  <p className="mb-4 text-gray-700">
+                    {t(city.descriptionKey)}
+                  </p>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    {city.photos.map(p => (
+                      <img
+                        key={p.src}
+                        src={p.src}
+                        onClick={() => openZoom(p.src)}
+                        className="h-40 w-full object-cover rounded-lg cursor-pointer"
+                      />
+                    ))}
+                  </div>
+                </section>
+              ))}
             </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* 全屏查看 */}
+      <AnimatePresence>
+        {currentPhoto && (
+          <motion.div className="fixed inset-0 bg-black z-[60] flex items-center justify-center">
+            <div className="absolute top-4 text-white">
+              {zoomIndex + 1} / {allPhotos.length}
+            </div>
+            <div className="absolute bottom-6 text-white">
+              {currentPhoto.city}, {t(currentPhoto.countryKey)}
+            </div>
+
+            <button
+              className="absolute left-6 text-white text-4xl"
+              onClick={prevPhoto}
+            >
+              ‹
+            </button>
+            <button
+              className="absolute right-6 text-white text-4xl"
+              onClick={nextPhoto}
+            >
+              ›
+            </button>
+            <button
+              className="absolute top-4 right-6 text-white text-3xl"
+              onClick={() => setZoomIndex(-1)}
+            >
+              ✕
+            </button>
+
+            <TransformWrapper>
+              <TransformComponent>
+                <img
+                  src={currentPhoto.src}
+                  className="max-h-[90vh] max-w-[90vw] object-contain"
+                />
+              </TransformComponent>
+            </TransformWrapper>
           </motion.div>
         )}
       </AnimatePresence>
