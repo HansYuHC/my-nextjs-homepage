@@ -5,11 +5,15 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch'
 import useTranslation from '../../../lib/useTranslation'
 
+/* ================== 工具 ================== */
+const isVideo = (src: string) =>
+  src.toLowerCase().endsWith('.mp4')
+
 /* ================== 类型 ================== */
 type Photo = { src: string }
 
 type CityInfo = {
-  name: string
+  nameKey: string
   descriptionKey: string
   photos: Photo[]
 }
@@ -31,7 +35,7 @@ const countries: Country[] = [
     flag: '/images/flags/spain.png',
     cities: [
       {
-        name: 'Barcelona',
+        nameKey: 'barcelona',
         descriptionKey: 'barcelonaExp',
         photos: [
           { src: '/images/countriesCity/barcelona1.jpg' },
@@ -40,12 +44,12 @@ const countries: Country[] = [
         ],
       },
       {
-        name: 'Tennerife',
+        nameKey: 'tenerife',
         descriptionKey: 'tennerifeExp',
         photos: [{ src: '/images/countriesCity/tennerife.jpg' }],
       },
       {
-        name: 'Palma',
+        nameKey: 'palma',
         descriptionKey: 'palmaExp',
         photos: [{ src: '/images/countriesCity/palma.jpg' }],
       },
@@ -58,7 +62,7 @@ const countries: Country[] = [
     flag: '/images/flags/france.png',
     cities: [
       {
-        name: 'Paris',
+        nameKey: 'paris',
         descriptionKey: 'parisExp',
         photos: [
           { src: '/images/countriesCity/paris1.jpg' },
@@ -67,27 +71,35 @@ const countries: Country[] = [
         ],
       },
       {
-        name: 'Strasbourg',
+        nameKey: 'strasbourg',
         descriptionKey: 'strasbourgExp',
-        photos: [{ src: '/images/countriesCity/strasbourg.jpg' }],
+        photos: [{ src: '/images/countriesCity/strasbourg1.jpg' },
+            { src: '/images/countriesCity/strasbourg2.jpg' },
+            { src: '/images/countriesCity/strasbourg3.jpg' },
+            { src: '/images/countriesCity/strasbourg4.mp4' }],
       },
       {
-        name: 'Colmar',
+        nameKey: 'colmar',
         descriptionKey: 'colmarExp',
         photos: [
           { src: '/images/countriesCity/colmar1.jpg' },
           { src: '/images/countriesCity/colmar2.jpg' },
+          { src: '/images/countriesCity/colmar3.jpg' }
         ],
       },
       {
-        name: 'Nice',
+        nameKey: 'nice',
         descriptionKey: 'niceExp',
-        photos: [{ src: '/images/countriesCity/nice.jpg' }],
+        photos: [{ src: '/images/countriesCity/nice1.jpg' },
+            { src: '/images/countriesCity/nice2.jpg' }],
       },
       {
-        name: 'Cannes',
-        descriptionKey: 'cannesExp',
-        photos: [{ src: '/images/countriesCity/cannes.jpg' }],
+        nameKey: 'antibes',
+        descriptionKey: 'antibesExp',
+        photos: [{ src: '/images/countriesCity/antibes1.jpg' },
+            { src: '/images/countriesCity/antibes2.jpg' },
+            { src: '/images/countriesCity/antibes3.jpg' },
+            { src: '/images/countriesCity/antibes4.jpg' }],
       },
     ],
   },
@@ -98,7 +110,7 @@ const countries: Country[] = [
     flag: '/images/flags/monaco.png',
     cities: [
       {
-        name: 'Monaco City',
+        nameKey: 'monacoCity',
         descriptionKey: 'monacoCityExp',
         photos: [{ src: '/images/countriesCity/monacoCity.jpg' }],
       },
@@ -111,12 +123,12 @@ const countries: Country[] = [
     flag: '/images/flags/italy.png',
     cities: [
       {
-        name: 'Como',
+        nameKey: 'como',
         descriptionKey: 'comoExp',
         photos: [{ src: '/images/countriesCity/como.jpg' }],
       },
       {
-        name: 'Milan',
+        nameKey: 'milan',
         descriptionKey: 'milanExp',
         photos: [
           { src: '/images/countriesCity/milan1.jpg' },
@@ -132,7 +144,7 @@ const countries: Country[] = [
     flag: '/images/flags/luxembourg.png',
     cities: [
       {
-        name: 'Luxembourg City',
+        nameKey: 'luxembourgCity',
         descriptionKey: 'luxembourgExp',
         photos: [{ src: '/images/countriesCity/luxembourgCity.jpg' }],
       },
@@ -145,7 +157,7 @@ const countries: Country[] = [
     flag: '/images/flags/czech.png',
     cities: [
       {
-        name: 'Praha',
+        nameKey: 'praha',
         descriptionKey: 'prahaExp',
         photos: [
           { src: '/images/countriesCity/praha1.jpg' },
@@ -162,7 +174,7 @@ const countries: Country[] = [
     flag: '/images/flags/hungary.png',
     cities: [
       {
-        name: 'Budapest',
+        nameKey: 'budapest',
         descriptionKey: 'budapestExp',
         photos: [
           { src: '/images/countriesCity/budapest1.jpg' },
@@ -179,7 +191,7 @@ const countries: Country[] = [
     flag: '/images/flags/slowakei.png',
     cities: [
       {
-        name: 'Bratislava',
+        nameKey: 'bratislava',
         descriptionKey: 'bratislavaExp',
         photos: [{ src: '/images/countriesCity/bratislava.jpg' }],
       },
@@ -192,7 +204,7 @@ const countries: Country[] = [
     flag: '/images/flags/liechtenstein.png',
     cities: [
       {
-        name: 'Vaduz',
+        nameKey: 'vaduz',
         descriptionKey: 'vaduzExp',
         photos: [{ src: '/images/countriesCity/vaduz1.jpg' }],
       },
@@ -205,7 +217,7 @@ const countries: Country[] = [
     flag: '/images/flags/switzerland.png',
     cities: [
       {
-        name: 'Zuerich',
+        nameKey: 'zuerich',
         descriptionKey: 'zuerichExp',
         photos: [
           { src: '/images/countriesCity/zuerich1.jpg' },
@@ -213,7 +225,7 @@ const countries: Country[] = [
         ],
       },
       {
-        name: 'Luzern',
+        nameKey: 'luzern',
         descriptionKey: 'luzernExp',
         photos: [
           { src: '/images/countriesCity/luzern_1.jpg' },
@@ -221,7 +233,7 @@ const countries: Country[] = [
         ],
       },
       {
-        name: 'Geneva',
+        nameKey: 'geneva',
         descriptionKey: 'genevaExp',
         photos: [{ src: '/images/countriesCity/geneva.jpg' }],
       },
@@ -234,17 +246,17 @@ const countries: Country[] = [
     flag: '/images/flags/austria.png',
     cities: [
       {
-        name: 'Wien',
+        nameKey: 'wien',
         descriptionKey: 'wienExp',
         photos: [{ src: '/images/countriesCity/wien1.jpg' }],
       },
       {
-        name: 'Salzburg',
+        nameKey: 'salzburg',
         descriptionKey: 'salzburgExp',
         photos: [{ src: '/images/countriesCity/salzburg.jpg' }],
       },
       {
-        name: 'Hallstatt',
+        nameKey: 'hallstatt',
         descriptionKey: 'hallstattExp',
         photos: [
           { src: '/images/countriesCity/hallstatt1.jpg' },
@@ -261,7 +273,7 @@ const countries: Country[] = [
     flag: '/images/flags/turkey.png',
     cities: [
       {
-        name: 'Antalya',
+        nameKey: 'antalya',
         descriptionKey: 'antalyaExp',
         photos: [
           { src: '/images/countriesCity/antalya1.jpg' },
@@ -299,7 +311,7 @@ function TouristCitiesContent() {
         country.cities.flatMap(city =>
           city.photos.map(p => ({
             src: p.src,
-            city: city.name,
+            cityKey: city.nameKey,
             countryKey: country.key,
           })),
         ),
@@ -333,7 +345,6 @@ function TouristCitiesContent() {
 
   return (
     <div className="p-6">
-      {/* 搜索 */}
       <div className="max-w-xl mx-auto mb-6">
         <input
           value={search}
@@ -350,7 +361,6 @@ function TouristCitiesContent() {
         {t('touristcitiesDescription')}
       </p>
 
-      {/* 国家卡片 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6">
         {filteredCountries.map(country => (
           <button
@@ -367,7 +377,7 @@ function TouristCitiesContent() {
         ))}
       </div>
 
-      {/* 国家弹窗 */}
+      {/* ================== 国家弹窗 ================== */}
       <AnimatePresence>
         {selectedCountry && (
           <motion.div
@@ -385,7 +395,6 @@ function TouristCitiesContent() {
                 ✕
               </button>
 
-              {/* ✅ 国家标题 + 描述 */}
               <header className="mb-6 text-center">
                 <h2 className="text-2xl font-bold">
                   {t(selectedCountry.key)}
@@ -396,19 +405,42 @@ function TouristCitiesContent() {
               </header>
 
               {selectedCountry.cities.map(city => (
-                <section key={city.name} className="mb-10">
-                  <h3 className="text-xl font-semibold mb-2">{city.name}</h3>
+                <section key={city.nameKey} className="mb-10">
+                  <h3 className="text-xl font-semibold mb-2">
+                    {t(city.nameKey)}
+                  </h3>
                   <p className="mb-4 text-gray-700">
                     {t(city.descriptionKey)}
                   </p>
+
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {city.photos.map(p => (
-                      <img
+                      <div
                         key={p.src}
-                        src={p.src}
                         onClick={() => openZoom(p.src)}
-                        className="h-40 w-full object-cover rounded-lg cursor-pointer"
-                      />
+                        className="relative h-40 w-full rounded-lg overflow-hidden cursor-pointer"
+                      >
+                        {isVideo(p.src) ? (
+                          <>
+                            <video
+                              src={p.src}
+                              muted
+                              preload="metadata"
+                              className="w-full h-full object-cover"
+                            />
+                            <div className="absolute inset-0 flex items-center justify-center">
+                              <div className="bg-black/60 text-white rounded-full w-12 h-12 flex items-center justify-center text-xl">
+                                ▶
+                              </div>
+                            </div>
+                          </>
+                        ) : (
+                          <img
+                            src={p.src}
+                            className="w-full h-full object-cover"
+                          />
+                        )}
+                      </div>
                     ))}
                   </div>
                 </section>
@@ -418,15 +450,19 @@ function TouristCitiesContent() {
         )}
       </AnimatePresence>
 
-      {/* 全屏查看 */}
+      {/* ================== 放大查看 ================== */}
       <AnimatePresence>
         {currentPhoto && (
           <motion.div className="fixed inset-0 bg-black z-[60] flex items-center justify-center">
             <div className="absolute top-4 text-white">
               {zoomIndex + 1} / {allPhotos.length}
             </div>
-            <div className="absolute bottom-6 text-white">
-              {currentPhoto.city}, {t(currentPhoto.countryKey)}
+
+            {/* 底部说明栏（防遮挡） */}
+            <div className="absolute bottom-0 w-full bg-gradient-to-t from-black/80 to-transparent text-center py-4 pointer-events-none">
+              <span className="text-white text-sm">
+                {t(currentPhoto.cityKey)}, {t(currentPhoto.countryKey)}
+              </span>
             </div>
 
             <button
@@ -450,10 +486,19 @@ function TouristCitiesContent() {
 
             <TransformWrapper>
               <TransformComponent>
-                <img
-                  src={currentPhoto.src}
-                  className="max-h-[90vh] max-w-[90vw] object-contain"
-                />
+                {isVideo(currentPhoto.src) ? (
+                  <video
+                    src={currentPhoto.src}
+                    controls
+                    autoPlay
+                    className="max-h-[85vh] max-w-[90vw]"
+                  />
+                ) : (
+                  <img
+                    src={currentPhoto.src}
+                    className="max-h-[85vh] max-w-[90vw] object-contain"
+                  />
+                )}
               </TransformComponent>
             </TransformWrapper>
           </motion.div>

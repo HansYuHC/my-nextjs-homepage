@@ -130,6 +130,17 @@
     "touristcitiesDescription": "Besides Germany, I also traveled to several other neighboring European countries, experiencing different customs and cultures. Below, I will introduce different cities in these countries, some famous for their natural scenery, some for their cultural landscapes, and some for both.",
 
     "france": "France",
+    "franceOverview": "France (French Republic) is located in Western Europe, the largest country in the EU by area, with its capital Paris, renowned worldwide for romance, fashion, and rich historical culture. France is the world's seventh-largest economy, leading in fields such as aviation, nuclear power, luxury goods, and tourism, and as a permanent member of the UN Security Council, it holds significant international influence. France is celebrated for art, cuisine, wine, and iconic landmarks like the Eiffel Tower, known as the 'City of Romance' and a great cultural nation.",
+    "paris": "Paris",
+    "parisExp": "Paris is the capital and largest city of France, located on the banks of the Seine, known as the 'City of Light' and 'City of Romance,' attracting global visitors with its elegant urban charm and rich cultural heritage. We visited the Eiffel Tower, Notre-Dame Cathedral, and the Louvre in Paris. Additionally, Paris is the global fashion capital (Fashion Week, luxury brands abound), a gourmet paradise (Michelin restaurants, French bread, and wine), and the epitome of art and romance—the cafés along the Seine and nighttime views are intoxicating.",
+    "strasbourg": "Strasbourg",
+    "strasbourgExp": "Strasbourg is the capital of the Alsace region in France, located on the Rhine near the German border, famous for its unique Franco-German mixed culture and as the seat of European institutions (such as the European Parliament), known as the 'European Capital.' We visited Strasbourg Cathedral, the romantic district of Little France, and the renowned Christmas market with stalls selling handicrafts, mulled wine, and Alsatian delicacies, attracting millions of visitors to experience the festive atmosphere.",
+    "colmar": "Colmar",
+    "colmarExp": "Colmar is a charming small town in northeastern Alsace, France, the capital of the Haut-Rhin department, known for its well-preserved medieval old town and fairytale-like colorful half-timbered houses, called 'Little Venice of France' and the capital of Alsatian wine. We followed the footsteps of the Chinese entertainment program 'Chinese Restaurant' and explored this town.",
+    "nice": "Nice",
+    "niceExp": "Nice is a city on the Mediterranean coast in southeastern France, the largest city in the Provence-Alpes-Côte d'Azur region, known for its pleasant Mediterranean climate, azure coastline, and pebble beaches, dubbed the 'Pearl of the French Riviera.'",
+    "antibes": "Antibes",
+    "antibesExp": "Antibes is a charming historic seaside town on the French Riviera between Nice and Cannes, known for its medieval old town, Picasso Museum, and impressive fortress walls. The city offers fine golden sandy beaches and clear Mediterranean waters, an ideal place for authentic seafood, and has become a source of artistic inspiration due to Impressionist painters like Monet who created works here.",
 
     "project_cadIntro": "Since my undergraduate studies, I have used various CAD software, such as SolidWorks or Creo PTC, to learn and practice CAD software modeling knowledge and projects.",
 
@@ -346,6 +357,17 @@
     "touristcitiesDescription": "Neben Deutschland bereiste ich auch einige andere europäische Nachbarländer und lernte dabei verschiedene Sitten und Gebräuche kennen. Im Folgenden stelle ich verschiedene Städte dieser Länder vor, von denen einige für ihre Naturlandschaften, andere für ihre Kulturlandschaften und wieder andere für beides bekannt sind.",
 
     "france": "Frankreich",
+    "franceOverview": "Frankreich (Republik Frankreich) liegt in Westeuropa, ist das flächenmäßig größte Land der EU, die Hauptstadt ist Paris und es ist weltberühmt für Romantik, Mode und reiches historisches Kulturerbe. Frankreich ist die siebtgrößte Wirtschaftsmacht der Welt, führend in Bereichen wie Luftfahrt, Kernenergie, Luxusgütern und Tourismus, und als ständiges Mitglied des UN-Sicherheitsrats von großer internationaler Bedeutung. Frankreich steht für Kunst, Gastronomie, Wein und ikonische Sehenswürdigkeiten wie den Eiffelturm und wird als „Stadt der Romantik“ und Kulturgroßmacht gefeiert.",
+    "paris": "Paris",
+    "parisExp": "Paris ist die Hauptstadt und größte Stadt Frankreichs, am Ufer der Seine gelegen, bekannt als „Stadt des Lichts“ und „Stadt der Romantik“, die mit ihrer eleganten städtischen Atmosphäre und reichem kulturellen Erbe Besucher aus aller Welt anzieht. Wir besuchten in Paris den Eiffelturm, die Kathedrale Notre-Dame und den Louvre. Darüber hinaus ist Paris die globale Modemetropole (Fashion Week, Luxusmarken), ein Paradies für Feinschmecker (Michelin-Restaurants, französisches Brot und Wein) sowie Inbegriff von Kunst und Romantik – die Cafés am Seine-Ufer und die nächtlichen Ausblicke sind unvergleichlich.",
+    "strasbourg": "Straßburg",
+    "strasbourgExp": "Straßburg ist die Hauptstadt der Region Elsass, liegt am Rhein nahe der deutschen Grenze, bekannt für seine einzigartige französisch-deutsche Mischkultur und als Sitz europäischer Institutionen (z. B. Europäisches Parlament) und wird als „Europahauptstadt“ bezeichnet. Wir besuchten die Straßburger Kathedrale, den romantischen Stadtteil Petite France sowie den berühmten Weihnachtsmarkt mit Ständen für Handwerkskunst, Glühwein und elsässische Spezialitäten, der Millionen Besucher in festliche Stimmung versetzt.",
+    "colmar": "Colmar",
+    "colmarExp": "Colmar ist eine bezaubernde Kleinstadt im Nordosten der Region Elsass, Hauptstadt des Départements Haut-Rhin, bekannt für ihre gut erhaltene mittelalterliche Altstadt und märchenhaften bunten Fachwerkhäuser, genannt „Klein-Venedig Frankreichs“ und Hauptstadt des elsässischen Weins. Wir folgten den Spuren der chinesischen Unterhaltungssendung „Zhong Can Ting“ (Chinesisches Restaurant) und erkundeten diese Stadt.",
+    "nice": "Nizza",
+    "niceExp": "Nizza ist eine Stadt an der Mittelmeerküste im Südosten Frankreichs, die größte Stadt der Region Provence-Alpes-Côte d’Azur, bekannt für ihr angenehmes mediterranes Klima, die azurblaue Küste und Kieselstrände und wird als „Perle der Côte d’Azur“ bezeichnet.",
+    "antibes": "Antibes",
+    "antibesExp": "Antibes ist eine bezaubernde historische Hafenstadt an der Côte d’Azur zwischen Nizza und Cannes, bekannt für ihre mittelalterliche Altstadt, das Picasso-Museum und die imposante Festung Fort Carré. Die Stadt bietet feine goldene Sandstrände und klares Mittelmeerwasser, ist ein idealer Ort für authentische Meeresfrüchte und wurde durch Impressionisten wie Monet zu einem Ort künstlerischer Inspiration.",
 
 
     "project_cadIntro": "Seit meinem Grundstudium in der Uni habe ich verschiedene CAD-Softwareprogramme mit SolidWorks oder Creo PTC genutzt, um Kenntnisse in der CAD-Softwaremodellierung zu erwerben und in Projekten anzuwenden.",
@@ -575,6 +597,19 @@
     "touristcitiesDescription": "除了德国之外，我还游历了周边若干其他的欧洲国家，体验了不一样的风土人情。下面我会介绍去过的这些国家里的不同城市，有些以自然风光而闻名，有些以人文景观著称，有些甚至兼而有之。",
 
     "france": "法国",
+    "franceOverview": "法国（法兰西共和国）位于西欧，是欧盟面积最大的国家，首都巴黎，以浪漫时尚和丰富历史文化闻名于世。法国是世界第七大经济体，在航空、核电、奢侈品和旅游业等领域领先，同时是联合国安理会常任理事国，拥有重要国际影响力。法国以艺术、美食、葡萄酒和标志性景点如埃菲尔铁塔著称，被誉为“浪漫之都”和文化大国。",
+    "paris": "巴黎",
+    "parisExp": "巴黎是法国的首都和最大城市，位于塞纳河畔，被誉为“光之城”和“浪漫之都”，以其优雅的都市风貌和丰富的文化遗产吸引全球游客。我们在巴黎参观了埃菲尔铁塔，巴黎圣母院和卢浮宫。此外，巴黎还是全球时尚之都（时装周、奢侈品牌云集）、美食天堂（米其林餐厅、法式面包和葡萄酒），以及艺术与浪漫的代名词，塞纳河畔的咖啡馆和夜景令人沉醉。",
+    "strasbourg": "斯特拉斯堡",
+    "strasbourgExp": "斯特拉斯堡是法国阿尔萨斯大区首府，位于莱茵河畔靠近德国边境，以其独特的法德混合文化和欧洲机构驻地（如欧洲议会）而闻名，被称为“欧洲首都”。我们参观了斯特拉斯堡大教堂，城市的浪漫景区小法兰西，还有当地的久负盛名的圣诞市场，摊位出售手工饰品、热红酒和阿尔萨斯美食，吸引数百万游客前来体验浓郁的节日气氛。",
+    "colmar": "科尔马",
+    "colmarExp": "科尔马是法国东北部阿尔萨斯地区的一座迷人小城，上莱茵省首府，以其保存完好的中世纪老城区和童话般的彩色半木结构房屋闻名，被誉为“法国小威尼斯”和阿尔萨斯葡萄酒之都。我们循着中国电视娱乐节目“中餐厅”的足迹，探访了这座小城。",
+    "nice": "尼斯",
+    "niceExp": "尼斯是法国东南部地中海沿岸的城市，普罗旺斯-阿尔卑斯-蓝色海岸大区的最大城市，以温暖宜人的地中海气候、蔚蓝海岸和鹅卵石海滩闻名，被誉为“蓝色海岸的明珠”。",
+    "antibes": "昂蒂布",
+    "antibesExp": "昂蒂布是法国蓝色海岸的一座迷人海滨古城，位于尼斯和戛纳之间，以中世纪老城区、毕加索博物馆和壮观的城墙要塞闻名。这座城市拥有细腻的金色沙滩和清澈地中海水域，是享用地道海鲜的绝佳之地，同时因莫奈等印象派画家曾在此创作而成为艺术灵感之地。",
+
+
 
 
     "projectsOverview": "项目概览",
