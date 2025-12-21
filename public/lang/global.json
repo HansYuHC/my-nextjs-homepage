@@ -142,6 +142,17 @@
     "antibes": "Antibes",
     "antibesExp": "Antibes is a charming historic seaside town on the French Riviera between Nice and Cannes, known for its medieval old town, Picasso Museum, and impressive fortress walls. The city offers fine golden sandy beaches and clear Mediterranean waters, an ideal place for authentic seafood, and has become a source of artistic inspiration due to Impressionist painters like Monet who created works here.",
 
+    "spain": "Spain",
+    "spainOverview": "Spain (Kingdom of Spain) is located on the Iberian Peninsula in southwestern Europe, the fourth-largest country in the EU, famous for passionate flamenco, bullfighting, rich historical sites, and Mediterranean charm, with Madrid as its capital. We visited Barcelona, Tenerife, and Palma.",
+    "barcelona": "Barcelona",
+    "barcelonaExp": "Barcelona is the capital of Catalonia and one of the most vibrant cities on the Mediterranean coast, renowned for Gaudí’s unique architecture, passionate Mediterranean culture, and rich historical legacy. The famous La Boqueria market and seaside restaurants offer fresh paella, fried calamari rings, and seafood platters. We visited Gaudí’s unfinished masterpiece Sagrada Família, his dreamlike Park Güell, and enjoyed shopping and sightseeing at Plaça d’Espanya.",
+    "tennerife": "Tenerife",
+    "tennerifeExp": "Tenerife is the largest and most diverse island of the Canary Islands, featuring volcanic landscapes, subtropical climate, and year-round mild ‘eternal spring’ weather, one of Europe’s top vacation destinations. The island offers a variety of beaches—from black volcanic sand beaches in the north to golden artificial beaches in the south—perfect for swimming, sunbathing, and water sports. Tenerife is one of the best places in Europe for stargazing; the Teide National Park, home to Spain’s highest peak at 3718 meters, has crystal-clear night skies, and sunsets from the summit with orange-red light over the clouds are breathtaking.",
+    "palma": "Palma",
+    "palmaExp": "Palma is the capital of Mallorca in the Balearic Islands and one of the most charming historic coastal cities in the Mediterranean, known for its blend of Arab, Gothic, and Renaissance architecture and picturesque harbor. The old town preserves narrow winding cobblestone streets, Arab baths, and grand aristocratic palaces, exuding Mediterranean charm; the port area offers luxury yachts, lively fish markets, and bustling restaurants—ideal for watching sunsets and enjoying seaside life.",
+
+
+
     "project_cadIntro": "Since my undergraduate studies, I have used various CAD software, such as SolidWorks or Creo PTC, to learn and practice CAD software modeling knowledge and projects.",
 
     "projectsOverview": "Project Overview",
@@ -368,6 +379,15 @@
     "niceExp": "Nizza ist eine Stadt an der Mittelmeerküste im Südosten Frankreichs, die größte Stadt der Region Provence-Alpes-Côte d’Azur, bekannt für ihr angenehmes mediterranes Klima, die azurblaue Küste und Kieselstrände und wird als „Perle der Côte d’Azur“ bezeichnet.",
     "antibes": "Antibes",
     "antibesExp": "Antibes ist eine bezaubernde historische Hafenstadt an der Côte d’Azur zwischen Nizza und Cannes, bekannt für ihre mittelalterliche Altstadt, das Picasso-Museum und die imposante Festung Fort Carré. Die Stadt bietet feine goldene Sandstrände und klares Mittelmeerwasser, ist ein idealer Ort für authentische Meeresfrüchte und wurde durch Impressionisten wie Monet zu einem Ort künstlerischer Inspiration.",
+
+    "spain": "Spanien",
+    "spainOverview": "Spanien (Königreich Spanien) liegt auf der Iberischen Halbinsel im Südwesten Europas, ist das viertgrößte Land der EU und bekannt für leidenschaftlichen Flamenco, Stierkampf, reiche historische Stätten und mediterranes Flair, Hauptstadt ist Madrid. Wir waren in Barcelona, Teneriffa und Palma.",
+    "barcelona": "Barcelona",
+    "barcelonaExp": "Barcelona ist die Hauptstadt der Region Katalonien und eine der lebendigsten Städte an der Mittelmeerküste, berühmt für Gaudís einzigartige Architektur, die leidenschaftliche mediterrane Kultur und reiche historische Spuren. Auf dem berühmten Markt La Boqueria und in den Hafenrestaurants genießt man frische Paella, gebratene Tintenfischringe und Meeresfrüchte-Platten. Wir besuchten Gaudís unvollendetes Meisterwerk Sagrada Família, seinen Traumpark Park Güell und machten in der Plaça d’Espanya Einkäufe und Sightseeing.",
+    "tennerife": "Teneriffa",
+    "tennerifeExp": "Teneriffa ist die größte und vielfältigste Insel der Kanarischen Inseln, mit vulkanischer Landschaft, subtropischem Klima und ganzjährig mildem „ewigem Frühling“, eines der beliebtesten Urlaubsziele Europas. Die Insel bietet verschiedenste Strände – von schwarzen Vulkansandstränden im Norden bis zu goldenen Sandstränden im Süden – ideal zum Schwimmen, Sonnenbaden und Wassersport. Teneriffa ist einer der besten Orte Europas zum Sternenbeobachten; im Teide-Nationalpark auf 3718 m Höhe, dem höchsten Berg Spaniens, ist der Nachthimmel kristallklar, Sonnenuntergänge vom Gipfel mit orangerotem Licht über den Wolken sind atemberaubend.",
+    "palma": "Palma",
+    "palmaExp": "Palma ist die Hauptstadt der Insel Mallorca auf den Balearen und eine der charmantesten historischen Hafenstädte des Mittelmeers, bekannt für die Mischung aus arabischer, gotischer und Renaissance-Architektur sowie ihrem malerischen Hafen. Die Altstadt bewahrt enge, gewundene Kopfsteinstraßen, arabische Bäder und prächtige Adelspaläste, die mediterranes Flair versprühen; der Hafenbereich lockt mit Luxusyachten, lebhaften Fischmärkten und Restaurants – perfekt für Sonnenuntergänge und entspanntes Küstenleben.",
 
 
     "project_cadIntro": "Seit meinem Grundstudium in der Uni habe ich verschiedene CAD-Softwareprogramme mit SolidWorks oder Creo PTC genutzt, um Kenntnisse in der CAD-Softwaremodellierung zu erwerben und in Projekten anzuwenden.",
@@ -608,6 +628,16 @@
     "niceExp": "尼斯是法国东南部地中海沿岸的城市，普罗旺斯-阿尔卑斯-蓝色海岸大区的最大城市，以温暖宜人的地中海气候、蔚蓝海岸和鹅卵石海滩闻名，被誉为“蓝色海岸的明珠”。",
     "antibes": "昂蒂布",
     "antibesExp": "昂蒂布是法国蓝色海岸的一座迷人海滨古城，位于尼斯和戛纳之间，以中世纪老城区、毕加索博物馆和壮观的城墙要塞闻名。这座城市拥有细腻的金色沙滩和清澈地中海水域，是享用地道海鲜的绝佳之地，同时因莫奈等印象派画家曾在此创作而成为艺术灵感之地。",
+
+    "spain": "西班牙",
+    "spainOverview": "西班牙（西班牙王国）位于欧洲西南部的伊比利亚半岛，是欧盟面积第四大的国家，以热情奔放的弗拉门戈、斗牛文化、丰富的历史遗迹和地中海风情闻名，首都马德里。我们去过西班牙的巴塞罗那，特内里费岛和帕尔马。",
+    "barcelona": "巴塞罗那",
+    "barcelonaExp": "巴塞罗那是西班牙加泰罗尼亚地区的首府，地中海沿岸最具活力的城市之一，以高迪的独特建筑风格、热情的地中海文化和丰富的历史遗迹闻名。海鲜市场提供新鲜的海鲜饭，炸鱿鱼圈和海鲜拼盘让人垂涎。我们还参观了高迪的不朽杰作圣家族大教堂以及他的梦幻之作古埃尔公园，并在西班牙广场购物及观光。",
+    "tennerife": "特内里费",
+    "tennerifeExp": "特内里费是西班牙加那利群岛中最大、最具多样性的岛屿，拥有火山地貌、亚热带气候和全年温和的“永恒之春”气候，是欧洲最受欢迎的度假胜地之一。岛上拥有多种风格的海滩，适合游泳、日光浴和水上活动。特内里费是欧洲最佳观星地点之一，泰德国家公园内海拔3718米的泰德火山是西班牙最高峰，夜空清澈，常举办专业观星活动；日落时，火山顶的橙红光芒与云海交织，景色壮丽震撼。",
+    "palma": "帕尔马",
+    "palmaExp": "帕尔马是西班牙巴利阿里群岛中马略卡岛的首府，也是地中海地区最具魅力的历史海滨城市之一，以其融合阿拉伯、哥特和文艺复兴风格的建筑和迷人的港口风光闻名。老城区保留了狭窄蜿蜒的石板街道、阿拉伯浴场和古老的贵族宅邸，充满地中海风情；港口区则有豪华游艇、鲜活的海鲜市场和热闹的餐厅，是欣赏日落和享受海滨生活的绝佳去处。",
+
 
 
 
