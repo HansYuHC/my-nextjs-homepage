@@ -188,6 +188,12 @@ const cities: City[] = [
     key: 'esslingen',
     image: '/images/cities/esslingen_badge.png',
     photos: ['/images/cities/esslingen1.jpg','/images/cities/esslingen2.jpg','/images/cities/esslingen3.jpg','/images/cities/esslingen4.jpg'],
+  },
+  {
+    id: 'schwaebischGemuend',
+    key: 'schwaebischGemuend',
+    image: '/images/cities/schwaebischGemuend_badge.png',
+    photos: ['/images/cities/schwaebischGemuend1.jpg','/images/cities/schwaebischGemuend2.jpg','/images/cities/schwaebischGemuend3.jpg','/images/cities/schwaebischGemuend4.jpg'],
   }
 ]
 
@@ -277,7 +283,7 @@ function OtherCitiesContent() {
             onClick={() => setSelectedCity(null)}
           >
             <motion.div
-              className="bg-white rounded-xl shadow-2xl p-6 max-w-2xl w-full relative"
+              className="bg-white rounded-xl shadow-2xl p-6 max-w-2xl w-full relative max-h-[85vh] overflow-y-auto"
               onClick={(e) => e.stopPropagation()}
             >
               <button

@@ -96,10 +96,20 @@
     "dresdenDesc": "Dresden is an important cultural, political, and economic center in eastern Germany. We visited famous landmarks there, including the Zwinger Palace, the Dresden Royal Palace, and the cathedral.",
     "nuernberg": "Nürnberg",
     "nuernbergDesc": "Nuremberg is the central city of the Central Franconia district in Bavaria, Germany. After World War II, the Nuremberg Trials, in which Nazi German war criminals were tried, were held here. We visited the city center and the Nuremberg Zoo.",
+    "erlangen": "Erlangen",
+    "erlangenDesc": "Erlangen is one of the three major cities in Bavaria, known for the Friedrich-Alexander University Erlangen-Nuremberg and the Siemens headquarters. I completed my mechanical engineering undergraduate internship at the Schaeffler Group near this city.",
+    "muenchen": "Munich",
+    "muenchenDesc": "Munich is the capital of the Free State of Bavaria, located on the northern foothills of the Alps along the Isar River, and is one of Germany’s leading economic, cultural, scientific, and transportation centers. The BMW headquarters, Allianz Arena, Oktoberfest, and the stunning natural landscapes of Bavaria are its iconic symbols.",
+    "bamberg": "Bamberg",
+    "bambergDesc": "Bamberg is a university and administrative city; its old town is Germany’s largest intact historic city center and has been a UNESCO World Heritage Site since 1993. We enjoyed a boat tour on the river through the city center to admire the old town scenery.",
+    "rothenburg": "Rothenburg",
+    "rothenburgDesc": "Rothenburg ob der Tauber is famous for its perfectly preserved medieval old town, attracting visitors from around the world. It is a key stop on Germany’s Romantic Road in the south. Today, Rothenburg is one of the four remaining cities in Germany with fully intact city walls.",
     "freiburg": "Freiburg",
     "freiburgDesc": "Freiburg is a transportation hub in the western Black Forest region, on the Upper Rhine Plain. As an ancient university town and the center of a Catholic diocese, Freiburg boasts the University of Freiburg, founded during the Renaissance, and the famous medieval Freiburg Cathedral. Lake Titisee, located nearby, offers stunning scenery.",
     "baden-baden": "Baden-Baden",
     "baden-badenDesc": "Baden-Baden, located in southwestern Germany at the western foot of the Black Forest, is a renowned spa resort, tourist destination, and international conference city.",
+    "konstanz": "Konstanz",
+    "konstanzDesc": "Konstanz borders Switzerland to the south and is the largest city on Lake Constance. With its beautiful scenery, nestled between mountains and water, it is a wonderful destination for relaxation and holidays.",
     "heilbronn": "Heilbronn",
     "heilbronnDesc": "Heilbronn is a city in northern Baden-Württemberg, Germany, with a population of approximately 120,000. The Experimenta science museum in the city center is a popular weekend destination for children.",
     "heidelberg": "Heidelberg",
@@ -119,6 +129,8 @@
     "reutlingenDesc": "Reutlingen, located in the southwestern corner of Germany, is the ninth largest city in the state of Baden-Württemberg. Its Christmas market, though small in scale, is unique and charming.",
     "esslingen": "Esslingen",
     "esslingenDesc": "Esslingen is famous for its medieval-style Christmas market, which combines various lights and stalls, food and handicraft stalls, medieval merchants dressed as Vikings, and medieval-style amusement facilities and performances, making Esslingen's Christmas market well-known.",
+    "schwaebischGemuend": "Schwäbisch Gmünd",
+    "schwaebischGemuendDesc": "Schwäbisch Gmünd is a historic small town in Baden-Württemberg, Germany, located about 50 km east of Stuttgart, renowned for its medieval old town, silverware craftsmanship, and peaceful natural surroundings, often called the 'Silver City'. The city center preserves well-maintained old town walls and Gothic architecture, while the famous Prediger Museum, housed in a 13th-century monastery, is Germany’s only museum dedicated to silver and jewelry craftsmanship, showcasing exquisite handcrafted silverware and local silversmith traditions. The Christmas market is a major highlight, held every year from late November to December in the central squares and old town streets, offering handmade silver jewelry, wooden toys, and mulled wine, accompanied by church lights and festive music, creating a warm and authentic German Christmas atmosphere.",
 
 
 
@@ -339,6 +351,14 @@
     "freiburgDesc": "Freiburg ist ein Verkehrsknotenpunkt im westlichen Schwarzwald, in der Oberrheinischen Tiefebene. Als alte Universitätsstadt und Zentrum eines katholischen Bistums beherbergt Freiburg die Universität Freiburg, die in der Renaissance gegründet wurde, und den berühmten mittelalterlichen Freiburger Dom. Der nahegelegene Titisee bietet eine atemberaubende Kulisse.",
     "baden-baden": "Baden-Baden",
     "baden-badenDesc": "Baden-Baden, im Südwesten Deutschlands am westlichen Fuße des Schwarzwaldes gelegen, ist ein bekannter Kurort, ein beliebtes Touristenziel und eine internationale Konferenzstadt.",
+    "erlangen": "Erlangen",
+    "erlangenDesc": "Erlangen ist eine der drei großen Städte Bayerns, bekannt für die Friedrich-Alexander-Universität Erlangen-Nürnberg und das Siemens-Zentrum. Hier habe ich während meines Bachelor-Studiums im Maschinenbau ein Praktikum bei der Schaeffler Gruppe in der Nähe der Stadt absolviert.",
+    "muenchen": "München",
+    "muenchenDesc": "München ist die Landeshauptstadt des Freistaates Bayern, liegt am nördlichen Alpenvorland am Ufer der Isar und zählt zu den wichtigsten Wirtschafts-, Kultur-, Wissenschafts- und Verkehrszentren Deutschlands. BMW-Hauptquartier, Allianz Arena, das Oktoberfest und die malerischen Naturlandschaften Bayerns sind ihre Markenzeichen.",
+    "bamberg": "Bamberg",
+    "bambergDesc": "Bamberg ist eine Universitäts- und Verwaltungsstadt; die Bamberger Altstadt ist Deutschlands größte unzerstörte historische Altstadt und seit 1993 UNESCO-Weltkulturerbe. Wir genossen eine Bootsfahrt auf dem Fluss durch die Stadt, um die Altstadt zu bewundern.",
+    "rothenburg": "Rothenburg",
+    "rothenburgDesc": "Rothenburg ob der Tauber ist berühmt für seine gut erhaltene mittelalterliche Altstadt und zieht Besucher aus aller Welt an. Es liegt an der Romantischen Straße im Süden Deutschlands. Heute ist Rothenburg eine der vier wenigen Städte in Deutschland, die noch vollständig erhaltene Stadtmauern besitzt.",
 
     "heidelberg": "Heidelberg",
     "heidelbergDesc": "Heidelberg liegt am Ufer des Neckars, und das berühmte Heidelberger Schloss thront 200 Meter über dem Fluss auf dem Königstuhl und überblickt die enge Altstadt. Der berühmte Dichter Goethe flanierte einst durch den Park rund um das Schloss.",
@@ -348,6 +368,8 @@
     "frankfurtDesc": "Frankfurt am Main ist ein bedeutendes Handels-, Kultur-, Bildungs-, Tourismus- und Verkehrszentrum in Kontinentaleuropa und Sitz zahlreicher globaler und europäischer Unternehmen und Bildungseinrichtungen. Wir besuchten die Internationale Automobil-Ausstellung in Frankfurt und genossen die wunderschöne Landschaft entlang des Mains.",
     "heilbronn": "Heilbronn",
     "heilbronnDesc": "Heilbronn ist eine Stadt im nördlichen Baden-Württemberg mit rund 120.000 Einwohnern. Das Experimenta-Museum im Stadtzentrum ist ein beliebtes Wochenendziel für Kinder.",
+    "konstanz": "Konstanz",
+    "konstanzDesc": "Konstanz grenzt im Süden direkt an die Schweiz und ist die größte Stadt am Bodensee. Die landschaftlich reizvolle Lage am Wasser und zu Füßen der Berge macht es zu einem idealen Ort für Erholung und Urlaub.",
     "lindau": "Lindau",
     "lindauDesc": "Lindau liegt im Dreiländereck Österreich, Deutschland und Schweiz. Die Altstadt befindet sich auf der Lindauer Insel am Ostufer des Bodensees. Dank seiner malerischen Lage und des Leuchtturms sowie der Löwenskulptur ist Lindau ein beliebtes Touristenziel.",
     "hohenzollern": "Burg Hohenzollern",
@@ -358,6 +380,8 @@
     "reutlingenDesc": "Reutlingen, im Südwesten Deutschlands gelegen, ist die neuntgrößte Stadt Baden-Württembergs. Ihr Weihnachtsmarkt ist zwar klein, aber einzigartig und bezaubernd.",
     "esslingen": "Esslingen",
     "esslingenDesc": "Esslingen ist berühmt für seinen mittelalterlichen Weihnachtsmarkt, der verschiedene Lichter und Stände, Essens- und Kunsthandwerksstände, als Wikinger verkleidete Händler sowie mittelalterliche Vergnügungseinrichtungen und Aufführungen kombiniert und so den Esslingener Weihnachtsmarkt bekannt macht.",
+    "schwaebischGemuend": "Schwäbisch Gmünd",
+    "schwaebischGemuendDesc": "Schwäbisch Gmünd ist eine historische Kleinstadt in Baden-Württemberg, etwa 50 km östlich von Stuttgart gelegen, bekannt für ihre mittelalterliche Altstadt, die Silberschmiedekunst und die ruhige Natur – oft als „Silberstadt“ bezeichnet. Das Stadtzentrum bewahrt gut erhaltene Stadtmauern und gotische Architektur; das berühmte Prediger-Museum, untergebracht in einem Kloster aus dem 13. Jahrhundert, ist das einzige Museum Deutschlands, das sich der Silber- und Schmuckkunst widmet, und zeigt exquisite handgefertigte Silberarbeiten sowie die Tradition der Gmünder Silberschmiede. Der Weihnachtsmarkt ist ein absolutes Highlight: Von Ende November bis Dezember füllen sich die Plätze und Gassen der Altstadt mit Ständen, die handgefertigten Silberschmuck, Holzschnitzereien und Glühwein anbieten – begleitet von Kirchenlicht und festlicher Musik, ein echter deutscher Weihnachtszauber.",
 
 
 
@@ -585,6 +609,7 @@
     "bambergDesc": "班贝格是一座大学城和行政城市，班贝格老城是德国最大的一座未受战争毁坏的历史城区，1993年入选联合国教科文组织的世界文化遗产名录。我们在城市中心的河流中乘船欣赏老城风光。",
     "rothenburg": "罗腾堡",
     "rothenburgDesc": "罗滕堡以其保存完好的中世纪古城而闻名，吸引着来自世界各地的游客。其为德国南部的浪漫之路上的一站。如今，罗滕堡是德国仅存的四座仍保有完整城墙的城市之一。",
+
     "konstanz": "康斯坦茨",
     "konstanzDesc": "康斯坦茨南与瑞士接壤，是博登湖畔最大的城市。这里风景秀丽，依山傍水，是休闲度假的好去处。",
     "freiburg": "弗莱堡",
@@ -609,6 +634,8 @@
     "reutlingenDesc": "罗伊特林根位于德国西南角，是巴登符腾堡州第九大城市。这里的圣诞集市虽然规模不大，但独具特色。",
     "esslingen": "埃斯林根",
     "esslingenDesc": "埃斯林根以中世纪风格的圣诞集市出名，揉合了各种灯饰与摊位元素，美食与手工制品摊位林立，维京人装扮的中世纪商人穿梭其中以及中世纪风格的游乐设施与表演，使得埃斯林根的圣诞市场远近闻名。",
+    "schwaebischGemuend": "施瓦本格明德",
+    "schwaebischGemuendDesc": "施瓦本格明德是德国巴登-符腾堡州的一座历史悠久的小城，位于斯图加特以东约50公里，以中世纪老城、银器工艺和宁静的自然风光闻名，被称为“银城”。市中心保留了保存完好的老城墙和哥特式建筑，著名的Prediger博物馆位于一座13世纪的修道院内，是德国唯一专注于银器和珠宝工艺的博物馆，展出精美的手工银饰和当地银匠传统。圣诞市场是当地一大亮点，每年11月底至12月在市中心广场和老城街道举行，摊位出售手工银饰、木雕玩具和热红酒，搭配教堂灯光和节日音乐，充满温馨的德式圣诞氛围。",
 
 
 
