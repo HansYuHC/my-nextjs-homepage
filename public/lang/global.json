@@ -153,6 +153,8 @@
     "niceExp": "Nice is a city on the Mediterranean coast in southeastern France, the largest city in the Provence-Alpes-Côte d'Azur region, known for its pleasant Mediterranean climate, azure coastline, and pebble beaches, dubbed the 'Pearl of the French Riviera.'",
     "antibes": "Antibes",
     "antibesExp": "Antibes is a charming historic seaside town on the French Riviera between Nice and Cannes, known for its medieval old town, Picasso Museum, and impressive fortress walls. The city offers fine golden sandy beaches and clear Mediterranean waters, an ideal place for authentic seafood, and has become a source of artistic inspiration due to Impressionist painters like Monet who created works here.",
+    "menton": "Menton",
+    "mentonExp": "Menton is the easternmost town on the French Riviera, right on the border with Italy, often called the 'Pearl at the Franco-Italian border' for its mild climate and the fragrance of lemon blossoms. It boasts some of the most charming pebble beaches along the Mediterranean with crystal-clear water, making it a perfect spot for sunbathing and swimming in summer. The old town features narrow, romantic streets lined with colorful houses in shades of orange, pink, and ochre, stacked tier upon tier up the hillside, adorned with blue shutters and vine-covered balconies, resembling a living Southern European postcard.",
 
     "spain": "Spain",
     "spainOverview": "Spain (Kingdom of Spain) is located on the Iberian Peninsula in southwestern Europe, the fourth-largest country in the EU, famous for passionate flamenco, bullfighting, rich historical sites, and Mediterranean charm, with Madrid as its capital. We visited Barcelona, Tenerife, and Palma.",
@@ -403,6 +405,8 @@
     "niceExp": "Nizza ist eine Stadt an der Mittelmeerküste im Südosten Frankreichs, die größte Stadt der Region Provence-Alpes-Côte d’Azur, bekannt für ihr angenehmes mediterranes Klima, die azurblaue Küste und Kieselstrände und wird als „Perle der Côte d’Azur“ bezeichnet.",
     "antibes": "Antibes",
     "antibesExp": "Antibes ist eine bezaubernde historische Hafenstadt an der Côte d’Azur zwischen Nizza und Cannes, bekannt für ihre mittelalterliche Altstadt, das Picasso-Museum und die imposante Festung Fort Carré. Die Stadt bietet feine goldene Sandstrände und klares Mittelmeerwasser, ist ein idealer Ort für authentische Meeresfrüchte und wurde durch Impressionisten wie Monet zu einem Ort künstlerischer Inspiration.",
+    "menton": "Menton",
+    "mentonExp": "Menton ist die östlichste Stadt an der Côte d’Azur in Südfrankreich, direkt an der italienischen Grenze gelegen, und wird oft als „Perle an der französisch-italienischen Grenze“ bezeichnet. Die Stadt ist bekannt für ihr mildes Klima und den Duft von Zitronenblüten. Sie verfügt über einige der schönsten Kieselstrände der Mittelmeerküste mit kristallklarem Wasser – ideal zum Sonnenbaden und Schwimmen im Sommer. Die Altstadt ist geprägt von engen, romantischen Gassen mit bunten Häusern in Orange, Rosa und Ocker, die sich terrassenförmig den Hang hinaufziehen, mit blauen Fensterläden und von Wein bewachsenen Balkonen – wie eine lebendige südeuropäische Postkarte.",
 
     "spain": "Spanien",
     "spainOverview": "Spanien (Königreich Spanien) liegt auf der Iberischen Halbinsel im Südwesten Europas, ist das viertgrößte Land der EU und bekannt für leidenschaftlichen Flamenco, Stierkampf, reiche historische Stätten und mediterranes Flair, Hauptstadt ist Madrid. Wir waren in Barcelona, Teneriffa und Palma.",
@@ -655,6 +659,8 @@
     "niceExp": "尼斯是法国东南部地中海沿岸的城市，普罗旺斯-阿尔卑斯-蓝色海岸大区的最大城市，以温暖宜人的地中海气候、蔚蓝海岸和鹅卵石海滩闻名，被誉为“蓝色海岸的明珠”。",
     "antibes": "昂蒂布",
     "antibesExp": "昂蒂布是法国蓝色海岸的一座迷人海滨古城，位于尼斯和戛纳之间，以中世纪老城区、毕加索博物馆和壮观的城墙要塞闻名。这座城市拥有细腻的金色沙滩和清澈地中海水域，是享用地道海鲜的绝佳之地，同时因莫奈等印象派画家曾在此创作而成为艺术灵感之地。",
+    "menton": "芒通",
+    "mentonExp": "芒通是法国东南部蔚蓝海岸最靠东的小城，与意大利边境接壤，被称为“法意交界的珍珠”，以温和气候和柠檬花香闻名。它拥有地中海沿岸最迷人的鹅卵石海滩和清澈海水，夏季是晒太阳、游泳的绝佳去处。老城区街道狭窄而浪漫，遍布色彩鲜艳的橘色、粉色和赭石色房子，层层叠叠爬满山坡，搭配蓝色百叶窗和爬满藤蔓的阳台，宛如一幅活生生的南欧明信片。",
 
     "spain": "西班牙",
     "spainOverview": "西班牙（西班牙王国）位于欧洲西南部的伊比利亚半岛，是欧盟面积第四大的国家，以热情奔放的弗拉门戈、斗牛文化、丰富的历史遗迹和地中海风情闻名，首都马德里。我们去过西班牙的巴塞罗那，特内里费岛和帕尔马。",

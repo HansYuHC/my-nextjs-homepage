@@ -115,7 +115,11 @@ const cities: City[] = [
     id: 'rothenburg',
     key: 'rothenburg',
     image: '/images/cities/rothenburg_badge.jpg',
-    photos: ['/images/cities/rothenburg1.jpg','/images/cities/rothenburg2.jpg','/images/cities/rothenburg3.jpg','/images/cities/rothenburg4.jpg'],
+    photos: ['/images/cities/rothenburg1.jpg','/images/cities/rothenburg2.jpg','/images/cities/rothenburg3.jpg','/images/cities/rothenburg4.jpg',
+        '/images/cities/rothenburg5.jpg',
+        '/images/cities/rothenburg6.jpg',
+        '/images/cities/rothenburg7.jpg',
+        '/images/cities/rothenburg8.jpg'],
   },
   {
     id: 'konstanz',

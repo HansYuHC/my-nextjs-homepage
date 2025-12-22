@@ -97,7 +97,10 @@ const countries: Country[] = [
         photos: [
           { src: '/images/countriesCity/colmar1.jpg' },
           { src: '/images/countriesCity/colmar2.jpg' },
-          { src: '/images/countriesCity/colmar3.jpg' }
+          { src: '/images/countriesCity/colmar3.jpg' },
+          { src: '/images/countriesCity/colmar4.jpg' },
+          { src: '/images/countriesCity/colmar5.jpg' },
+          { src: '/images/countriesCity/colmar6.jpg' }
         ],
       },
       {
@@ -113,6 +116,16 @@ const countries: Country[] = [
             { src: '/images/countriesCity/antibes2.jpg' },
             { src: '/images/countriesCity/antibes3.jpg' },
             { src: '/images/countriesCity/antibes4.jpg' }],
+      },
+      {
+        nameKey: 'menton',
+        descriptionKey: 'mentonExp',
+        photos: [{ src: '/images/countriesCity/menton1.jpg' },
+            { src: '/images/countriesCity/menton2.jpg' },
+            { src: '/images/countriesCity/menton3.jpg' },
+            { src: '/images/countriesCity/menton4.jpg' },
+            { src: '/images/countriesCity/menton5.jpg' },
+            { src: '/images/countriesCity/menton6.jpg' }],
       },
     ],
   },
