@@ -81,6 +81,9 @@ const countries: Country[] = [
           { src: '/images/countriesCity/paris1.jpg' },
           { src: '/images/countriesCity/paris2.jpg' },
           { src: '/images/countriesCity/paris3.jpg' },
+          { src: '/images/countriesCity/paris4.jpg' },
+          { src: '/images/countriesCity/paris5.jpg' },
+          { src: '/images/countriesCity/paris6.jpg' }
         ],
       },
       {
@@ -107,7 +110,11 @@ const countries: Country[] = [
         nameKey: 'nice',
         descriptionKey: 'niceExp',
         photos: [{ src: '/images/countriesCity/nice1.jpg' },
-            { src: '/images/countriesCity/nice2.jpg' }],
+            { src: '/images/countriesCity/nice2.jpg' },
+            { src: '/images/countriesCity/nice3.jpg' },
+            { src: '/images/countriesCity/nice4.jpg' },
+            { src: '/images/countriesCity/nice5.jpg' },
+            { src: '/images/countriesCity/nice6.jpg' }],
       },
       {
         nameKey: 'antibes',

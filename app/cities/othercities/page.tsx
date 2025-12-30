@@ -55,7 +55,9 @@ const cities: City[] = [
     id: 'stuttgart',
     key: 'stuttgart',
     image: '/images/cities/stuttgart_badge.jpg',
-    photos: ['/images/cities/stuttgart1.jpg','/images/cities/stuttgart2.jpg','/images/cities/stuttgart3.jpg','/images/cities/stuttgart4.jpg'],
+    photos: ['/images/cities/stuttgart1.jpg','/images/cities/stuttgart2.jpg','/images/cities/stuttgart3.jpg','/images/cities/stuttgart4.jpg',
+        '/images/cities/stuttgart5.jpg',
+        '/images/cities/stuttgart6.jpg'],
   },
   {
     id: 'ludwigsburg',
@@ -131,19 +133,27 @@ const cities: City[] = [
     id: 'freiburg',
     key: 'freiburg',
     image: '/images/cities/freiburg_badge.jpg',
-    photos: ['/images/cities/freiburg1.jpg','/images/cities/freiburg2.jpg'],
+    photos: ['/images/cities/freiburg1.jpg','/images/cities/freiburg2.jpg',
+        '/images/cities/freiburg3.jpg',
+        '/images/cities/freiburg4.jpg',
+        '/images/cities/freiburg5.jpg',
+        '/images/cities/freiburg6.jpg'],
   },
   {
     id: 'baden-baden',
     key: 'baden-baden',
     image: '/images/cities/baden-baden_badge.png',
-    photos: ['/images/cities/baden-baden1.jpg','/images/cities/baden-baden2.jpg'],
+    photos: ['/images/cities/baden-baden1.jpg','/images/cities/baden-baden2.jpg',
+        '/images/cities/baden-baden3.jpg',
+        '/images/cities/baden-baden4.jpg'],
   },
   {
     id: 'heilbronn',
     key: 'heilbronn',
     image: '/images/cities/heilbronn_badge.jpg',
-    photos: ['/images/cities/heilbronn1.jpg','/images/cities/heilbronn2.jpg'],
+    photos: ['/images/cities/heilbronn1.jpg','/images/cities/heilbronn2.jpg',
+        '/images/cities/heilbronn3.jpg',
+        '/images/cities/heilbronn4.jpg'],
   },
   {
     id: 'heidelberg',
@@ -198,6 +208,12 @@ const cities: City[] = [
     key: 'schwaebischGemuend',
     image: '/images/cities/schwaebischGemuend_badge.png',
     photos: ['/images/cities/schwaebischGemuend1.jpg','/images/cities/schwaebischGemuend2.jpg','/images/cities/schwaebischGemuend3.jpg','/images/cities/schwaebischGemuend4.jpg'],
+  },
+  {
+    id: 'wuerzburg',
+    key: 'wuerzburg',
+    image: '/images/cities/wuerzburg_badge.jpg',
+    photos: ['/images/cities/wuerzburg1.jpg','/images/cities/wuerzburg2.jpg','/images/cities/wuerzburg3.jpg','/images/cities/wuerzburg4.jpg'],
   }
 ]
 
