@@ -168,6 +168,43 @@
     "palma": "Palma",
     "palmaExp": "Palma is the capital of Mallorca in the Balearic Islands and one of the most charming historic coastal cities in the Mediterranean, known for its blend of Arab, Gothic, and Renaissance architecture and picturesque harbor. The old town preserves narrow winding cobblestone streets, Arab baths, and grand aristocratic palaces, exuding Mediterranean charm; the port area offers luxury yachts, lively fish markets, and bustling restaurants—ideal for watching sunsets and enjoying seaside life.",
 
+    "monaco": "Monaco",
+    "monacoOverview": "Monaco is a small principality located in southwestern Europe along the Mediterranean coast, surrounded by France on three sides and bordered by the Mediterranean Sea to the south. It is famous for its luxurious lifestyle, the renowned Monte Carlo Casino, and the Formula One Monaco Grand Prix. Despite its small size, Monaco has a highly developed economy centered on finance, tourism, and services.",
+    "monacoCity": "Monaco City",
+    "monacoCityExp": "The capital of Monaco is Monaco City (Monaco-Ville), often referred to as 'The Rock.' It is home to the Prince’s Palace, Monaco Cathedral, and government institutions, making it the political and historical center of the country. Located atop a cliff overlooking the Mediterranean Sea, Monaco City is known for its well-preserved old town and tranquil atmosphere.",
+
+    "italy": "Italy",
+    "italyOverview": "Italy is located in southern Europe and is shaped like a boot, with a long and brilliant history. It is the birthplace of ancient Roman civilization and has had a profound influence on the world in art, architecture, and culture. Italy is renowned for its cuisine, fashion, and abundant UNESCO World Heritage sites.",
+    "como": "Como",
+    "comoExp": "Como is a city in the Lombardy region of northern Italy, situated on the shores of the famous Lake Como. It is known for its beautiful lake and mountain scenery, historic old town, and elegant architecture. Como also serves as an important tourist gateway to the Alps and the surrounding lake region.",
+    "milan": "Milan",
+    "milanExp": "Milan is a major city in northern Italy and the capital of the Lombardy region. It is a world-renowned center of fashion and design, as well as Italy’s financial and commercial hub. Milan boasts rich cultural heritage, including the Milan Cathedral and Leonardo da Vinci’s 'The Last Supper'.",
+
+    "luxembourg": "Luxembourg",
+    "luxembourgOverview": "Luxembourg is a small landlocked country in northwestern Europe, bordering France, Germany, and Belgium. It is one of the wealthiest countries in the world, with an economy largely driven by financial services. Luxembourg is also a key member of the European Union and is known for its multilingual and multicultural society.",
+    "luxembourgCity": "Luxembourg City",
+    "luxembourgExp": "Luxembourg City is the capital and largest city of the Grand Duchy of Luxembourg. It uniquely combines medieval fortifications, a historic old town, and modern European Union institutions. Its old town and fortifications are designated as a UNESCO World Heritage Site.",
+    "schengen": "Schengen",
+    "schengenExp": "Schengen is a small town in southeastern Luxembourg, located along the Moselle River. In 1985, the Schengen Agreement was signed here, forming the basis for border-free travel across much of Europe. As a result, Schengen has become a symbol of European integration and free movement.",
+
+    "slowakei": "Slovakia",
+    "slowakeiOverview": "Slovakia is located in Central Europe and is a member of the European Union and the Eurozone. It is well known for its mountainous landscapes and rich natural scenery. The Carpathian Mountains, numerous castles, and the ski resorts of the High Tatras are among its most iconic features, reflecting a history shaped by Slavic culture, the Austro-Hungarian Empire, and Central European traditions.",
+    "bratislava": "Bratislava",
+    "bratislavaExp": "Bratislava is the capital of Slovakia and serves as the country's political, economic, and cultural center. Situated on the Danube River, it borders Austria and Hungary, making it one of the few capitals in Europe located at the junction of three countries. Its well-preserved old town and hilltop castle showcase a blend of Central European and Baroque architecture.",
+
+    "austria": "Austria",
+    "austriaOverview": "Austria is located in Central Europe and is renowned for its music, art, and Alpine landscapes. It is a member of the European Union and has played a significant role in European history. Classical music heritage, lakes, and mountains strongly shape the country’s identity.",
+    "wien": "Vienna",
+    "wienExp": "Vienna is the capital of Austria and the country’s political, cultural, and economic center. It is renowned for its classical music heritage, imperial history, and grand architecture, earning the title “City of Music.” The city combines imperial traditions with modern urban life and is frequently ranked among the world’s most livable cities. We visited Schönbrunn Palace, a symbol of imperial grandeur, and saw giant pandas from China at the Vienna Zoo. In winter, the Christmas market at Prater Park adds a festive atmosphere and highlights the city’s warm and diverse character.",
+    "salzburg": "Salzburg",
+    "salzburgExp": "Salzburg is a historic city in Austria and the birthplace of Wolfgang Amadeus Mozart. Nestled at the edge of the Alps, it is known for its Baroque architecture and scenic surroundings. Its old town is a UNESCO World Heritage Site famous for music and culture.",
+    "hallstatt": "Hallstatt",
+    "hallstattExp": "Hallstatt is one of Austria’s most iconic lakeside villages, surrounded by mountains and water. Its history dates back to prehistoric times, and it is part of a UNESCO World Heritage region. The picturesque scenery makes it one of the most visited destinations in the country.",
+    "linz": "Linz",
+    "linzExp": "Linz lies on the banks of the Danube River and is Austria’s third-largest city. It is known for its focus on digital art, electronic music, and innovation. The city successfully blends industrial heritage with modern cultural life.",
+
+
+
 
 
     "project_cadIntro": "Since my undergraduate studies, I have used various CAD software, such as SolidWorks or Creo PTC, to learn and practice CAD software modeling knowledge and projects.",
@@ -422,6 +459,44 @@
     "tennerifeExp": "Teneriffa ist die größte und vielfältigste Insel der Kanarischen Inseln, mit vulkanischer Landschaft, subtropischem Klima und ganzjährig mildem „ewigem Frühling“, eines der beliebtesten Urlaubsziele Europas. Die Insel bietet verschiedenste Strände – von schwarzen Vulkansandstränden im Norden bis zu goldenen Sandstränden im Süden – ideal zum Schwimmen, Sonnenbaden und Wassersport. Teneriffa ist einer der besten Orte Europas zum Sternenbeobachten; im Teide-Nationalpark auf 3718 m Höhe, dem höchsten Berg Spaniens, ist der Nachthimmel kristallklar, Sonnenuntergänge vom Gipfel mit orangerotem Licht über den Wolken sind atemberaubend.",
     "palma": "Palma",
     "palmaExp": "Palma ist die Hauptstadt der Insel Mallorca auf den Balearen und eine der charmantesten historischen Hafenstädte des Mittelmeers, bekannt für die Mischung aus arabischer, gotischer und Renaissance-Architektur sowie ihrem malerischen Hafen. Die Altstadt bewahrt enge, gewundene Kopfsteinstraßen, arabische Bäder und prächtige Adelspaläste, die mediterranes Flair versprühen; der Hafenbereich lockt mit Luxusyachten, lebhaften Fischmärkten und Restaurants – perfekt für Sonnenuntergänge und entspanntes Küstenleben.",
+
+    "monaco": "Monaco",
+    "monacoOverview": "Monaco ist ein kleines Fürstentum im Südwesten Europas an der Mittelmeerküste, das auf drei Seiten von Frankreich umgeben ist und im Süden an das Mittelmeer grenzt. Es ist bekannt für seinen luxuriösen Lebensstil, das berühmte Casino von Monte-Carlo und den Formel-1-Grand-Prix von Monaco. Trotz seiner geringen Fläche verfügt Monaco über eine hochentwickelte Wirtschaft mit Schwerpunkten in den Bereichen Finanzen, Tourismus und Dienstleistungen.",
+    "monacoCity": "Monaco-Stadt",
+    "monacoCityExp": "Die Hauptstadt von Monaco ist Monaco-Stadt (Monaco-Ville), die oft als „Der Felsen“ bezeichnet wird. Hier befinden sich der Fürstenpalast, die Kathedrale von Monaco und wichtige Regierungsinstitutionen, wodurch sie das politische und historische Zentrum des Landes ist. Monaco-Stadt liegt auf einem Felsen über dem Mittelmeer und ist bekannt für ihre gut erhaltene Altstadt und ihre ruhige Atmosphäre.",
+
+    "italy": "Italien",
+    "italyOverview": "Italien liegt in Südeuropa und hat die Form eines Stiefels mit einer langen und glanzvollen Geschichte. Es ist die Wiege der antiken römischen Zivilisation und hat die Welt in den Bereichen Kunst, Architektur und Kultur stark beeinflusst. Italien ist bekannt für seine Küche, Mode und seine zahlreichen UNESCO-Welterbestätten.",
+    "como": "Como",
+    "comoExp": "Como ist eine Stadt in der Region Lombardei im Norden Italiens und liegt am Ufer des berühmten Comer Sees. Sie ist bekannt für ihre eindrucksvolle See- und Berglandschaft, die historische Altstadt und ihre elegante Architektur. Como ist zudem ein wichtiger Ausgangspunkt für Reisen in die Alpen und die umliegenden Seengebiete.",
+    "milan": "Mailand",
+    "milanExp": "Mailand ist eine bedeutende Stadt im Norden Italiens und die Hauptstadt der Region Lombardei. Die Stadt gilt als weltweites Zentrum für Mode und Design sowie als Finanz- und Wirtschaftszentrum Italiens. Mailand verfügt über ein reiches kulturelles Erbe, darunter der Mailänder Dom und Leonardo da Vincis „Das Abendmahl“.",
+
+    "luxembourg": "Luxemburg",
+    "luxembourgOverview": "Luxemburg ist ein kleines Binnenland im Nordwesten Europas und grenzt an Frankreich, Deutschland und Belgien. Es zählt zu den wohlhabendsten Ländern der Welt, wobei die Wirtschaft stark vom Finanzsektor geprägt ist. Luxemburg ist zudem ein bedeutendes Mitglied der Europäischen Union und zeichnet sich durch seine Mehrsprachigkeit und kulturelle Vielfalt aus.",
+    "luxembourgCity": "Luxemburg-Stadt",
+    "luxembourgExp": "Luxemburg-Stadt ist die Hauptstadt und größte Stadt des Großherzogtums Luxemburg. Die Stadt verbindet mittelalterliche Befestigungsanlagen, eine historische Altstadt und moderne Gebäude europäischer Institutionen. Die Altstadt und die Festungsanlagen gehören zum UNESCO-Weltkulturerbe.",
+    "schengen": "Schengen",
+    "schengenExp": "Schengen ist eine kleine Gemeinde im Südosten Luxemburgs an der Mosel. Dort wurde 1985 das Schengener Abkommen unterzeichnet, das die Grundlage für den freien Personenverkehr in Europa schuf. Schengen gilt daher als Symbol für die europäische Integration und offene Grenzen.",
+
+    "slowakei": "Slowakei",
+    "slowakeiOverview": "Die Slowakei liegt in Mitteleuropa und ist Mitglied der Europäischen Union sowie der Eurozone. Sie ist bekannt für ihre bergige Landschaft und ihre beeindruckende Natur. Die Karpaten, zahlreiche Burgen und die Skigebiete der Hohen Tatra zählen zu den bekanntesten Wahrzeichen des Landes, dessen Geschichte stark von slawischer Kultur, der Donaumonarchie und mitteleuropäischen Traditionen geprägt ist.",
+    "bratislava": "Bratislava",
+    "bratislavaExp": "Bratislava ist die Hauptstadt der Slowakei und zugleich ihr politisches, wirtschaftliches und kulturelles Zentrum. Die Stadt liegt an der Donau und grenzt an Österreich und Ungarn, was sie zu einer der wenigen Hauptstädte Europas mit unmittelbarer Nähe zu drei Ländern macht. Die gut erhaltene Altstadt und die Burg, die über der Stadt thront, verbinden mitteleuropäische und barocke Architektur.",
+
+    "austria": "Österreich",
+    "austriaOverview": "Österreich liegt in Mitteleuropa und ist bekannt für Musik, Kunst und die Alpenlandschaft. Das Land ist Mitglied der Europäischen Union und spielte historisch eine zentrale Rolle in Europa. Klassische Musik, Seen und Berge prägen das nationale Erscheinungsbild.",
+    "wien": "Wien",
+    "wienExp": "Wien ist die Hauptstadt Österreichs sowie das politische, kulturelle und wirtschaftliche Zentrum des Landes. Die Stadt ist berühmt für ihre klassische Musiktradition, kaiserliche Geschichte und prächtige Architektur und gilt als „Stadt der Musik“. Wien verbindet imperiales Erbe mit modernem Stadtleben und zählt regelmäßig zu den lebenswertesten Städten der Welt. Wir besichtigten das Schloss Schönbrunn als Symbol der kaiserlichen Pracht und sahen im Tiergarten Schönbrunn die aus China stammenden Pandas. In der Winterzeit sorgt der Weihnachtsmarkt im Prater für festliche Stimmung und zeigt die vielfältige und herzliche Seite der Stadt.",
+    "salzburg": "Salzburg",
+    "salzburgExp": "Salzburg ist eine historische Stadt in Österreich und der Geburtsort von Wolfgang Amadeus Mozart. Sie liegt am Rand der Alpen und ist für ihre barocke Architektur bekannt. Die Altstadt gehört zum UNESCO-Weltkulturerbe und ist eng mit Musik und Kultur verbunden.",
+    "hallstatt": "Hallstatt",
+    "hallstattExp": "Hallstatt ist eines der bekanntesten österreichischen Dörfer am See, umgeben von Bergen. Die Geschichte des Ortes reicht bis in prähistorische Zeiten zurück und gehört zum UNESCO-Welterbe. Seine malerische Landschaft macht Hallstatt zu einem beliebten Reiseziel.",
+    "linz": "Linz",
+    "linzExp": "Linz liegt an der Donau und ist die drittgrößte Stadt Österreichs. Die Stadt ist bekannt für Medienkunst, elektronische Musik und technologische Innovation. Linz verbindet industrielle Vergangenheit mit moderner Kultur auf einzigartige Weise.",
+
+
+
 
 
     "project_cadIntro": "Seit meinem Grundstudium in der Uni habe ich verschiedene CAD-Softwareprogramme mit SolidWorks oder Creo PTC genutzt, um Kenntnisse in der CAD-Softwaremodellierung zu erwerben und in Projekten anzuwenden.",
@@ -678,6 +753,43 @@
     "tennerifeExp": "特内里费是西班牙加那利群岛中最大、最具多样性的岛屿，拥有火山地貌、亚热带气候和全年温和的“永恒之春”气候，是欧洲最受欢迎的度假胜地之一。岛上拥有多种风格的海滩，适合游泳、日光浴和水上活动。特内里费是欧洲最佳观星地点之一，泰德国家公园内海拔3718米的泰德火山是西班牙最高峰，夜空清澈，常举办专业观星活动；日落时，火山顶的橙红光芒与云海交织，景色壮丽震撼。",
     "palma": "帕尔马",
     "palmaExp": "帕尔马是西班牙巴利阿里群岛中马略卡岛的首府，也是地中海地区最具魅力的历史海滨城市之一，以其融合阿拉伯、哥特和文艺复兴风格的建筑和迷人的港口风光闻名。老城区保留了狭窄蜿蜒的石板街道、阿拉伯浴场和古老的贵族宅邸，充满地中海风情；港口区则有豪华游艇、鲜活的海鲜市场和热闹的餐厅，是欣赏日落和享受海滨生活的绝佳去处。",
+
+    "monaco": "摩纳哥",
+    "monacoOverview": "摩纳哥是位于欧洲西南部、地中海沿岸的一个袖珍公国，被法国三面环绕、南临地中海。它以奢华的生活方式、著名的蒙特卡洛赌场和一级方程式摩纳哥大奖赛闻名于世。虽然国土面积很小，但摩纳哥拥有高度发达的金融、旅游和服务业。",
+    "monacoCity": "摩纳哥城",
+    "monacoCityExp": "摩纳哥的首都是摩纳哥城（Monaco-Ville），常被称为“岩石城”。这里坐落着亲王宫、摩纳哥大教堂和政府机构，是国家的政治与历史中心。摩纳哥城位于悬崖之上，俯瞰地中海，以保存完好的老城区和宁静氛围著称。",
+
+    "italy": "意大利",
+    "italyOverview": "意大利位于欧洲南部，地形呈靴子状，拥有悠久而灿烂的历史。它是古罗马文明的发源地，在艺术、建筑和文化方面对世界影响深远。意大利以美食、时尚和丰富的世界文化遗产而闻名。",
+    "como": "科莫",
+    "comoExp": "科莫是意大利北部伦巴第大区的一座城市，位于著名的科莫湖畔。它以优美的湖光山色、历史悠久的老城和精致的建筑而闻名。科莫也是通往阿尔卑斯山和周边湖区的重要旅游城市。",
+    "milan": "米兰",
+    "milanExp": "米兰是意大利北部的重要城市，也是伦巴第大区的首府。它是全球著名的时尚与设计之都，同时也是意大利的金融和商业中心。米兰拥有丰富的历史文化遗产，如米兰大教堂和达·芬奇的《最后的晚餐》。",
+
+    "luxembourg": "卢森堡",
+    "luxembourgOverview": "卢森堡是位于欧洲西北部的一个内陆小国，毗邻法国、德国和比利时。它是世界上最富裕的国家之一，经济以金融服务业为主。卢森堡同时也是欧盟的重要成员国，拥有多语言和多文化特色。",
+    "luxembourgCity": "卢森堡市",
+    "luxembourgExp": "卢森堡市是卢森堡的大公国首都和最大城市。城市融合了中世纪要塞、老城区与现代欧盟机构建筑。其老城区和防御工事被列为联合国教科文组织世界文化遗产。",
+    "schengen": "申根",
+    "schengenExp": "申根是卢森堡东南部的一个小镇，位于摩泽尔河畔。1985年，《申根协定》在此签署，奠定了欧洲无边境通行的基础。申根因此成为欧洲一体化和人员自由流动的重要象征。",
+
+    "slowakei": "斯洛伐克",
+    "slowakeiOverview": "斯洛伐克位于中欧，是欧盟和欧元区成员国，以山地和自然风光著称。喀尔巴阡山脉、众多城堡以及塔特拉山的滑雪胜地是其代表性景观。该国历史上深受斯拉夫文化、奥匈帝国与中欧传统影响。",
+    "bratislava": "布拉迪斯拉发",
+    "bratislavaExp": "布拉迪斯拉发是斯洛伐克的首都，也是该国政治、经济和文化中心。它坐落在多瑙河畔，与奥地利和匈牙利接壤，是欧洲少有的“三国交界首都”。老城区保存完好，城堡俯瞰全城，融合了中欧与巴洛克风格。",
+
+    "austria": "奥地利",
+    "austriaOverview": "奥地利位于中欧，是一个以音乐、艺术和阿尔卑斯山风光闻名的国家。它是欧盟成员国，历史上长期处于欧洲文化与政治的重要位置。古典音乐传统、湖泊与雪山共同塑造了奥地利的国家形象。",
+    "wien": "维也纳",
+    "wienExp": "维也纳是奥地利的首都，也是国家政治、文化和经济中心。它以古典音乐、皇室历史和宏伟建筑闻名，被誉为“音乐之都”。这座城市融合了帝国传统与现代生活，多次被评为全球最宜居城市之一。我们参观了象征皇室辉煌的美泉宫，并在维也纳动物园看到了来自中国的熊猫。冬季时，普拉特公园的圣诞集市充满节日气氛，展现了这座城市温馨而多元的一面。",
+    "salzburg": "萨尔茨堡",
+    "salzburgExp": "萨尔茨堡是奥地利著名的历史名城，也是莫扎特的出生地。城市坐落在阿尔卑斯山脚下，巴洛克建筑与自然景观相得益彰。其老城区被列为世界文化遗产，以音乐节和古典氛围闻名。",
+    "hallstatt": "哈尔施塔特",
+    "hallstattExp": "哈尔施塔特是奥地利最具代表性的湖畔小镇之一，位于群山与湖泊之间。小镇历史可追溯至史前时期，是世界文化遗产所在地。其如画般的风景使其成为奥地利最受欢迎的旅游地之一。",
+    "linz": "林茨",
+    "linzExp": "林茨位于多瑙河畔，是奥地利第三大城市。它以现代艺术、电子音乐与科技创新而著称。林茨将工业传统与当代文化成功融合，展现出独特的城市气质。",
+
+
 
 
 
