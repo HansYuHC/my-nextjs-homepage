@@ -203,6 +203,28 @@
     "linz": "Linz",
     "linzExp": "Linz lies on the banks of the Danube River and is Austria’s third-largest city. It is known for its focus on digital art, electronic music, and innovation. The city successfully blends industrial heritage with modern cultural life.",
 
+    "liechtenstein": "Liechtenstein",
+    "liechtensteinOverview": "Liechtenstein is a small landlocked country located in the Alps between Switzerland and Austria. Despite its size, it offers impressive alpine scenery with mountains, valleys, and picturesque towns. The country is known for its high standard of living, economic stability, and peaceful lifestyle.",
+    "vaduz": "Vaduz",
+    "vaduzExp": "Vaduz is the capital of Liechtenstein and a quiet city with a strong cultural atmosphere. We explored the city center, visiting the art museum and the University of Liechtenstein, experiencing a close connection between culture, academia, and daily life. Surrounded by snow-capped mountains, the city offers stunning Alpine views and a sense of openness.",
+
+    "czech": "Czech Republic",
+    "czechOverview": "The Czech Republic is located in Central Europe and is known for its rich history and cultural heritage. Medieval towns, castles, churches, and well-preserved historic centers can be found throughout the country. Its blend of history, art, and urban charm makes it one of Europe’s most attractive travel destinations.",
+    "praha": "Prague",
+    "prahaExp": "Prague is the capital of the Czech Republic and is often called the “City of a Hundred Spires.” We walked through the Old Town Square and across Charles Bridge, enjoying views of Prague Castle along the Vltava River. The city beautifully combines medieval architecture, music, and modern city life, leaving a lasting impression.",
+
+     "hungary": "Hungary",
+    "hungaryOverview": "Hungary is located in Central Europe and has a long and diverse history. The country blends European traditions with Eastern European influences, visible in both its cities and countryside. Historic architecture, thermal bath culture, and the scenery along the Danube make Hungary a distinctive destination in Central Europe.",
+    "budapest": "Budapest",
+    "budapestExp": "Budapest is the capital of Hungary and is divided by the Danube River into Buda and Pest. We walked along the riverbanks, admired the Parliament building and the Chain Bridge, and experienced the city’s famous thermal baths. The combination of classical architecture and modern urban life leaves a strong impression.",
+
+    "switzerland": "Switzerland",
+    "switzerlandOverview": "Switzerland is located in the heart of Central Europe and is known for its stunning Alpine landscapes, stable society, and high quality of life. The combination of mountains, lakes, and modern cities creates a distinctive and harmonious national character.",
+    "zuerich": "Zurich",
+    "zuerichExp": "Zurich is the largest city in Switzerland and an important financial and cultural center. We walked along the Limmat River and through the old town, experiencing the city’s balance between modern life, art, and historical atmosphere.",
+    "luzern": "Lucerne",
+    "luzernExp": "Lucerne is located on the shores of Lake Lucerne and serves as a gateway to the Alps. We visited the Chapel Bridge and the historic old town, with mountains and the lake forming a classic Swiss backdrop.",
+
 
 
 
@@ -494,6 +516,29 @@
     "hallstattExp": "Hallstatt ist eines der bekanntesten österreichischen Dörfer am See, umgeben von Bergen. Die Geschichte des Ortes reicht bis in prähistorische Zeiten zurück und gehört zum UNESCO-Welterbe. Seine malerische Landschaft macht Hallstatt zu einem beliebten Reiseziel.",
     "linz": "Linz",
     "linzExp": "Linz liegt an der Donau und ist die drittgrößte Stadt Österreichs. Die Stadt ist bekannt für Medienkunst, elektronische Musik und technologische Innovation. Linz verbindet industrielle Vergangenheit mit moderner Kultur auf einzigartige Weise.",
+
+    "liechtenstein": "Liechtenstein",
+    "liechtensteinOverview": "Liechtenstein ist ein kleines Binnenland in den Alpen, gelegen zwischen der Schweiz und Österreich. Trotz seiner geringen Fläche beeindruckt das Land mit alpiner Landschaft, Bergen und ruhigen Dörfern. Es ist bekannt für seinen hohen Lebensstandard, wirtschaftliche Stabilität und eine sehr hohe Lebensqualität.",
+    "vaduz": "Vaduz",
+    "vaduzExp": "Vaduz ist die Hauptstadt Liechtensteins und eine ruhige Stadt mit starkem kulturellem Charakter. In der Innenstadt besuchten wir das Kunstmuseum sowie die Universität Liechtenstein und erlebten die enge Verbindung von Kunst, Bildung und Stadtleben. Die umliegenden schneebedeckten Berge bilden eine eindrucksvolle Kulisse und prägen das Landschaftsbild der Stadt.",
+
+    "czech": "Tschechien",
+    "czechOverview": "Tschechien liegt in Mitteleuropa und ist ein Land mit reicher Geschichte und kulturellem Erbe. Mittelalterliche Stadtbilder, Burgen, Kirchen und historische Altstädte prägen das gesamte Land. Die Verbindung von Geschichte, Kunst und urbaner Atmosphäre macht Tschechien zu einem besonders reizvollen Reiseziel in Europa.",
+    "praha": "Prag",
+    "prahaExp": "Prag ist die Hauptstadt Tschechiens und wird oft als „Stadt der hundert Türme“ bezeichnet. Wir spazierten über den Altstädter Ring und die Karlsbrücke und genossen den Blick auf die Prager Burg entlang der Moldau. Die Stadt vereint beeindruckende historische Architektur mit lebendigem Stadtleben auf ganz besondere Weise.",
+
+    "hungary": "Ungarn",
+    "hungaryOverview": "Ungarn liegt in Mitteleuropa und verfügt über eine lange und vielfältige Geschichte. Das Land verbindet europäische Traditionen mit osteuropäischen Einflüssen, die sich sowohl in den Städten als auch auf dem Land widerspiegeln. Historische Architektur, Thermalbäder und die Landschaft entlang der Donau machen Ungarn zu einem besonders attraktiven Reiseziel.",
+    "budapest": "Budapest",
+    "budapestExp": "Budapest ist die Hauptstadt Ungarns und wird durch die Donau in die Stadtteile Buda und Pest geteilt. Wir spazierten entlang des Donauufers, bewunderten das Parlamentsgebäude und die Kettenbrücke und erlebten die besondere Atmosphäre der Thermalbäder. Die Stadt verbindet Geschichte und modernes Stadtleben auf eindrucksvolle Weise.",
+
+    "switzerland": "Schweiz",
+    "switzerlandOverview": "Die Schweiz liegt im Herzen Mitteleuropas und ist bekannt für ihre beeindruckende Alpenlandschaft, ihre stabile Gesellschaft und ihre hohe Lebensqualität. Natur und moderne Städte bilden hier eine harmonische Einheit aus Bergen, Seen und urbaner Kultur.",
+    "zuerich": "Zürich",
+    "zuerichExp": "Zürich ist die größte Stadt der Schweiz und ein bedeutendes Finanz- und Kulturzentrum. Wir spazierten entlang der Limmat und durch die Altstadt und erlebten die besondere Mischung aus Ordnung, Moderne, Kunst und urbanem Lebensstil.",
+    "luzern": "Luzern",
+    "luzernExp": "Luzern liegt am Vierwaldstättersee und gilt als Tor zu den Alpen. Wir besuchten die Kapellbrücke und die historische Altstadt, während im Hintergrund Berge und See eine typische Schweizer Kulisse bildeten.",
+
 
 
 
@@ -789,6 +834,27 @@
     "linz": "林茨",
     "linzExp": "林茨位于多瑙河畔，是奥地利第三大城市。它以现代艺术、电子音乐与科技创新而著称。林茨将工业传统与当代文化成功融合，展现出独特的城市气质。",
 
+    "liechtenstein": "列支敦士登",
+    "liechtensteinOverview": "列支敦士登是一个位于阿尔卑斯山区的小型内陆国家，夹在瑞士与奥地利之间。虽然国土面积不大，但自然风光壮丽，雪山、山谷与传统小镇相互交织。这里以高生活水平、稳定的经济以及宁静而精致的生活方式闻名。",
+    "vaduz": "瓦杜兹",
+    "vaduzExp": "瓦杜兹是列支敦士登的首都，也是一座安静而富有文化气息的小城。我们在市区参观了美术馆和列支敦士登大学，感受到艺术、学术与城市生活的紧密融合。远处的雪山环绕着城市，为这座小城增添了独特而开阔的阿尔卑斯风景。",
+
+    "czech": "捷克",
+    "czechOverview": "捷克位于中欧地区，是一个历史与文化底蕴极为深厚的国家。这里保存了大量中世纪城市风貌，古堡、教堂与老城区遍布全国。悠久的历史、丰富的艺术传统以及独特的城市景观，使捷克成为欧洲极具吸引力的旅行目的地。",
+    "praha": "布拉格",
+    "prahaExp": "布拉格是捷克的首都，被誉为“百塔之城”。我们漫步在老城广场和查理大桥，感受伏尔塔瓦河两岸的历史气息，并远眺布拉格城堡俯瞰整座城市。这座城市将中世纪建筑、音乐与现代生活自然地融合在一起，留下了非常深刻的印象。",
+
+    "hungary": "匈牙利",
+    "hungaryOverview": "匈牙利位于中欧，是一个拥有悠久历史和多元文化的国家。这里融合了欧洲传统与东欧特色，城市与乡村都保留着浓厚的历史痕迹。丰富的建筑风格、温泉文化以及多瑙河沿岸的风光，使匈牙利成为中欧旅行中极具魅力的一站。",
+    "budapest": "布达佩斯",
+    "budapestExp": "布达佩斯是匈牙利的首都，被多瑙河分为布达和佩斯两部分。我们漫步在多瑙河岸，欣赏国会大厦与链子桥的夜景，并感受这座城市独特的温泉文化与历史氛围。古典建筑与现代生活在这里自然交织，给人留下深刻印象。",
+
+    "switzerland": "瑞士",
+    "switzerlandOverview": "瑞士位于欧洲中部，以稳定的社会环境和优美的自然风光闻名。阿尔卑斯山脉、湖泊与城市高度融合，使这里既有壮丽的自然景观，也拥有高度发达的城市生活。精确、秩序与自然和谐共存，是瑞士最鲜明的特征。",
+    "zuerich": "苏黎世",
+    "zuerichExp": "苏黎世是瑞士最大的城市，也是重要的金融与科技中心。我们在老城区漫步，感受历史街区与现代城市节奏的交汇，并沿着苏黎世湖欣赏宁静的湖畔风景。整座城市干净而有秩序，给人一种理性而舒适的印象。",
+    "luzern": "卢塞恩",
+    "luzernExp": "卢塞恩位于瑞士中部，坐落在湖泊与群山之间。我们参观了卡佩尔廊桥，在湖畔远眺雪山，并感受这座城市浓厚的中世纪气息。自然景观与历史建筑相互映衬，使卢塞恩成为瑞士极具代表性的城市之一。",
 
 
 
